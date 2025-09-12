@@ -25,63 +25,88 @@
 # Registro de Versiones del Informe
 
 <table style="border-collapse: collapse; width: 100%; text-align: left;">
-	<thead>
-		<tr>
-			<th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Versión</th>
-			<th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Fecha</th>
-			<th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Autor</th>
-			<th style="border: 1px solid black; padding: 8px; font-weight: bold;">Descripción de modificación</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1.0</td>
-			<td>11/09/2025</td>
-			<td>
-				<ul>
-					<li>Diestra Zambrano, Adriana Maria</li>
-					<li>Fernandez Remon, Roy Linsh</li>
-					<li>León Vivas, Fabrizio Amir</li>
-				</ul>
-			</td>
-			<td>
-				<strong>Adición de secciones:</strong><br>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Registro de Versiones del Informe</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Project Report Collaboration Insights</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">Student Outcome</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.1. Startup Profile</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.1. Descripción de la Startup</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">1.1.2. Perfiles de integrantes del equipo</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.2. Solution Profile</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.1. Antecedentes y problemática</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">1.2.2. Lean UX Process</p>
-				<p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.1. Lean UX Problem Statements</p>
-				<p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.2. Lean UX Assumptions</p>
-				<p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.3. Lean UX Hypothesis Statements</p>
-				<p style="display: block; margin: 2px 0; text-indent: 20px;">1.2.2.4. Lean UX Canvas</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">1.3. Segmentos objetivo</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.1. Competidores</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.1.1. Análisis competitivo</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.1.2. Estrategias y tácticas frente a competidores</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.2. Entrevistas</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.2.1. Diseño de entrevistas</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.2.2. Registro de entrevistas</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.2.3. Análisis de entrevistas</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">2.3. Needfinding</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.1. User Personas</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.2. User Task Matrix</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.3. Empathy Mapping</p>
-				<p style="display: block; margin: 2px 0; text-indent: 10px;">2.3.4. As-is Scenario Mapping</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.1. To-Be Scenario Mapping</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.2. User Stories</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.3. Impact Mapping</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.4. Alcance</p>
-				<p style="display: block; margin: 2px 0; text-indent: 0px; font-weight: bold;">3.5. Product Backlog</p>
-		</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Versión</th>
+      <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Fecha</th>
+      <th style="border: 1px solid black; padding: 8px; font-weight: bold; text-align: center;">Autor</th>
+      <th style="border: 1px solid black; padding: 8px; font-weight: bold;">Descripción de modificación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 8px;">1.0</td>
+      <td style="border: 1px solid black; padding: 8px;">11/09/2025</td>
+      <td style="border: 1px solid black; padding: 8px;">
+        <ul style="margin: 0; padding-left: 18px;">
+          <li>León Vivas, Fabrizio Amir</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </td>
+      <td style="border: 1px solid black; padding: 8px;">
+        <strong>Adición de secciones:</strong><br>
+        <p style="margin: 2px 0; font-weight: bold;">Registro de Versiones del Informe</p>
+        <p style="margin: 2px 0; font-weight: bold;">Project Report Collaboration Insights</p>
+        <p style="margin: 2px 0; font-weight: bold;">Student Outcome</p>
+        <p style="margin: 2px 0; font-weight: bold;">Objetivos SMART</p>
+        <p style="margin: 2px 0; font-weight: bold;">Capítulo I: Introducción</p>
+        <p style="margin: 2px 0; text-indent: 10px;">1.1. Startup Profile</p>
+        <p style="margin: 2px 0; text-indent: 20px;">1.1.1. Descripción de la Startup</p>
+        <p style="margin: 2px 0; text-indent: 20px;">1.1.2. Perfiles de integrantes del equipo</p>
+        <p style="margin: 2px 0; text-indent: 10px;">1.2. Solution Profile</p>
+        <p style="margin: 2px 0; text-indent: 20px;">1.2.1. Antecedentes y problemática</p>
+        <p style="margin: 2px 0; text-indent: 20px;">1.2.2. Lean UX Process</p>
+        <p style="margin: 2px 0; text-indent: 30px;">1.2.2.1. Lean UX Problem Statements</p>
+        <p style="margin: 2px 0; text-indent: 30px;">1.2.2.2. Lean UX Assumptions</p>
+        <p style="margin: 2px 0; text-indent: 30px;">1.2.2.3. Lean UX Hypothesis Statements</p>
+        <p style="margin: 2px 0; text-indent: 30px;">1.2.2.4. Lean UX Canvas</p>
+        <p style="margin: 2px 0; text-indent: 10px;">1.3. Segmentos objetivo</p>
+        <p style="margin: 2px 0; font-weight: bold;">Capítulo II: Requirements Development and Software Solution Design</p>
+        <p style="margin: 2px 0; text-indent: 10px;">2.1. Competidores</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.1.1. Análisis competitivo</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.1.2. Estrategias y tácticas frente a competidores</p>
+        <p style="margin: 2px 0; text-indent: 10px;">2.2. Entrevistas</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.2.1. Diseño de entrevistas</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.2.2. Registro de entrevistas</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.2.3. Análisis de entrevistas</p>
+        <p style="margin: 2px 0; text-indent: 10px;">2.3. Needfinding</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.3.1. User Personas</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.3.2. User Task Matrix</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.3.3. User Journey Mapping</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.3.4. Empathy Mapping</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.3.5. Ubiquitous Language</p>
+        <p style="margin: 2px 0; text-indent: 10px;">2.4. Requirements specification</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.4.1. User Stories</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.4.2. Impact Mapping</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.4.3. Product Backlog</p>
+        <p style="margin: 2px 0; text-indent: 10px;">2.5. Strategic-Level Domain-Driven Design</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.5.1. EventStorming</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.5.1.1. Candidate Context Discovery</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.5.1.2. Domain Message Flows Modeling</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.5.1.3. Bounded Context Canvases</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.5.2. Context Mapping</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.5.3. Software Architecture</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.5.3.1. Software Architecture Context Level Diagrams</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.5.3.2. Software Architecture Container Level Diagrams</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.5.3.3. Software Architecture Deployment Diagrams</p>
+        <p style="margin: 2px 0; text-indent: 10px;">2.6. Tactical-Level Domain-Driven Design</p>
+        <p style="margin: 2px 0; text-indent: 20px;">2.6.1. Bounded Context: &lt;Bounded Context Name&gt;</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.6.1.1. Domain Layer</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.6.1.2. Interface Layer</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.6.1.3. Application Layer</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.6.1.4. Infrastructure Layer</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.6.1.5. Bounded Context Software Architecture Component Level Diagrams</p>
+        <p style="margin: 2px 0; text-indent: 30px;">2.6.1.6. Bounded Context Software Architecture Code Level Diagrams</p>
+        <p style="margin: 2px 0; text-indent: 40px;">2.6.1.6.1. Bounded Context Domain Layer Class Diagrams</p>
+        <p style="margin: 2px 0; text-indent: 40px;">2.6.1.6.2. Bounded Context Database Design Diagram</p>
+      </td>
+    </tr>
+  </tbody>
 </table>
-
-
 
 <div style="page-break-before: always;"></div>
 
@@ -125,44 +150,58 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
   - [1.1. Startup Profile](#11-startup-profile)
-	- [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
-	- [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](#12-solution-profile)
-	- [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-	- [1.2.2 Lean UX Process](#122-lean-ux-process)
-	  - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
-	  - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
-	  - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
-	  - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
-- [1.3. Segmentos objetivo](#13-segmentos-objetivo)
-- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
-  - [2.1. Competidores](#21-competidores)
-	- [2.1.1. Análisis competitivo](#211-análisis-competitivo)
-	- [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
-  - [2.2. Entrevistas](#22-entrevistas)
-	- [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
-	- [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
-	- [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
-  - [2.3. Needfinding](#23-needfinding)
-	- [2.3.1. User Personas](#231-user-personas)
-	- [2.3.2. User Task Matrix](#232-user-task-matrix)
-	- [2.3.3. User Journey Mapping](#233-user-journey-mapping)
-	- [2.3.4. Empathy Mapping](#234-empathy-mapping)
-	- [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2. Lean UX Process](#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
-  - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-  - [3.2. User Stories](#32-user-stories)
-  - [3.3. Impact Mapping](#33-impact-mapping)
-  - [3.4. Alcance](#34-alcance)
-  - [3.5. Product Backlog](#35-product-backlog)
-  - [3.6. Requerimientos Funcionales](#36-requerimientos-funcionales)
-  - [3.7. Requerimientos No Funcionales](#37-requerimientos-no-funcionales)
+- [Capítulo II: Requirements Development and Software Solution Design](#capítulo-ii-requirements-development-and-software-solution-design)
+  - [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2. Entrevistas](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3. Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+    - [2.3.5. Ubiquitous Language](#235-ubiquitous-language)
+  - [2.4. Requirements specification](#24-requirements-specification)
+    - [2.4.1. User Stories](#241-user-stories)
+    - [2.4.2. Impact Mapping](#242-impact-mapping)
+    - [2.4.3. Product Backlog](#243-product-backlog)
+  - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
+    - [2.5.1. EventStorming](#251-eventstorming)
+      - [2.5.1.1. Candidate Context Discovery](#2511-candidate-context-discovery)
+      - [2.5.1.2. Domain Message Flows Modeling](#2512-domain-message-flows-modeling)
+      - [2.5.1.3. Bounded Context Canvases](#2513-bounded-context-canvases)
+    - [2.5.2. Context Mapping](#252-context-mapping)
+    - [2.5.3. Software Architecture](#253-software-architecture)
+      - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
+      - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
+      - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
+  - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+    - [2.6.1. Bounded Context: Sprint 1](#261-bounded-context-sprint-1)
+      - [2.6.1.1. Domain Layer](#2611-domain-layer)
+      - [2.6.1.2. Interface Layer](#2612-interface-layer)
+      - [2.6.1.3. Application Layer](#2613-application-layer)
+      - [2.6.1.4. Infrastructure Layer](#2614-infrastructure-layer)
+      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](#2615-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](#2616-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](#26161-bounded-context-domain-layer-class-diagrams)
+        - [2.6.1.6.2. Bounded Context Database Design Diagram](#26162-bounded-context-database-design-diagram)
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
-
-
 
 <div style="page-break-before: always;"></div>
 
@@ -247,7 +286,7 @@ _Contenido pendiente._
 ## 1.3. Segmentos objetivo
 _Contenido pendiente._
 
-# Capítulo II: Requirements Elicitation & Analysis
+# Capítulo II: Requirements Development and Software Solution Design
 
 ## 2.1. Competidores
 _Contenido pendiente._
@@ -288,27 +327,76 @@ _Contenido pendiente._
 ### 2.3.5. As-is Scenario Mapping
 _Contenido pendiente._
 
-# Capítulo III: Requirements Specification
-
-## 3.1. To-Be Scenario Mapping
+# 2.4. Requirements specification
 _Contenido pendiente._
 
-## 3.2. User Stories
+## 2.4.1. User Stories
 _Contenido pendiente._
 
-## 3.3. Impact Mapping
+## 2.4.2. Impact Mapping
 _Contenido pendiente._
 
-## 3.4. Alcance
+## 2.4.3. Product Backlog
 _Contenido pendiente._
 
-## 3.5. Product Backlog
+# 2.5. Strategic-Level Domain-Driven Design
 _Contenido pendiente._
 
-## 3.6. Requerimientos Funcionales
+## 2.5.1. EventStorming
 _Contenido pendiente._
 
-## 3.7. Requerimientos No Funcionales
+### 2.5.1.1. Candidate Context Discovery
+_Contenido pendiente._
+
+### 2.5.1.2. Domain Message Flows Modeling
+_Contenido pendiente._
+
+### 2.5.1.3. Bounded Context Canvases
+_Contenido pendiente._
+
+## 2.5.2. Context Mapping
+_Contenido pendiente._
+
+## 2.5.3. Software Architecture
+_Contenido pendiente._
+
+### 2.5.3.1. Software Architecture Context Level Diagrams
+_Contenido pendiente._
+
+### 2.5.3.2. Software Architecture Container Level Diagrams
+_Contenido pendiente._
+
+### 2.5.3.3. Software Architecture Deployment Diagrams
+_Contenido pendiente._
+
+# 2.6. Tactical-Level Domain-Driven Design
+_Contenido pendiente._
+
+## 2.6.1. Bounded Context: Sprint 1
+_Contenido pendiente._
+
+### 2.6.1.1. Domain Layer
+_Contenido pendiente._
+
+### 2.6.1.2. Interface Layer
+_Contenido pendiente._
+
+### 2.6.1.3. Application Layer
+_Contenido pendiente._
+
+### 2.6.1.4. Infrastructure Layer
+_Contenido pendiente._
+
+### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+_Contenido pendiente._
+
+### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+_Contenido pendiente._
+
+#### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+_Contenido pendiente._
+
+#### 2.6.1.6.2. Bounded Context Database Design Diagram
 _Contenido pendiente._
 
 # Conclusiones
