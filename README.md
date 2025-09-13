@@ -122,12 +122,24 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<th>GitHub Username</th>
   </tr>
   <tr>
-	<td>Diestra Zambrano, Adriana Maria</td>
-	<td>adriiiiii123</td>
+	<td>León Vivas, Fabrizio Amir</td>
+	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>Fernandez Remon, Roy Linsh</td>
-	<td>RTPX26</td>
+	<td>León Vivas, Fabrizio Amir</td>
+	<td>CodyLionVivo</td>
+  </tr>
+  <tr>
+	<td>León Vivas, Fabrizio Amir</td>
+	<td>CodyLionVivo</td>
+  </tr>
+  <tr>
+	<td>León Vivas, Fabrizio Amir</td>
+	<td>CodyLionVivo</td>
+  </tr>
+  <tr>
+	<td>León Vivas, Fabrizio Amir</td>
+	<td>CodyLionVivo</td>
   </tr>
   <tr>
 	<td>León Vivas, Fabrizio Amir</td>
@@ -223,29 +235,35 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 			<td>
 				<strong>TB1:</strong><br>
 				<ul>
-					<li><strong>Adriana:</strong> Desarrollé los user persona y el Empathy Mapping, junto con entrevistas, para entender al segmento objetivo y guiar el desarrollo del software. </li>
-					<li><strong>Fabrizio:</strong> Repasé los artefactos necesarios para el capítulo II y III para realizar un correcto dimensionamiento de la solución de software.</li>
-					<li><strong>Roy:</strong> Se realizó las entrevistas con su respectivo análisis y los requerimientos funcionales y no funcionales para obtener la información necesaria para seguir con el desarrollo de el proyecto y el software  </li>
+					<li><strong>Fabrizio:</strong> </li>
+					<li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizio:</strong> </li>
+					<li><strong>Fabrizio:</strong>  </li>
 				</ul>
 			</td>
 			<td>
-				<strong>TB1:</strong> El entregable más que laborioso fue interesante ya que nos permitio usar conocimientos previos para el desarrollo de la solución de software.<br>
+				<strong>TB1:</strong> <br>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.
+				Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. 
 			</td>
 			<td>
 				<strong>TB1:</strong><br>
 				<ul>
-					<li><strong>Adriana:</strong> Reconocí que el aprendizaje continuo es esencial. Las entrevistas me permitieron comprender al segmento objetivo y orientar el software a resolver sus necesidades reales.</li>
-					<li><strong>Fabrizio:</strong> A través de las entrevistas obtuve una comprensión sólida tanto del modelo de negocio como del problema que se busca abordar.</li>
-					<li><strong>Roy:</strong> Mediante el desarrollo de las entrevistas y requerimientos pude entender los problemas que tienen las personas y el cómo poder solucionarlas </li>
+					<li><strong>Fabrizio:</strong> </li>
+					<li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizio:</strong> </li>
+					<li><strong>Fabrizio:</strong>  </li>
 				</ul>
 			</td>
 			<td>
-				<strong>TB1:</strong> Como equipo, coincidimos en que las entrevistas constituyeron un elemento clave para comprender con mayor profundidad el modelo de negocio. Asimismo, el trabajo se desarrolló en un marco de coordinación y apoyo mutuo.<br>
+				<strong>TB1:</strong> <br>
 			</td>
 		</tr>
 	</tobdy>
@@ -253,12 +271,64 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 
 <div style="page-break-before: always;"></div>
 
+# Objetivos SMART
+
+<table style="border-collapse: collapse; width: 100%; text-align: left;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid #000; padding: 8px;" rowspan="2">Nombre del estudiante</th>
+      <th style="border: 1px solid #000; padding: 8px; text-align: center;" colspan="2">Objetivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">León Vivas, Fabrizio Amir</td>
+      <td style="border: 1px solid #000; padding: 8px;">jfkñdsjfkldsfjlkdsafjkdsafjsdf</td>
+      <td style="border: 1px solid #000; padding: 8px;">dsfkldsjafkldsajfkldsjf</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
 
+En esta sección compone la descripción del Startup, asi como quienes la conforman y su propósito.
+
 ### 1.1.1. Descripción de la Startup
-_Contenido pendiente._
+
+
 
 ### 1.1.2. Perfiles de integrantes del equipo
 _Contenido pendiente._
