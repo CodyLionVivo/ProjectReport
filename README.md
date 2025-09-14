@@ -324,14 +324,120 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 
 ## 1.1. Startup Profile
 
-En esta sección compone la descripción del Startup, asi como quienes la conforman y su propósito.
+En esta sección se presenta una **visión general** de la startup del proyecto. Se resume su **propósito**, el **problema** que busca resolver y la **propuesta de valor** a alto nivel, junto con una descripción breve del **equipo** y sus **roles**. El objetivo es contextualizar al lector antes de entrar a los detalles de producto en capítulos posteriores.
 
 ### 1.1.1. Descripción de la Startup
+
+AromaTech es una startup que crea aplicaciones móviles para el café de especialidad. Ayudamos a baristas, cafeterías y entusiastas a estandarizar recetas, registrar catas y simplificar el trabajo en barra. También somos entusiastas del café: desde la barra y el origen hemos vivido que el valor del café no termina en “pedir y tomar”, sino en entender su viaje —del grano a la taza— y compartirlo con una comunidad curiosa. Por eso diseñamos herramientas rápidas y usables que convierten cada preparación en una experiencia de aprendizaje.
+
+**Misión**  
+Educar a baristas y amantes del café sobre los derivados (espresso, cappuccino, latte, macchiato, cold brew, etc.) y sus recetas; explicar de forma simple la extracción (relación café/agua, molienda, temperatura, presión, tiempo), la química del grano (tostado, compuestos solubles, desgasificación) y la texturización de la leche. Todo mediante experiencias móviles guiadas, prácticas y colaborativas que invitan a experimentar, registrar y compartir.
+
+**Visión** 
+Construir la plataforma móvil de referencia para el café de especialidad en Latinoamérica: accesible para aprender, útil para operar y abierta para compartir. Conectar origen, barra y consumidor a través de recetas reutilizables, métricas claras y una comunidad que documenta, mejora y celebra cada taza.
 
 
 
 ### 1.1.2. Perfiles de integrantes del equipo
-_Contenido pendiente._
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 25%;">Foto</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 15%;">Nombres y Apellidos</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 15%;">Código de Alumno</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 15%;">Carrera</th>
+                <th style="border: 1px solid #ddd; padding: 10px; text-align: left; width: 30%;">Habilidades</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Andrea.png" alt="Foto de Andrea Aponte"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202224135</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                        <li>Diseño web</li>
+                        <li>Gestión y diseño de bases de datos SQL y noSQL</li>
+                        <li>Programación en C++ y Python</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Fabrizio.png" alt="Foto de Fabrizio León"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">León Vivas, Fabrizio Amir</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">20211b994</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                        <li>Desarrollo front-end</li>
+                        <li>Conocimiento de TI en sistemas basados en UNIX</li>
+                        <li>Competente en C++, JavaScript y Python</li>
+                        <li>Experiencia con Frameworks ágiles</li>
+                    </ul>
+                </td> 
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Mario.png" alt="Foto de Mario Lopez"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202116250</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                        <li>Diseño web</li>
+                        <li>Manejo de Azure para la gestión de máquinas virtuales</li>
+                        <li>Conocimiento en sistemas Linux</li>
+                        <li>Competente en C++, JavaScript y Python</li> 
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Alvaro.png" alt="Foto de Álvaro Orozco"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202220783</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                        <li>Programación con Python y JavaScript</li>
+                        <li>Fundamentos de arquitectura de software</li>
+                        <li>Diseño UX/UI con figma</li>
+                        <li>Aplicación de herramientas y prácticas para la agilidad</li>
+                        <li>Buenas prácticas de programación orientada a objetos, patrones, code quality & readability</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Henry.png" alt="Foto de Henry Reaño"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">20221e247</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                        <li>Conocimiento en sistemas operativos tipo Linux</li>
+                        <li>Manejo de Azure para la gestión de máquinas virtuales</li>
+                        <li>Conocimiento avanzado en sistemas Linux.</li>
+                        <li>Familiaridad con SOA y Layered Architecture.</li>
+                    </ul>
+                </td> 
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Henry.png" alt="Foto de Henry Reaño"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">20221e247</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                        <li>Conocimiento en sistemas operativos tipo Linux</li>
+                        <li>Manejo de Azure para la gestión de máquinas virtuales</li>
+                        <li>Conocimiento avanzado en sistemas Linux.</li>
+                        <li>Familiaridad con SOA y Layered Architecture.</li>
+                    </ul>
+                </td> 
+            </tr>
+        </tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
 
 ## 1.2. Solution Profile
 
