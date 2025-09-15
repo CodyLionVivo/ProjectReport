@@ -6,7 +6,7 @@
 	<h4 style="margin: 10px 0; border-bottom: none;">Mayta Guillermo, Jorge Luis</h4>
 	<h2 style="margin: 10px 0; border-bottom: none;">Informe de Trabajo Final</h2>
 	<h3 style="margin: 10px 0; border-bottom: none;">Startup: AromaTech</h3>
-	<h3 style="margin: 10px 0; border-bottom: none;">Producto: CoffeeFlow</h3>
+	<h3 style="margin: 10px 0; border-bottom: none;">Producto: Xantina</h3>
 	<h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
 	<ul style="display: inline-block; text-align: left; padding: 0;">
 		<li style="padding: 5px 0;">León Vivas, Fabrizio Amir (20211b994)</li>
@@ -441,8 +441,72 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
 
 ## 1.2. Solution Profile
 
+Esta sección presenta el contexto y la coyuntura del café de especialidad que justifican la viabilidad de AromaTech/Xantina —técnica, de negocio y de experiencia—. Resume antecedentes y problemática con 5W2H y da paso al Lean UX Process (Problem Statements, Assumptions, Hypothesis y Lean UX Canvas), enlazando con Segmentos objetivo (1.3).
+
 ### 1.2.1 Antecedentes y problemática
-_Contenido pendiente._
+
+**Aproximación preliminar a los antecedentes**  
+
+En el ecosistema del café de especialidad, la formación práctica suele darse en escuelas o talleres presenciales y, en el día a día, mediante transferencia informal de conocimiento en barra. Aunque existen videos y blogs, el contenido está disperso, no siempre es confiable ni está adaptado al flujo real de trabajo. Esto genera una curva de aprendizaje lenta para baristas en formación y para emprendedores que quieren abrir una cafetería. A la vez, el consumidor final está cada vez más interesado en entender el “viaje del grano a la taza”, pero rara vez accede a información clara y breve sobre el origen, los procesos y el valor social del café.
+
+**Problemática**  
+
+1) **Aprendizaje técnico accesible y estructurado**  
+   Falta una vía gratuita y digital que enseñe, de forma guiada y práctica, cómo preparar café con consistencia. Esto incluye:
+   - Bebidas y métodos: espresso, cappuccino, latte, macchiato, moka, cold brew, entre otros.  
+   - Parámetros de extracción: dosis, molienda, relación café/agua, temperatura, presión y tiempo.  
+   - Procedimientos de barra: calibración, tiempos de tiro, purga, limpieza y control básico de insumos.  
+   La ausencia de un repositorio único y usables “paso a paso” ralentiza la capacitación, dificulta estandarizar recetas y afecta la calidad del servicio.
+
+2) **Visibilidad del origen y cultura cafetera**  
+   El trabajo en finca y el valor del origen (cultivo, cosecha, beneficiado, secado, clasificación, tostado) rara vez se comunica de forma simple en el punto de consumo. Esto contribuye a:
+   - Desconexión entre consumidor y productor.  
+   - Subvaloración del esfuerzo en campo y de la cadena de valor.  
+   - Pérdida de oportunidades educativas sobre química del café (compuestos solubles, desgasificación) y texturización de la leche (microespuma, control térmico).  
+   Se requiere un espacio breve y recurrente —p. ej., cápsulas tipo “loading tips” en la app— que divulgue datos, procesos y buenas prácticas para elevar la cultura del café de forma amena.
+
+**Síntesis**
+
+Existe una oportunidad clara para **centralizar y democratizar** el aprendizaje técnico (recetas, extracción, operación en barra) y, en paralelo, **contar el relato del origen** mediante cápsulas educativas cortas. Con esto se acelera la formación de baristas y emprendedores, y se reconoce el valor del café desde la finca hasta la taza.
+
+**Objetivos de la Solución**
+
+Democratizar el aprendizaje del café de especialidad y estandarizar la operación en barra mediante una app móvil (Android) con backend cloud, para mejorar la consistencia en taza y difundir la cultura del café desde el origen hasta la preparación.
+
+- Democratizar el aprendizaje del café de especialidad mediante una app móvil en Android con backend cloud, acercando contenido confiable y práctico a baristas, emprendedores y entusiastas.
+- Estandarizar recetas por método y lote, documentar dosis, molienda, relación café/agua, temperatura, presión y tiempo para lograr preparaciones consistentes.
+- Guiar la operación en barra con pasos claros, listas de verificación y calibraciones rápidas, reduciendo retrabajos y variabilidad en el servicio.
+- Registrar catas con notas sensoriales y perfiles de taza, facilitar la comparación y el aprendizaje continuo del equipo.
+- Divulgar cápsulas breves tipo “loading tips” sobre origen, procesos (beneficiado, tostado, desgasificación) y texturización de la leche, fortalecer la cultura cafetera.
+- Visibilizar el trabajo en origen y la cadena de valor, conectar a productores, barra y consumidor mediante historias, datos y buenas prácticas.
+- Simplificar el control básico de insumos con inventario por lotes y alertas tempranas, evitar quiebres en momentos críticos.
+- Garantizar una experiencia de uso ágil y sin fricciones, priorizar flujos cortos, uso con una mano y soporte offline con sincronización posterior.
+- Fortalecer la plataforma técnica con API REST documentada (OpenAPI), autenticación segura, patrones DDD y despliegue cloud nativo con CI/CD y observabilidad.
+- Fomentar la adopción y la comunidad al permitir compartir recetas, buenas prácticas y aprendizajes entre cafeterías y usuarios afines.
+
+**Restricciones**
+
+- **Duración:** completar el proyecto en un plazo máximo de **4 meses calendario**.
+- **Licenciamiento y stack:** construir la aplicación móvil (y sus servicios) con herramientas y librerías **open source**, evitando dependencias propietarias salvo justificación.
+- **Calidad del producto:**
+  - **Accesibilidad:** ofrecer una interfaz usable para todo tipo de usuarios (contraste, tamaños de texto, navegación simple).
+  - **Seguridad:** proteger datos en tránsito y en reposo; implementar autenticación y autorización adecuadas.
+  - **Escalabilidad y eficiencia:** diseñar para crecer sin degradar el rendimiento y evitar consumos innecesarios de recursos.
+  - **Simplicidad:** mantener arquitectura y UX sin complejidad innecesaria para facilitar implementación y mantenimiento.
+
+**Análisis 5W+2H**
+
+| Pregunta | Observaciones clave |
+|---|---|
+| **Who (Quiénes)** | Baristas (junior/senior), jefes de barra y dueños de cafeterías; entusiastas que desean aprender; emprendedores que evalúan abrir una cafetería. Actores indirectos: formadores y productores (para visibilizar el origen). |
+| **What (Qué)** | Contenidos y guías prácticas para preparar bebidas (espresso, cappuccino, latte, moka, cold brew, etc.), estandarizar recetas y registrar catas; cápsulas breves sobre origen, procesos y cultura; apoyos operativos simples (checklists, recordatorios). |
+| **Where (Dónde)** | Barra de cafeterías, academias de barismo y hogar. Entornos con ruido, tiempos cortos, manos ocupadas y múltiples distracciones; sesiones breves, retomables y fáciles de “escanear”. |
+| **When (Cuándo)** | Durante la calibración y la preparación en turno; antes/después del servicio para reforzar; en tiempos de espera para microaprendizaje; en la etapa de puesta en marcha de nuevas cafeterías para capacitación inicial. |
+| **Why (Por qué)** | Reducir la variabilidad en taza, acelerar la curva de aprendizaje, facilitar el onboarding del equipo y revalorizar el café visibilizando el trabajo en origen y su cadena de valor. |
+| **How (Cómo)** | Ofrecer rutas guiadas paso a paso; microlecciones consumibles en minutos; fichas de receta claras y reutilizables; catas con estructura simple; cápsulas tipo “tip” que informen sin interrumpir; tono cercano y vocabulario común del barismo. |
+| **How much (Cuánto)** | Tiempo de proyecto acotado (máximo 4 meses); esfuerzo de adopción bajo dentro de cada tienda; contenidos accesibles y gratuitos como puerta de entrada; sesiones de uso cortas (1–3 min) integradas en la rutina. |
+
+<div style="page-break-before: always;"></div>
 
 ### 1.2.2 Lean UX Process
 _Contenido pendiente._
