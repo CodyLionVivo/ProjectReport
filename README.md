@@ -509,16 +509,88 @@ Democratizar el aprendizaje del café de especialidad y estandarizar la operaci�
 <div style="page-break-before: always;"></div>
 
 ### 1.2.2 Lean UX Process
-_Contenido pendiente._
+
+Esta sección presenta la visión del modelo de negocio soportado por el producto, a través de **Problem Statements**, **Assumptions** y **Hypothesis Statements**. Cierra con el **Lean UX Canvas**.
 
 #### 1.2.2.1. Lean UX Problem Statements
-_Contenido pendiente._
+
+El objetivo del producto es ofrecer un espacio de aprendizaje flexible para baristas —en formación o en ejercicio— que permita practicar y perfeccionar habilidades a su propio ritmo y en tiempos asincrónicos, además de brindar un canal claro y ameno sobre la producción del café en el Perú y su cadena de valor.
+
+Hoy, la capacitación ocurre principalmente en formatos presenciales o mediante contenidos dispersos y poco aplicables en barra, lo que encarece y ralentiza el aprendizaje, dificulta la estandarización de recetas y procedimientos, y mantiene invisibles muchos procesos del origen. 
+
+¿Cómo podríamos facilitar un aprendizaje práctico y a ritmo propio, centralizar el conocimiento crítico de preparación y, a la vez, acercar de forma breve el “viaje del grano a la taza” sin imponer horarios ni elevar costos?
 
 #### 1.2.2.2. Lean UX Assumptions
-_Contenido pendiente._
+
+**Outcomes**
+
+* Convertir a Xantina en la herramienta diaria de aprendizaje y consulta en barra en las tiendas piloto de Lima en un plazo de 6 meses.
+
+* Estandarizar recetas por método y por lote en los equipos de barra de cafeterías aliadas en Lima en 6 meses.
+
+* Institucionalizar el registro de catas y la revisión conjunta al cierre de turno como hábito del equipo en Lima en 6 a 9 meses.
+
+* Integrar cápsulas breves sobre origen, procesos y cultura como parte natural de la experiencia de uso en Lima en 4 a 6 meses.
+
+* Extender Xantina a nuevas cafeterías fuera del piloto, comenzando por Lima Metropolitana, en 9 a 12 meses.
+
+* Consolidar una comunidad que comparta recetas y aprendizajes con base en Lima y alcance nacional en 9 a 12 meses.
+
+* Posicionar a Xantina como la referencia móvil en formación y estandarización del café de especialidad en el Perú en 12 a 18 meses.
+
+**Assumptions Worksheet**
+
+1. Creo que mis clientes necesitan **aprender y estandarizar** la preparación de bebidas de café con guías simples, paso a paso y reutilizables.
+2. Estas necesidades se pueden resolver con **una app móvil** que ofrezca recetas aprobadas por método/lote, microlecciones breves, checklists de calibración y registro de catas.
+3. Mis clientes iniciales son (o serán) **cafeterías de especialidad en Lima** con equipos de barra pequeños (baristas junior/senior) y **entusiastas avanzados**.
+4. El valor #1 que un cliente quiere de mi servicio es **consistencia en taza** con **confianza en turno** (recetas claras y comparables).
+5. El cliente también puede obtener estos beneficios adicionales **onboarding más rápido**, **aprendizaje continuo** con catas, **lenguaje común** de barismo y **cápsulas** de cultura/origen.
+6. Voy a adquirir la mayoría de mis clientes a través de **alianzas con tostadores y escuelas de barismo**, **referencias entre cafeterías**, **eventos/comunidades** y **demostraciones en tienda**.
+7. Haré dinero a través de **modelo freemium** (aprendizaje base gratuito) y **suscripción B2B** para cafeterías (equipo multiusuario, recetas compartidas, administración básica). Opcional: **patrocinios** de contenido educativo con tostadores.
+8. Mi competencia principal en el mercado será **contenido disperso** (YouTube/IG/TikTok), **cursos presenciales** y **apps genéricas de temporizador/recetas** no adaptadas al flujo de barra.
+9. Los venceremos debido a **flujos pensados para barra**, **contenido en español contextualizado**, **microaprendizaje** de 1–3 minutos y **todo en un solo lugar** (recetas, catas, cápsulas).
+10. Mi mayor riesgo de producto es **baja adopción en equipos** por fricción de uso o **falta de confianza** de jefes de barra en el contenido/recetas.
+11. Resolveremos esto a través de **co-diseño con tiendas piloto**, **recetas aprobadas por el equipo**, **onboarding guiado**, **flujos muy cortos** y **mejoras rápidas** a partir de feedback.
+12. Otras suposiciones críticas: **permiten usar el móvil en servicio**, **los dueños apoyan la estandarización**, **hay interés real por cultura/origen**, **los tostadores comparten datos de lote** y **los usuarios aceptan políticas de privacidad**. Si esto se prueba falso, el proyecto pierde tracción.
+
+**Preguntas**
+
+1. ¿Quién es el usuario?  
+   Baristas (junior/senior), jefes de barra y dueños; secundario: entusiastas avanzados.
+
+2. ¿Dónde encaja nuestro producto en su trabajo o vida?  
+   En la **operación diaria** (calibración y preparación), en **cierre de turno** (catas) y en **tiempos cortos** para microaprendizaje.
+
+3. ¿Qué problemas debe resolver nuestro producto?  
+   **Variabilidad** en preparaciones, **aprendizaje disperso/no aplicable**, **falta de registro** de catas y **baja visibilidad** del origen.
+
+4. ¿Cuándo y cómo es nuestro producto usado?  
+   **Antes y durante el turno** para consultar/crear recetas y calibrar; **después del turno** para registrar catas; **entre acciones** para cápsulas breves.
+
+5. ¿Qué características son importantes?  
+   **Recetas estandarizadas**, **checklists simples**, **catas con notas comparables**, **cápsulas** de cultura/origen, **búsqueda rápida** y **navegación clara**.
+
+6. ¿Cómo debe verse nuestro producto y comportarse?  
+   **Claro, rápido y usable con una mano**; información “escaneable” en segundos; tono cercano de barismo; mínima fricción en tareas clave.
+
+<div style="page-break-before: always;"></div>
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-_Contenido pendiente._
+
+Hemos formulado como equipo las siguientes hipótesis orientadas a probar las distintas funcionalidades que hemos obtenido como parte del Lean UX Process:
+
+* Creemos que ofrecer guías paso a paso y recetas aprobadas en Xantina para baristas junior de las tiendas piloto en Lima logrará que Xantina se convierta en su herramienta diaria de aprendizaje y consulta en barra en 6 meses. Sabremos que esto es cierto cuando veamos uso recurrente al inicio de turno y jefes de barra reportando que se consultan guías/recetas durante el servicio.
+* Creemos que habilitar “recetas de la casa” reutilizables por método y por lote para todos los baristas de cada tienda en Lima logrará preparaciones estandarizadas entre turnos. Sabremos que esto es cierto cuando veamos que la mayoría de órdenes se inician desde una receta aprobada y los jefes de barra confirman resultados similares entre turnos.
+* Creemos que incluir un registro simple de catas con notas y rueda de sabores para equipos de barra logrará aprendizaje estructurado tras el cierre de turno. Sabremos que esto es cierto cuando veamos catas registradas al cierre y discusiones del equipo sobre ajustes basados en esas notas durante 2–4 semanas de piloto.
+* Creemos que agregar un checklist de calibración al inicio de cada turno para jefes de barra y baristas senior logrará menos errores de extracción en horas pico. Sabremos que esto es cierto cuando veamos checklists completados antes del servicio y menos bebidas reiniciadas según registros del jefe de barra en 2–3 semanas.
+* Creemos que mostrar cápsulas breves (“tips”) sobre origen, procesos y cultura para baristas y clientes curiosos en Lima logrará mayor conciencia del “grano a la taza”. Sabremos que esto es cierto cuando veamos tips abiertos/guardados en momentos de espera y al personal referenciándolos en conversaciones con clientes.
+* Creemos que ofrecer un flujo de onboarding con “tareas del primer día” para baristas nuevos logrará una incorporación más rápida hasta el servicio autónomo. Sabremos que esto es cierto cuando veamos nuevos baristas completando el flujo sin ayuda y jefes confirmando autonomía temprana durante las primeras 2–3 semanas.
+* Creemos que sumar recordatorios de inventario por lote para insumos críticos para encargados de tienda logrará evitar quiebres inesperados. Sabremos que esto es cierto cuando veamos recordatorios atendidos a tiempo y ausencia de faltantes imprevistos durante el piloto.
+* Creemos que permitir buscar y filtrar recetas por método, lote y parámetros clave para baristas en servicio logrará acceso más rápido a la receta correcta. Sabremos que esto es cierto cuando veamos recetas localizadas en pocos segundos y menos consultas verbales entre compañeros durante 2 semanas.
+* Creemos que estructurar microlecciones de 1–3 minutos con pasos accionables para baristas en formación logrará mejor retención de procedimientos en barra. Sabremos que esto es cierto cuando veamos microlecciones completadas y replicadas en práctica, con jefes observando menos errores al repetir el procedimiento.
+* Creemos que habilitar notas rápidas ligadas a cada receta para equipos de barra logrará documentar ajustes locales sin perder consistencia. Sabremos que esto es cierto cuando veamos recetas con notas recientes usadas por distintos baristas y menor necesidad de “recordatorios de pasillo” durante el servicio.
+
+<div style="page-break-before: always;"></div>
 
 #### 1.2.2.4. Lean UX Canvas
 _Contenido pendiente._
