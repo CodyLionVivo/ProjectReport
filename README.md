@@ -40,7 +40,7 @@
       <td style="border: 1px solid black; padding: 8px;">
         <ul style="margin: 0; padding-left: 18px;">
           <li>León Vivas, Fabrizio Amir</li>
-          <li></li>
+          <li>Vidal Castro, Miguel Angel</li>
           <li></li>
           <li></li>
           <li></li>
