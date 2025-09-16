@@ -10,7 +10,7 @@
 	<h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
 	<ul style="display: inline-block; text-align: left; padding: 0;">
 		<li style="padding: 5px 0;">León Vivas, Fabrizio Amir (20211b994)</li>
-		<li style="padding: 5px 0;"></li>
+		<li style="padding: 5px 0;">Pereira Vasquez, Nelson Fabrizzio (202417468) </li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
@@ -716,7 +716,407 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ## 2.6.1. Bounded Context: Sprint 1
-_Contenido pendiente._
+
+En esta sección, para cada uno de los productos, el equipo presenta las clases identificadas y las detalla a manera de diccionario, explicando para cada una su nombre, propósito y la documentación de atributos y métodos considerados, junto con las relaciones entre ellas.
+
+**Bounded Context: Coffees**
+
+---
+
+**1. Clase: Coffee**
+
+**• Propósito:** Representa un café específico en el sistema, encapsulando toda la información básica de un café incluyendo su origen, variedad y características físicas. Es el Aggregate Root del bounded context.
+
+**• Atributos:**
+- `id: Long` → Identificador único del café (heredado de AuditableAbstractAggregateRoot).
+- `name: CoffeeName` → Nombre del café (Value Object).
+- `region: CoffeeRegion` → Región de origen del café (Value Object).
+- `variety: CoffeeVariety` → Variedad específica del café (Value Object).
+- `totalWeight: Double` → Peso total del café en kilogramos.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre del café.
+- `getRegion(): String` → Devuelve la región de origen del café.
+- `getVariety(): String` → Devuelve la variedad del café.
+- `updateName(String name): void` → Actualiza el nombre del café.
+- `updateRegion(String region): void` → Actualiza la región del café.
+- `updateVariety(String variety): void` → Actualiza la variedad del café.
+- `updateTotalWeight(Double totalWeight): void` → Actualiza el peso total del café.
+
+**• Relaciones:**
+- Un Coffee puede tener muchos Defect (relación con el bounded context de Defects).
+- Un Coffee puede ser utilizado en muchos CoffeeLot (relación con el bounded context de Production).
+
+---
+
+**Bounded Context: Preparation**
+
+**1. Clase: Recipe**
+
+**• Propósito:** Representa una receta de preparación de café, encapsulando toda la información necesaria para preparar una bebida de café específica incluyendo método de extracción, ingredientes y pasos de preparación.
+
+**• Atributos:**
+- `id: Long` → Identificador único de la receta (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario de la receta.
+- `name: RecipeName` → Nombre de la receta (Value Object).
+- `imageUrl: String` → URL de la imagen de la receta.
+- `extractionMethod: ExtractionMethod` → Método de extracción (enum: espresso, pour-over, french-press, etc.).
+- `extractionCategory: ExtractionCategory` → Categoría de extracción (enum: coffee, espresso).
+- `ratio: String` → Proporción café/agua (ej: "1:16").
+- `cuppingSessionId: Long` → Identificador de la sesión de cupping asociada.
+- `portfolioId: Long` → Identificador del portfolio al que pertenece la receta.
+- `preparationTime: Integer` → Tiempo de preparación en minutos.
+- `steps: String` → Pasos detallados de preparación.
+- `tips: String` → Consejos y recomendaciones para la preparación.
+- `cupping: String` → Notas de cata.
+- `grindSize: String` → Tamaño de molido requerido.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre de la receta.
+- `getImageUrl(): String` → Devuelve la URL de la imagen.
+- `getExtractionMethod(): ExtractionMethod` → Devuelve el método de extracción.
+- `getExtractionCategory(): ExtractionCategory` → Devuelve la categoría de extracción.
+- `getRatio(): String` → Devuelve la proporción café/agua.
+- `getPreparationTime(): Integer` → Devuelve el tiempo de preparación.
+- `getSteps(): String` → Devuelve los pasos de preparación.
+- `getTips(): String` → Devuelve los consejos de preparación.
+- `getCupping(): String` → Devuelve las notas de cata.
+- `getGrindSize(): String` → Devuelve el tamaño de molido.
+- `update(UpdateRecipeCommand command): Recipe` → Actualiza la receta con los datos del comando.
+
+**• Relaciones:**
+- Una Recipe pertenece a un Portfolio.
+- Una Recipe puede tener muchos Ingredient.
+- Una Recipe está asociada a una CuppingSession.
+
+
+**2. Clase: Portfolio**
+
+**• Propósito:** Representa una colección o portafolio de recetas de café, permitiendo organizar las recetas por categorías o proyectos específicos.
+
+**• Atributos:**
+- `id: Long` → Identificador único del portfolio (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario del portfolio.
+- `name: String` → Nombre del portfolio.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre del portfolio.
+- `update(UpdatePortfolioCommand command): Portfolio` → Actualiza el portfolio con los datos del comando.
+
+**• Relaciones:**
+- Un Portfolio puede contener muchas Recipe.
+- Un Portfolio pertenece a un User.
+
+**3. Clase: Ingredient**
+
+**• Propósito:** Representa un ingrediente específico utilizado en una receta de café, definiendo la cantidad y unidad de medida necesaria.
+
+**• Atributos:**
+- `id: Long` → Identificador único del ingrediente (heredado de AuditableAbstractAggregateRoot).
+- `recipeId: Long` → Identificador de la receta a la que pertenece el ingrediente.
+- `name: IngredientName` → Nombre del ingrediente (Value Object).
+- `amount: Double` → Cantidad del ingrediente.
+- `unit: String` → Unidad de medida (ej: "g", "ml", "cups").
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre del ingrediente.
+- `getAmount(): Double` → Devuelve la cantidad del ingrediente.
+- `getUnit(): String` → Devuelve la unidad de medida.
+- `update(UpdateIngredientCommand command): Ingredient` → Actualiza el ingrediente con los datos del comando.
+
+**• Relaciones:**
+- Un Ingredient pertenece a una Recipe.
+
+**4. Clase: ExtractionMethod**
+
+**• Propósito:** Enum que define los métodos de extracción disponibles para preparar café, proporcionando valores estandarizados y conversión de datos.
+
+**• Atributos:**
+- `value: String` → Valor del método de extracción (espresso, pour-over, french-press, etc.).
+
+**• Métodos:**
+- `getValue(): String` → Devuelve el valor del método de extracción.
+- `fromString(String text): ExtractionMethod` → Convierte un string al enum correspondiente.
+- `toString(): String` → Devuelve la representación string del enum.
+- `ExtractionMethodConverter.convertToDatabaseColumn(ExtractionMethod attribute): String` → Convierte a formato de base de datos.
+- `ExtractionMethodConverter.convertToEntityAttribute(String dbData): ExtractionMethod` → Convierte desde formato de base de datos.
+
+**• Relaciones:**
+- Es utilizado por la clase Recipe como atributo.
+
+
+**5. Clase: ExtractionCategory**
+
+**• Propósito:** Enum que categoriza los métodos de extracción en dos grupos principales: café filtrado y espresso, facilitando la organización y filtrado de recetas.
+
+**• Atributos:**
+- `value: String` → Valor de la categoría (coffee, espresso).
+
+**• Métodos:**
+- `getValue(): String` → Devuelve el valor de la categoría.
+- `fromString(String text): ExtractionCategory` → Convierte un string al enum correspondiente.
+- `toString(): String` → Devuelve la representación string del enum.
+- `ExtractionCategoryConverter.convertToDatabaseColumn(ExtractionCategory attribute): String` → Convierte a formato de base de datos.
+- `ExtractionCategoryConverter.convertToEntityAttribute(String dbData): ExtractionCategory` → Convierte desde formato de base de datos.
+
+**• Relaciones:**
+- Es utilizado por la clase Recipe como atributo.
+
+---
+
+**Bounded Context: Production**
+
+**1. Clase: CoffeeLot**
+
+**• Propósito:** Representa un lote específico de café en el sistema de producción, encapsulando toda la información relacionada con la adquisición, procesamiento y estado de un lote de café.
+
+**• Atributos:**
+- `id: Long` → Identificador único del lote de café (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario del lote.
+- `supplierId: Long` → Identificador del proveedor del lote.
+- `lotName: CoffeeLotName` → Nombre del lote de café (Value Object).
+- `coffeeType: CoffeeType` → Tipo de café (Value Object: Arábica, Robusta, Mezcla).
+- `processingMethod: ProcessingMethod` → Método de procesamiento del café (Value Object).
+- `altitude: Integer` → Altitud de cultivo en metros.
+- `weight: Double` → Peso del lote en kilogramos.
+- `origin: Origin` → Origen geográfico del café (Value Object).
+- `status: CoffeeLotStatus` → Estado actual del lote (Value Object).
+- `certifications: List<String>` → Lista de certificaciones del lote.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getLotName(): String` → Devuelve el nombre del lote.
+- `getCoffeeType(): String` → Devuelve el tipo de café.
+- `getProcessingMethod(): String` → Devuelve el método de procesamiento.
+- `getAltitude(): Integer` → Devuelve la altitud de cultivo.
+- `getWeight(): Double` → Devuelve el peso del lote.
+- `getOrigin(): String` → Devuelve el origen del café.
+- `getStatus(): String` → Devuelve el estado del lote.
+- `getCertifications(): List<String>` → Devuelve las certificaciones del lote.
+- `update(UpdateCoffeeLotCommand command): CoffeeLot` → Actualiza el lote con los datos del comando.
+
+**• Relaciones:**
+- Un CoffeeLot pertenece a un Supplier.
+- Un CoffeeLot puede tener muchos RoastProfile.
+- Un CoffeeLot pertenece a un User.
+
+**2. Clase: RoastProfile**
+
+**• Propósito:** Representa un perfil de tueste específico para un lote de café, definiendo los parámetros de temperatura, duración y tipo de tueste para obtener características organolépticas deseadas.
+
+**• Atributos:**
+- `id: Long` → Identificador único del perfil de tueste (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario del perfil.
+- `name: RoastProfileName` → Nombre del perfil de tueste (Value Object).
+- `type: RoastType` → Tipo de tueste (Value Object).
+- `duration: Duration` → Duración del tueste en minutos (Value Object).
+- `tempStart: Temperature` → Temperatura inicial del tueste en °C (Value Object).
+- `tempEnd: Temperature` → Temperatura final del tueste en °C (Value Object).
+- `isFavorite: Boolean` → Indica si el perfil es favorito del usuario.
+- `coffeeLotId: Long` → Identificador del lote de café asociado.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre del perfil.
+- `getType(): String` → Devuelve el tipo de tueste.
+- `getDuration(): Integer` → Devuelve la duración del tueste.
+- `getTempStart(): Double` → Devuelve la temperatura inicial.
+- `getTempEnd(): Double` → Devuelve la temperatura final.
+- `getIsFavorite(): Boolean` → Devuelve si es favorito.
+- `update(UpdateRoastProfileCommand command): RoastProfile` → Actualiza el perfil con los datos del comando.
+- `toggleFavorite(): void` → Cambia el estado de favorito.
+
+**• Relaciones:**
+- Un RoastProfile pertenece a un CoffeeLot.
+- Un RoastProfile pertenece a un User.
+
+**3. Clase: Supplier**
+
+**• Propósito:** Representa un proveedor de café en el sistema, encapsulando la información de contacto y especialidades de los proveedores que suministran lotes de café.
+
+**• Atributos:**
+- `id: Long` → Identificador único del proveedor (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario del proveedor.
+- `name: SupplierName` → Nombre del proveedor (Value Object).
+- `email: SupplierEmail` → Correo electrónico del proveedor (Value Object).
+- `phone: Long` → Número de teléfono del proveedor.
+- `location: SupplierLocation` → Ubicación del proveedor (Value Object).
+- `specialties: List<String>` → Lista de especialidades del proveedor.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre del proveedor.
+- `getEmail(): String` → Devuelve el correo electrónico.
+- `getPhone(): Long` → Devuelve el número de teléfono.
+- `getLocation(): String` → Devuelve la ubicación.
+- `getSpecialties(): List<String>` → Devuelve las especialidades.
+- `update(UpdateSupplierCommand command): Supplier` → Actualiza el proveedor con los datos del comando.
+
+**• Relaciones:**
+- Un Supplier puede suministrar muchos CoffeeLot.
+- Un Supplier pertenece a un User.
+
+---
+
+**Bounded Context: Production**
+
+
+**1. Clase: CoffeeLot**
+
+**• Propósito:** Representa un lote específico de café en el sistema de producción, encapsulando toda la información relacionada con la adquisición, procesamiento y estado de un lote de café.
+
+**• Atributos:**
+- `id: Long` → Identificador único del lote de café (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario del lote.
+- `supplierId: Long` → Identificador del proveedor del lote.
+- `lotName: CoffeeLotName` → Nombre del lote de café (Value Object).
+- `coffeeType: CoffeeType` → Tipo de café (Value Object: Arábica, Robusta, Mezcla).
+- `processingMethod: ProcessingMethod` → Método de procesamiento del café (Value Object).
+- `altitude: Integer` → Altitud de cultivo en metros.
+- `weight: Double` → Peso del lote en kilogramos.
+- `origin: Origin` → Origen geográfico del café (Value Object).
+- `status: CoffeeLotStatus` → Estado actual del lote (Value Object).
+- `certifications: List<String>` → Lista de certificaciones del lote.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getLotName(): String` → Devuelve el nombre del lote.
+- `getCoffeeType(): String` → Devuelve el tipo de café.
+- `getProcessingMethod(): String` → Devuelve el método de procesamiento.
+- `getAltitude(): Integer` → Devuelve la altitud de cultivo.
+- `getWeight(): Double` → Devuelve el peso del lote.
+- `getOrigin(): String` → Devuelve el origen del café.
+- `getStatus(): String` → Devuelve el estado del lote.
+- `getCertifications(): List<String>` → Devuelve las certificaciones del lote.
+- `update(UpdateCoffeeLotCommand command): CoffeeLot` → Actualiza el lote con los datos del comando.
+
+**• Relaciones:**
+- Un CoffeeLot pertenece a un Supplier.
+- Un CoffeeLot puede tener muchos RoastProfile.
+- Un CoffeeLot pertenece a un User.
+
+
+**2. Clase: RoastProfile**
+
+**• Propósito:** Representa un perfil de tueste específico para un lote de café, definiendo los parámetros de temperatura, duración y tipo de tueste para obtener características organolépticas deseadas.
+
+**• Atributos:**
+- `id: Long` → Identificador único del perfil de tueste (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario del perfil.
+- `name: RoastProfileName` → Nombre del perfil de tueste (Value Object).
+- `type: RoastType` → Tipo de tueste (Value Object).
+- `duration: Duration` → Duración del tueste en minutos (Value Object).
+- `tempStart: Temperature` → Temperatura inicial del tueste en °C (Value Object).
+- `tempEnd: Temperature` → Temperatura final del tueste en °C (Value Object).
+- `isFavorite: Boolean` → Indica si el perfil es favorito del usuario.
+- `coffeeLotId: Long` → Identificador del lote de café asociado.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre del perfil.
+- `getType(): String` → Devuelve el tipo de tueste.
+- `getDuration(): Integer` → Devuelve la duración del tueste.
+- `getTempStart(): Double` → Devuelve la temperatura inicial.
+- `getTempEnd(): Double` → Devuelve la temperatura final.
+- `getIsFavorite(): Boolean` → Devuelve si es favorito.
+- `update(UpdateRoastProfileCommand command): RoastProfile` → Actualiza el perfil con los datos del comando.
+- `toggleFavorite(): void` → Cambia el estado de favorito.
+
+**• Relaciones:**
+- Un RoastProfile pertenece a un CoffeeLot.
+- Un RoastProfile pertenece a un User.
+
+**3. Clase: Supplier**
+
+**• Propósito:** Representa un proveedor de café en el sistema, encapsulando la información de contacto y especialidades de los proveedores que suministran lotes de café.
+
+**• Atributos:**
+- `id: Long` → Identificador único del proveedor (heredado de AuditableAbstractAggregateRoot).
+- `userId: Long` → Identificador del usuario propietario del proveedor.
+- `name: SupplierName` → Nombre del proveedor (Value Object).
+- `email: SupplierEmail` → Correo electrónico del proveedor (Value Object).
+- `phone: Long` → Número de teléfono del proveedor.
+- `location: SupplierLocation` → Ubicación del proveedor (Value Object).
+- `specialties: List<String>` → Lista de especialidades del proveedor.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getName(): String` → Devuelve el nombre del proveedor.
+- `getEmail(): String` → Devuelve el correo electrónico.
+- `getPhone(): Long` → Devuelve el número de teléfono.
+- `getLocation(): String` → Devuelve la ubicación.
+- `getSpecialties(): List<String>` → Devuelve las especialidades.
+- `update(UpdateSupplierCommand command): Supplier` → Actualiza el proveedor con los datos del comando.
+
+**• Relaciones:**
+- Un Supplier puede suministrar muchos CoffeeLot.
+- Un Supplier pertenece a un User.
+
+---
+
+**Bounded Context: Profile**
+
+**1. Clase: Profile**
+
+**• Propósito:** Representa el perfil completo de un usuario en el sistema, encapsulando toda la información personal, profesional y de configuración necesaria para personalizar la experiencia del usuario en la plataforma de café.
+
+**• Atributos:**
+- `id: Long` → Identificador único del perfil (heredado de AuditableAbstractAggregateRoot).
+- `emailAddress: EmailAddress` → Dirección de correo electrónico del usuario (Value Object).
+- `name: String` → Nombre completo del usuario.
+- `password: String` → Contraseña encriptada del usuario.
+- `role: String` → Rol del usuario en el sistema (ej: admin, user, barista).
+- `cafeteriaName: String` → Nombre de la cafetería asociada al usuario.
+- `experience: String` → Nivel de experiencia del usuario en café.
+- `profilePicture: String` → URL o ruta de la imagen de perfil del usuario.
+- `paymentMethod: String` → Método de pago preferido del usuario.
+- `isFirstLogin: boolean` → Indica si es el primer inicio de sesión del usuario.
+- `plan: String` → Plan de suscripción del usuario.
+- `hasPlan: boolean` → Indica si el usuario tiene un plan activo.
+- `createdAt: Date` → Fecha de creación del registro (heredado de AuditableAbstractAggregateRoot).
+- `updatedAt: Date` → Fecha de última actualización (heredado de AuditableAbstractAggregateRoot).
+
+**• Métodos:**
+- `getEmailAddress(): String` → Devuelve la dirección de correo electrónico.
+- `getName(): String` → Devuelve el nombre del usuario.
+- `getPassword(): String` → Devuelve la contraseña del usuario.
+- `getRole(): String` → Devuelve el rol del usuario.
+- `getCafeteriaName(): String` → Devuelve el nombre de la cafetería.
+- `getExperience(): String` → Devuelve el nivel de experiencia.
+- `getProfilePicture(): String` → Devuelve la imagen de perfil.
+- `getPaymentMethod(): String` → Devuelve el método de pago.
+- `isFirstLogin(): boolean` → Devuelve si es el primer inicio de sesión.
+- `getPlan(): String` → Devuelve el plan de suscripción.
+- `hasPlan(): boolean` → Devuelve si tiene un plan activo.
+- `updateName(String name): void` → Actualiza el nombre del usuario.
+- `updateEmailAddress(String email): void` → Actualiza la dirección de correo electrónico.
+- `updatePassword(String password): void` → Actualiza la contraseña del usuario.
+- `updateRole(String role): void` → Actualiza el rol del usuario.
+- `updateCafeteriaName(String cafeteriaName): void` → Actualiza el nombre de la cafetería.
+- `updateExperience(String experience): void` → Actualiza el nivel de experiencia.
+- `updateProfilePicture(String profilePicture): void` → Actualiza la imagen de perfil.
+- `updatePaymentMethod(String paymentMethod): void` → Actualiza el método de pago.
+- `updatePlan(String plan): void` → Actualiza el plan de suscripción.
+- `updateFirstLoginStatus(boolean isFirstLogin): void` → Actualiza el estado de primer inicio de sesión.
+- `updateHasPlanStatus(boolean hasPlan): void` → Actualiza el estado del plan.
+
+**• Relaciones:**
+- Un Profile puede estar asociado a múltiples entidades de otros bounded contexts como propietario.
+- Un Profile puede tener múltiples CoffeeLot, Recipe, RoastProfile, etc. en otros contextos.
 
 ### 2.6.1.1. Domain Layer
 _Contenido pendiente._
