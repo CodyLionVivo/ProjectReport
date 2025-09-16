@@ -636,8 +636,39 @@ _Contenido pendiente._
 ### 2.3.4. Empathy Mapping
 _Contenido pendiente._
 
-### 2.3.5. As-is Scenario Mapping
-_Contenido pendiente._
+### 2.3.5. Ubiquitous Language
+
+Glosario de términos clave del dominio del café de especialidad utilizados en AromaTech/Xantina:
+
+**Rebote** (Recuperación rápida)
+Arreglar un error en la preparación sin que el cliente lo note.
+
+**Cascada** (Técnica de vertido)
+El flujo perfecto del espresso cuando sale dorado y consistente.
+
+**Espejear** (Acción de preparación)
+Revisar y ajustar todas las variables antes de hacer un shot (dosis, tiempo, presión).
+
+**Chispa** (Shot afinado)
+Espresso con balance exacto, dulce y vibrante.
+
+**Río** (Purgar)
+Agua que corre al limpiar el grupo antes del siguiente café.
+
+**Veludo** (Textura ideal)
+Leche vaporizada con microespuma tersa y sedosa.
+
+**Chispado** (Shot perfecto)
+Cuando el espresso sale con crema dorada y tiempo exacto, listo para servir.
+
+**Lechoso** (Leche lista)
+Leche vaporizada en punto perfecto, ni muy caliente ni muy fría.
+
+**Café Muerto** (Máquina apagada)
+Estado cuando la máquina está apagada y lista para limpieza final.
+
+**Seda** (Microespuma ideal)
+Leche con textura perfecta para hacer arte latte.
 
 # 2.4. Requirements specification
 _Contenido pendiente._
