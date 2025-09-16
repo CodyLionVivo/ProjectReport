@@ -971,7 +971,6 @@ En esta sección, para cada uno de los productos, el equipo presenta las clases 
 
 **Bounded Context: Production**
 
-
 **1. Clase: CoffeeLot**
 
 **• Propósito:** Representa un lote específico de café en el sistema de producción, encapsulando toda la información relacionada con la adquisición, procesamiento y estado de un lote de café.
@@ -1119,7 +1118,985 @@ En esta sección, para cada uno de los productos, el equipo presenta las clases 
 - Un Profile puede tener múltiples CoffeeLot, Recipe, RoastProfile, etc. en otros contextos.
 
 ### 2.6.1.1. Domain Layer
-_Contenido pendiente._
+
+En esta capa el equipo explica por medio de qué clases representará el core de la aplicación y las reglas de negocio que pertenecen al dominio para el bounded context. Aquí el equipo presenta clases de categorías como Entities, Value Objects, Aggregates, Factories, Domain Services.
+
+**Bounded Context: Coffees**
+
+**Aggregates**
+
+**Coffee**
+
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa la raíz de agregado para el concepto de café, encapsulando todas las reglas de negocio relacionadas con la gestión de cafés en el sistema.
+
+**• Responsabilidades:**
+- Mantener la consistencia de los datos del café
+- Validar las reglas de negocio del dominio de café
+- Coordinar las operaciones sobre los value objects relacionados
+
+**• Invariantes:**
+- El café debe tener un nombre válido y no vacío
+- La región debe ser especificada y válida
+- La variedad debe estar definida
+- El peso total debe ser un valor positivo
+
+⸻
+
+**Entities**
+
+**Coffee**
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad principal que representa un café específico con identidad única en el sistema.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único del café
+
+**• Atributos de Estado:**
+- `name: CoffeeName` → Nombre del café (Value Object)
+- `region: CoffeeRegion` → Región de origen (Value Object)
+- `variety: CoffeeVariety` → Variedad del café (Value Object)
+- `totalWeight: Double` → Peso total en kilogramos
+
+**• Comportamientos:**
+- Creación de café con validaciones de dominio
+- Actualización de propiedades con mantenimiento de invariantes
+- Consulta de información del café
+
+---
+
+**Value Objects**
+
+**CoffeeName**
+**• Propósito:** Encapsula el nombre del café asegurando que cumple con las reglas de negocio del dominio.
+
+**• Reglas de Negocio:**
+- No puede ser nulo o vacío
+- Debe contener un valor significativo
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**CoffeeRegion**
+**• Propósito:** Representa la región geográfica de origen del café con validaciones específicas del dominio.
+
+**• Reglas de Negocio:**
+- La región no puede ser nula o vacía
+- Debe representar una región válida de cultivo de café
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**CoffeeVariety**
+**• Propósito:** Define la variedad específica del café (ej: Bourbon, Typica, Caturra) con validaciones de dominio.
+
+**• Reglas de Negocio:**
+- La variedad no puede ser nula o vacía
+- Debe representar una variedad conocida de café
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+---
+
+**Domain Services**
+
+**CoffeeCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de comando (escritura) para el dominio de café, encapsulando la lógica de negocio compleja.
+
+**• Responsabilidades:**
+- Procesar comandos de creación de café
+- Validar reglas de negocio complejas
+- Coordinar con repositorios para persistencia
+
+**• Operaciones:**
+- `handle(CreateCoffeeCommand): Optional<Coffee>` → Procesa la creación de un nuevo café
+
+**CoffeeQueryService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de consulta (lectura) para el dominio de café, proporcionando acceso controlado a los datos.
+
+**• Responsabilidades:**
+- Procesar consultas de café
+- Aplicar filtros de dominio
+- Retornar datos en formato apropiado
+
+**• Operaciones:**
+- `handle(GetCoffeeByIdQuery): Optional<Coffee>` → Obtiene un café por su identificador
+- `handle(GetAllCoffeesQuery): List<Coffee>` → Obtiene todos los cafés disponibles
+
+---
+
+**Reglas de Negocio del Dominio**
+
+1. **Integridad del Café:**
+   - Todo café debe tener un nombre único y descriptivo
+   - La región de origen debe estar especificada
+   - La variedad debe ser válida y reconocida
+
+2. **Validaciones de Datos:**
+   - Los nombres no pueden estar vacíos o ser nulos
+   - El peso total debe ser un valor positivo
+   - Todos los value objects mantienen su propia consistencia
+
+3. **Consistencia del Agregado:**
+   - El agregado Coffee mantiene la consistencia de todos sus componentes
+   - Las modificaciones se realizan a través de métodos controlados
+   - Se preserva la integridad referencial dentro del agregado
+
+---
+
+**Bounded Context: Management**
+
+**Aggregates**
+
+**InventoryEntry**
+
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa la raíz de agregado para el concepto de entrada de inventario, encapsulando todas las reglas de negocio relacionadas con el control y gestión del uso de lotes de café.
+
+**• Responsabilidades:**
+- Mantener la consistencia de los datos de consumo de inventario
+- Validar las reglas de negocio del dominio de gestión de inventario
+- Coordinar las operaciones sobre los value objects relacionados
+- Registrar el uso de café de manera trazable
+
+**• Invariantes:**
+- La cantidad utilizada debe ser un valor positivo
+- La fecha de uso no puede ser nula
+- El producto final debe estar especificado
+- Debe existir una relación válida con un lote de café
+- Debe estar asociado a un usuario válido
+
+---
+
+**Entities**
+
+**InventoryEntry**
+
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad principal que representa una entrada de inventario con identidad única, registrando el uso específico de un lote de café.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único de la entrada de inventario
+
+**• Atributos de Estado:**
+- `userId: Long` → Identificador del usuario que registra la entrada
+- `coffeeLotId: Long` → Identificador del lote de café utilizado
+- `quantityUsed: Double` → Cantidad de café utilizada en kilogramos
+- `dateUsed: LocalDateTime` → Fecha y hora exacta del uso
+- `finalProduct: FinalProduct` → Producto final obtenido (Value Object)
+
+**• Comportamientos:**
+- Creación de entrada de inventario con validaciones de dominio
+- Actualización de información de uso con mantenimiento de invariantes
+- Consulta de datos de consumo
+- Trazabilidad del uso de café
+
+---
+
+**Value Objects**
+
+**FinalProduct**
+
+**• Propósito:** Encapsula el producto final obtenido del uso del café, asegurando que cumple con las reglas de negocio del dominio de gestión.
+
+**• Reglas de Negocio:**
+- No puede ser nulo o vacío
+- Debe contener un valor descriptivo del producto final
+- No puede exceder 100 caracteres de longitud
+- Debe representar un producto válido derivado del café
+
+**• Ejemplos de Valores Válidos:**
+- "Espresso", "Americano", "Cappuccino", "Latte", "Cold Brew"
+- "Café Filtrado", "French Press", "Pour Over"
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+---
+
+**Domain Services**
+
+**InventoryEntryCommandService**
+
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de comando (escritura) para el dominio de gestión de inventario, encapsulando la lógica de negocio compleja relacionada con el control de stock.
+
+**• Responsabilidades:**
+- Procesar comandos de creación, actualización y eliminación de entradas de inventario
+- Validar reglas de negocio complejas relacionadas con el consumo de café
+- Coordinar con repositorios para persistencia
+- Mantener la integridad del inventario
+
+**• Operaciones:**
+- `handle(CreateInventoryEntryCommand): Optional<InventoryEntry>` → Procesa la creación de una nueva entrada
+- `handle(UpdateInventoryEntryCommand): Optional<InventoryEntry>` → Procesa la actualización de una entrada existente
+- `handle(DeleteInventoryEntryCommand): boolean` → Procesa la eliminación de una entrada
+
+**InventoryEntryQueryService**
+
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de consulta (lectura) para el dominio de gestión de inventario, proporcionando acceso controlado a los datos de consumo.
+
+**• Responsabilidades:**
+- Procesar consultas de entradas de inventario
+- Aplicar filtros de dominio específicos
+- Proporcionar vistas agregadas del consumo
+- Generar reportes de uso de inventario
+
+**• Operaciones:**
+- `getAllInventoryEntries(): List<InventoryEntry>` → Obtiene todas las entradas de inventario
+- `getInventoryEntriesByUserId(Long): List<InventoryEntry>` → Obtiene entradas por usuario
+- `getInventoryEntriesByCoffeeLotId(Long): List<InventoryEntry>` → Obtiene entradas por lote de café
+- `getInventoryEntryById(Long): Optional<InventoryEntry>` → Obtiene una entrada específica
+
+⸻
+
+**Reglas de Negocio del Dominio**
+
+1. **Control de Inventario:**
+   - Toda entrada debe registrar una cantidad positiva de café utilizado
+   - Debe existir trazabilidad completa del uso de cada lote
+   - La fecha de uso debe ser registrada con precisión
+
+2. **Integridad de Datos:**
+   - Cada entrada debe estar asociada a un lote de café válido
+   - Debe identificar claramente al usuario responsable del registro
+   - El producto final debe estar especificado y ser válido
+
+3. **Validaciones de Negocio:**
+   - No se puede registrar uso de cantidad negativa o cero
+   - La fecha de uso no puede ser futura (regla implícita)
+   - El producto final debe ser descriptivo y no exceder límites
+
+4. **Consistencia del Agregado:**
+   - El agregado InventoryEntry mantiene la consistencia de todos sus componentes
+   - Las modificaciones preservan la integridad referencial
+   - Se garantiza la trazabilidad del consumo de inventario
+
+5. **Auditoría y Trazabilidad:**
+   - Cada entrada queda registrada permanentemente para auditoría
+   - Se mantiene un histórico completo del uso de cada lote
+   - Permite análisis de consumo y eficiencia
+
+---
+
+**Bounded Context: Preparation**
+
+**Aggregates**
+
+**Recipe**
+
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa la raíz de agregado para el concepto de receta de café, encapsulando todas las reglas de negocio relacionadas con la preparación de bebidas de café, incluyendo métodos de extracción, ingredientes y pasos de preparación.
+
+**• Responsabilidades:**
+- Mantener la consistencia de todos los datos de la receta
+- Validar las reglas de negocio del dominio de preparación de café
+- Coordinar las operaciones sobre los ingredientes y parámetros de preparación
+- Garantizar la integridad de los métodos de extracción
+
+**• Invariantes:**
+- La receta debe tener un nombre válido y único
+- El método de extracción debe ser válido y compatible con la categoría
+- El tiempo de preparación debe ser positivo
+- Los pasos de preparación deben estar definidos
+- La proporción café/agua debe ser especificada
+
+**Portfolio**
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa una colección organizada de recetas, permitiendo la gestión y categorización de recetas por proyectos o temáticas específicas.
+
+**• Responsabilidades:**
+- Mantener la consistencia de la colección de recetas
+- Validar la integridad del portfolio
+- Coordinar la organización de recetas
+
+**• Invariantes:**
+- El portfolio debe tener un nombre descriptivo
+- Debe estar asociado a un usuario válido
+
+**Ingredient**
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa un ingrediente específico utilizado en una receta, con sus cantidades y unidades de medida precisas.
+
+**• Responsabilidades:**
+- Mantener la consistencia de los datos del ingrediente
+- Validar cantidades y unidades de medida
+- Garantizar la trazabilidad hacia la receta
+
+**• Invariantes:**
+- El ingrediente debe tener un nombre válido
+- La cantidad debe ser positiva
+- Debe estar asociado a una receta válida
+
+---
+
+**Entities**
+
+**Recipe**
+
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad principal que representa una receta de preparación de café con identidad única.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único de la receta
+
+**• Atributos de Estado:**
+- `userId: Long` → Identificador del usuario propietario
+- `name: RecipeName` → Nombre de la receta (Value Object)
+- `imageUrl: String` → URL de la imagen de la receta
+- `extractionMethod: ExtractionMethod` → Método de extracción (Value Object)
+- `extractionCategory: ExtractionCategory` → Categoría de extracción (Value Object)
+- `ratio: String` → Proporción café/agua
+- `cuppingSessionId: Long` → ID de sesión de cupping asociada
+- `portfolioId: Long` → ID del portfolio al que pertenece
+- `preparationTime: Integer` → Tiempo de preparación en minutos
+- `steps: String` → Pasos detallados de preparación
+- `tips: String` → Consejos y recomendaciones
+- `cupping: String` → Notas de cata
+- `grindSize: String` → Tamaño de molido requerido
+
+**Portfolio**
+
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad que representa una colección de recetas con identidad única.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único del portfolio
+
+**• Atributos de Estado:**
+- `userId: Long` → Identificador del usuario propietario
+- `name: String` → Nombre del portfolio
+
+**Ingredient**
+
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad que representa un ingrediente específico con identidad única.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único del ingrediente
+
+**• Atributos de Estado:**
+- `recipeId: Long` → Identificador de la receta asociada
+- `name: IngredientName` → Nombre del ingrediente (Value Object)
+- `amount: Double` → Cantidad del ingrediente
+- `unit: String` → Unidad de medida
+
+---
+
+** Value Objects**
+
+**RecipeName**
+**• Propósito:** Encapsula el nombre de una receta asegurando que cumple con las reglas de negocio específicas del dominio de preparación.
+
+**• Reglas de Negocio:**
+- No puede ser nulo o vacío
+- No puede exceder 20 caracteres de longitud
+- Debe ser descriptivo y único dentro del contexto
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**IngredientName**
+**• Propósito:** Encapsula el nombre de un ingrediente con validaciones específicas del dominio.
+
+**• Reglas de Negocio:**
+- No puede ser nulo o vacío
+- No puede exceder 100 caracteres de longitud
+- Debe representar un ingrediente válido para preparación de café
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**ExtractionMethod**
+**• Propósito:** Define los métodos de extracción disponibles para preparar café, proporcionando valores estandarizados y consistentes.
+
+**• Valores Válidos:**
+- ESPRESSO, POUR_OVER, FRENCH_PRESS, COLD_BREW, AEROPRESS, CHEMEX, V60, CLEVER
+
+**• Reglas de Negocio:**
+- Debe ser uno de los métodos reconocidos
+- Debe ser compatible con la categoría de extracción
+- Incluye conversión automática de formatos
+
+**• Inmutabilidad:** Garantizada por enum
+
+**ExtractionCategory**
+**• Propósito:** Categoriza los métodos de extracción en grupos principales para facilitar la organización y filtrado.
+
+**• Valores Válidos:**
+- COFFEE (café filtrado)
+- ESPRESSO (café espresso)
+
+**• Reglas de Negocio:**
+- Debe ser una de las categorías reconocidas
+- Debe ser consistente con el método de extracción seleccionado
+
+**• Inmutabilidad:** Garantizada por enum
+
+---
+
+**Domain Services**
+
+**RecipeCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de comando (escritura) para el dominio de recetas, encapsulando la lógica de negocio compleja relacionada con la gestión de recetas.
+
+**• Responsabilidades:**
+- Procesar comandos de creación, actualización y eliminación de recetas
+- Validar reglas de negocio complejas de preparación
+- Coordinar con repositorios para persistencia
+- Mantener la integridad de las recetas y sus relaciones
+
+**• Operaciones:**
+- `handle(CreateRecipeCommand): Optional<Recipe>` → Procesa la creación de una nueva receta
+- `handle(UpdateRecipeCommand): Optional<Recipe>` → Procesa la actualización de una receta existente
+- `handle(DeleteRecipeCommand): boolean` → Procesa la eliminación de una receta
+
+**RecipeQueryService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de consulta (lectura) para el dominio de recetas.
+
+**• Operaciones:**
+- `handle(GetAllRecipesQuery): List<Recipe>` → Obtiene todas las recetas disponibles
+- `handle(GetRecipeByIdQuery): Optional<Recipe>` → Obtiene una receta específica por ID
+
+**PortfolioCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Maneja las operaciones de comando para portfolios de recetas.
+
+**• Operaciones:**
+- `handle(CreatePortfolioCommand): Optional<Portfolio>` → Crea un nuevo portfolio
+- `handle(UpdatePortfolioCommand): Optional<Portfolio>` → Actualiza un portfolio existente
+- `handle(DeletePortfolioCommand): boolean` → Elimina un portfolio
+
+**PortfolioQueryService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Maneja las operaciones de consulta para portfolios.
+
+**IngredientCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Maneja las operaciones de comando para ingredientes de recetas.
+
+**• Operaciones:**
+- `handle(CreateIngredientCommand): Optional<Ingredient>` → Crea un nuevo ingrediente
+- `handle(UpdateIngredientCommand): Optional<Ingredient>` → Actualiza un ingrediente existente
+- `handle(DeleteIngredientCommand): boolean` → Elimina un ingrediente
+
+---
+
+**Reglas de Negocio del Dominio**
+
+1. **Integridad de Recetas:**
+   - Toda receta debe tener un método de extracción válido
+   - La categoría debe ser consistente con el método seleccionado
+   - El tiempo de preparación debe ser realista y positivo
+   - Los pasos deben estar claramente definidos
+
+2. **Consistencia de Preparación:**
+   - La proporción café/agua debe seguir estándares reconocidos
+   - El tamaño de molido debe ser apropiado para el método
+   - Las notas de cupping deben proporcionar información útil
+
+3. **Gestión de Ingredientes:**
+   - Cada ingrediente debe tener cantidad y unidad especificadas
+   - Las cantidades deben ser positivas y realistas
+   - Los ingredientes deben estar asociados a recetas válidas
+
+4. **Organización de Portfolios:**
+   - Los portfolios deben tener nombres descriptivos
+   - Debe mantenerse la trazabilidad hacia el usuario propietario
+   - La organización debe facilitar la búsqueda y categorización
+
+5. **Validaciones de Dominio:**
+   - Los nombres no pueden exceder límites establecidos
+   - Todos los value objects mantienen su propia consistencia
+   - Se preserva la integridad referencial entre entidades
+
+6. **Trazabilidad y Auditoría:**
+   - Cada receta mantiene referencia a su creador
+   - Se registra la asociación con sesiones de cupping
+   - Se mantiene el historial de cambios para auditoría
+
+---
+
+**Bounded Context: Production**
+
+**Aggregates**
+
+**CoffeeLot**
+
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa la raíz de agregado para el concepto de lote de café, encapsulando todas las reglas de negocio relacionadas con la adquisición, procesamiento y gestión de lotes de café desde el proveedor hasta el producto final.
+
+**• Responsabilidades:**
+- Mantener la consistencia de todos los datos del lote de café
+- Validar las reglas de negocio del dominio de producción
+- Coordinar las operaciones sobre los value objects relacionados
+- Garantizar la trazabilidad desde el origen hasta el consumo
+- Gestionar el estado del lote (verde/tostado)
+
+**• Invariantes:**
+- El lote debe tener un nombre único y descriptivo
+- Debe estar asociado a un proveedor válido
+- El peso debe ser positivo
+- La altitud debe estar en rangos válidos para cultivo de café
+- El estado debe ser uno de los valores permitidos
+- Las certificaciones deben ser válidas y verificables
+
+**RoastProfile**
+
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa un perfil de tueste específico, encapsulando todas las reglas de negocio relacionadas con los parámetros de tostado para obtener características organolépticas deseadas.
+
+**• Responsabilidades:**
+- Mantener la consistencia de los parámetros de tueste
+- Validar rangos de temperatura y duración
+- Coordinar la relación con lotes de café
+- Gestionar el estado de favorito del usuario
+
+**• Invariantes:**
+- Las temperaturas deben estar en rangos válidos para tueste
+- La duración debe ser positiva y realista
+- Debe estar asociado a un lote de café válido
+- El tipo de tueste debe ser reconocido
+
+**Supplier**
+
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa un proveedor de café, encapsulando todas las reglas de negocio relacionadas con la gestión de proveedores y sus especialidades.
+
+**• Responsabilidades:**
+- Mantener la consistencia de los datos del proveedor
+- Validar información de contacto
+- Gestionar las especialidades del proveedor
+- Coordinar la relación con lotes suministrados
+
+**• Invariantes:**
+- Debe tener información de contacto válida
+- El email debe tener formato correcto
+- Las especialidades deben ser relevantes al negocio del café
+- Debe estar asociado a un usuario válido
+
+---
+
+**Entities**
+
+**CoffeeLot**
+
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad principal que representa un lote específico de café con identidad única y ciclo de vida completo.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único del lote de café
+
+**• Atributos de Estado:**
+- `userId: Long` → Identificador del usuario propietario
+- `supplierId: Long` → Identificador del proveedor
+- `lotName: CoffeeLotName` → Nombre del lote (Value Object)
+- `coffeeType: CoffeeType` → Tipo de café (Value Object)
+- `processingMethod: ProcessingMethod` → Método de procesamiento (Value Object)
+- `altitude: Integer` → Altitud de cultivo en metros
+- `weight: Double` → Peso del lote en kilogramos
+- `origin: Origin` → Origen geográfico (Value Object)
+- `status: CoffeeLotStatus` → Estado del lote (Value Object)
+- `certifications: List<String>` → Lista de certificaciones
+
+**RoastProfile**
+
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad que representa un perfil de tueste con identidad única y parámetros específicos.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único del perfil de tueste
+
+**• Atributos de Estado:**
+- `userId: Long` → Identificador del usuario propietario
+- `name: RoastProfileName` → Nombre del perfil (Value Object)
+- `type: RoastType` → Tipo de tueste (Value Object)
+- `duration: Duration` → Duración del tueste (Value Object)
+- `tempStart: Temperature` → Temperatura inicial (Value Object)
+- `tempEnd: Temperature` → Temperatura final (Value Object)
+- `isFavorite: Boolean` → Indica si es favorito
+- `coffeeLotId: Long` → ID del lote de café asociado
+
+**Supplier**
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad que representa un proveedor de café con identidad única y información completa.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único del proveedor
+
+**• Atributos de Estado:**
+- `userId: Long` → Identificador del usuario propietario
+- `name: SupplierName` → Nombre del proveedor (Value Object)
+- `email: SupplierEmail` → Email del proveedor (Value Object)
+- `phone: Long` → Número de teléfono
+- `location: SupplierLocation` → Ubicación del proveedor (Value Object)
+- `specialties: List<String>` → Lista de especialidades
+
+⸻
+
+**Value Objects**
+
+**CoffeeLotName**
+**• Propósito:** Encapsula el nombre de un lote de café con validaciones específicas del dominio de producción.
+
+**• Reglas de Negocio:**
+- No puede ser nulo o vacío
+- No puede exceder 100 caracteres
+- Debe ser descriptivo del lote específico
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**CoffeeType**
+
+**• Propósito:** Define el tipo de café con valores válidos restringidos para mantener consistencia.
+
+**• Valores Válidos:** Arábica, Robusta, Mezcla
+
+**• Reglas de Negocio:**
+- Debe ser uno de los tipos reconocidos
+- No puede exceder 50 caracteres
+- Debe corresponder a variedades comerciales
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**ProcessingMethod**
+
+**• Propósito:** Define el método de procesamiento del café con valores estandarizados.
+
+**• Valores Válidos:** Anaeróbico, Lavado, Natural, Honey
+
+**• Reglas de Negocio:**
+- Debe ser uno de los métodos reconocidos
+- No puede exceder 50 caracteres
+- Debe corresponder a métodos de procesamiento reales
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**CoffeeLotStatus**
+**• Propósito:** Define el estado del lote de café en el proceso de producción.
+
+**• Valores Válidos:** green (verde), roasted (tostado)
+
+**• Reglas de Negocio:**
+- Debe ser uno de los estados válidos
+- Representa el estado físico del café
+- Determina las operaciones disponibles
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**Temperature**
+**• Propósito:** Representa una temperatura con validaciones específicas para tueste de café.
+
+**• Reglas de Negocio:**
+- No puede ser nula
+- Debe estar entre 0 y 300°C
+- Rango apropiado para procesos de tueste
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**Duration**
+**• Propósito:** Representa una duración en minutos con validaciones para procesos de tueste.
+
+**• Reglas de Negocio:**
+- Debe ser un valor positivo
+- No puede exceder 1440 minutos (24 horas)
+- Apropiado para tiempos de tueste realistas
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**RoastType**
+**• Propósito:** Define el tipo de tueste con valores estandarizados de la industria.
+
+**• Valores Válidos:** Ligero, Medio, Medio-Oscuro, Oscuro
+
+**• Reglas de Negocio:**
+- Debe ser uno de los tipos reconocidos
+- Corresponde a niveles estándar de tueste
+- Determina características organolépticas
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**SupplierName**
+**• Propósito:** Encapsula el nombre de un proveedor con validaciones específicas.
+
+**• Reglas de Negocio:**
+- No puede ser nulo o vacío
+- No puede exceder 100 caracteres
+- Debe identificar claramente al proveedor
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**SupplierEmail**
+**• Propósito:** Encapsula el email de un proveedor con validaciones de formato.
+
+**• Reglas de Negocio:**
+- Debe tener formato de email válido
+- No puede ser nulo o vacío
+- Debe ser único en el sistema
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+**SupplierLocation**
+
+**• Propósito:** Encapsula la ubicación de un proveedor con validaciones geográficas.
+
+**• Reglas de Negocio:**
+- No puede ser nulo o vacío
+- Debe representar una ubicación válida
+- Importante para logística y trazabilidad
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+⸻
+
+**Domain Services**
+
+**CoffeeLotCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de comando (escritura) para el dominio de lotes de café, encapsulando la lógica de negocio compleja relacionada con la gestión del inventario de café verde.
+
+**• Responsabilidades:**
+- Procesar comandos de creación, actualización y eliminación de lotes
+- Validar reglas de negocio complejas de producción
+- Coordinar con repositorios para persistencia
+- Mantener la integridad de los lotes y sus relaciones
+
+**CoffeeLotQueryService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de consulta (lectura) para el dominio de lotes de café.
+
+**• Responsabilidades:**
+- Procesar consultas de lotes por diversos criterios
+- Aplicar filtros de dominio específicos
+- Proporcionar vistas especializadas de los datos
+
+**RoastProfileCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Maneja las operaciones de comando para perfiles de tueste.
+
+**• Operaciones:**
+- `handle(CreateRoastProfileCommand): Optional<RoastProfile>` → Crea un nuevo perfil
+- `handle(UpdateRoastProfileCommand): Optional<RoastProfile>` → Actualiza un perfil existente
+- `handle(DeleteRoastProfileCommand): boolean` → Elimina un perfil
+
+**RoastProfileQueryService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Maneja las operaciones de consulta para perfiles de tueste.
+
+**SupplierCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Maneja las operaciones de comando para proveedores de café.
+
+**SupplierQueryService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Maneja las operaciones de consulta para proveedores.
+
+**• Operaciones:**
+- `handle(GetAllSuppliersQuery): List<Supplier>` → Obtiene todos los proveedores
+- `handle(GetSupplierByIdQuery): Optional<Supplier>` → Obtiene proveedor por ID
+- `handle(GetSuppliersByUserIdQuery): List<Supplier>` → Obtiene proveedores por usuario
+
+---
+
+**Reglas de Negocio del Dominio**
+
+1. **Gestión de Lotes de Café:**
+   - Todo lote debe estar asociado a un proveedor válido
+   - El peso debe ser positivo y realista para operaciones comerciales
+   - La altitud debe estar en rangos válidos para cultivo de café (0-3000m típicamente)
+   - El estado debe reflejar el procesamiento actual del café
+
+2. **Trazabilidad y Origen:**
+   - Cada lote debe mantener información completa de origen
+   - Las certificaciones deben ser verificables y relevantes
+   - El método de procesamiento debe ser consistente con el origen
+
+3. **Perfiles de Tueste:**
+   - Las temperaturas deben estar en rangos seguros y efectivos
+   - La duración debe ser apropiada para el tipo de tueste
+   - Debe existir coherencia entre temperatura inicial, final y duración
+   - Los perfiles deben estar asociados a lotes específicos
+
+4. **Gestión de Proveedores:**
+   - La información de contacto debe ser válida y actualizada
+   - Las especialidades deben ser relevantes al negocio
+   - Debe mantenerse la trazabilidad de todos los lotes suministrados
+
+5. **Validaciones de Calidad:**
+   - Los tipos de café deben corresponder a variedades comerciales
+   - Los métodos de procesamiento deben ser reconocidos en la industria
+   - Los estados del lote deben reflejar la realidad física
+
+6. **Integridad Referencial:**
+   - Los lotes deben mantener referencias válidas a proveedores
+   - Los perfiles de tueste deben estar asociados a lotes existentes
+   - Se debe preservar la consistencia en todas las relaciones
+
+7. **Auditoría y Control:**
+   - Todos los cambios deben ser trazables
+   - Se debe mantener historial de estados del lote
+   - Las operaciones deben ser reversibles cuando sea apropiado
+
+---
+
+**Bounded Context: Profile**
+
+**Aggregates**
+
+**Profile**
+**• Tipo:** Aggregate Root  
+**• Propósito:** Representa la raíz de agregado para el concepto de perfil de usuario, encapsulando todas las reglas de negocio relacionadas con la gestión de identidad, autenticación, autorización y personalización de la experiencia del usuario en la plataforma.
+
+**• Responsabilidades:**
+- Mantener la consistencia de todos los datos del perfil de usuario
+- Validar las reglas de negocio del dominio de gestión de usuarios
+- Coordinar las operaciones sobre los value objects relacionados
+- Gestionar el ciclo de vida del usuario desde el registro hasta la configuración completa
+- Controlar el acceso y los permisos del usuario en el sistema
+- Administrar la información de suscripción y planes del usuario
+
+**• Invariantes:**
+- El perfil debe tener una dirección de email única y válida
+- El nombre del usuario debe estar definido
+- El rol debe ser uno de los roles válidos del sistema
+- Si tiene plan activo, debe tener un plan específico definido
+- La configuración de primer login debe ser consistente con el estado del perfil
+- Los datos de pago deben estar presentes si tiene un plan de pago
+
+---
+
+**Entities**
+
+**Profile**
+**• Tipo:** Entity (Aggregate Root)  
+**• Propósito:** Entidad principal que representa un perfil de usuario con identidad única y gestión completa del ciclo de vida del usuario.
+
+**• Atributos de Identidad:**
+- `id: Long` → Identificador único del perfil de usuario
+
+**• Atributos de Estado:**
+- `emailAddress: EmailAddress` → Dirección de email del usuario (Value Object)
+- `name: String` → Nombre completo del usuario
+- `password: String` → Contraseña encriptada para autenticación
+- `role: String` → Rol del usuario en el sistema (admin, user, barista, etc.)
+- `cafeteriaName: String` → Nombre de la cafetería asociada al usuario
+- `experience: String` → Nivel de experiencia del usuario en café
+- `profilePicture: String` → URL o ruta de la imagen de perfil
+- `paymentMethod: String` → Método de pago preferido del usuario
+- `isFirstLogin: boolean` → Bandera que indica si es el primer inicio de sesión
+- `plan: String` → Plan de suscripción actual del usuario
+- `hasPlan: boolean` → Indica si el usuario tiene un plan activo
+
+**• Comportamientos:**
+- Creación de perfil con validaciones de dominio
+- Actualización de información personal y profesional
+- Gestión de configuración de cuenta y preferencias
+- Control de estado de suscripción y planes
+- Manejo de primer inicio de sesión y configuración inicial
+
+---
+
+**Value Objects**
+
+**EmailAddress**
+**• Propósito:** Encapsula la dirección de correo electrónico del usuario, asegurando que cumple con las reglas de negocio específicas del dominio de perfiles y autenticación.
+
+**• Reglas de Negocio:**
+- Debe tener formato de email válido (validación @Email de Jakarta)
+- Debe ser único en todo el sistema
+- No puede ser nulo para perfiles activos
+- Sirve como identificador alternativo del usuario
+
+**• Validaciones:**
+- Formato de email estándar RFC 5322
+- Unicidad garantizada a nivel de dominio
+- Inmutabilidad para preservar integridad referencial
+
+**• Inmutabilidad:** Garantizada por el patrón record de Java
+
+---
+
+** Domain Services**
+
+**ProfileCommandService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de comando (escritura) para el dominio de perfiles de usuario, encapsulando la lógica de negocio compleja relacionada con la gestión del ciclo de vida del usuario.
+
+**• Responsabilidades:**
+- Procesar comandos de creación y actualización de perfiles
+- Validar reglas de negocio complejas relacionadas con usuarios
+- Coordinar con repositorios para persistencia
+- Mantener la integridad de los perfiles y sus relaciones
+- Generar eventos de dominio relevantes (ej: ProfileCreatedEvent)
+- Validar unicidad de email addresses
+
+**• Operaciones:**
+- `handle(CreateProfileCommand): Optional<Profile>` → Procesa la creación de un nuevo perfil de usuario
+- `handle(UpdateProfileCommand): Optional<Profile>` → Procesa la actualización de un perfil existente
+
+**• Excepciones:**
+- `IllegalArgumentException` si el email ya existe en el sistema
+
+**ProfileQueryService**
+**• Tipo:** Domain Service Interface  
+**• Propósito:** Define las operaciones de consulta (lectura) para el dominio de perfiles de usuario, proporcionando acceso controlado a los datos de usuarios.
+
+**• Responsabilidades:**
+- Procesar consultas de perfiles por diversos criterios
+- Aplicar filtros de dominio específicos
+- Proporcionar vistas especializadas de los datos de usuario
+- Mantener la seguridad y privacidad de los datos
+
+**• Operaciones:**
+- `handle(GetProfileByIdQuery): Optional<Profile>` → Obtiene un perfil específico por su ID
+- `handle(GetProfileByEmailQuery): Optional<Profile>` → Obtiene un perfil por su dirección de email
+- `handle(GetAllProfilesQuery): List<Profile>` → Obtiene todos los perfiles (con restricciones de seguridad)
+
+---
+
+**Reglas de Negocio del Dominio**
+
+1. **Gestión de Identidad:**
+   - Cada usuario debe tener una dirección de email única en todo el sistema
+   - El email sirve como identificador alternativo para autenticación
+   - Los nombres de usuario deben estar definidos y no pueden estar vacíos
+   - Las contraseñas deben ser gestionadas de forma segura (encriptación)
+
+2. **Control de Acceso y Roles:**
+   - Todo usuario debe tener un rol asignado válido
+   - Los roles determinan los permisos y capacidades del usuario
+   - El cambio de roles debe ser controlado y auditado
+   - Los roles deben ser consistentes con las funcionalidades del sistema
+
+3. **Gestión de Suscripciones:**
+   - Si un usuario tiene plan activo (hasPlan = true), debe tener un plan específico definido
+   - Los métodos de pago deben estar configurados para usuarios con planes de pago
+   - Los cambios de plan deben mantener consistencia en el estado
+
+4. **Experiencia de Usuario:**
+   - El flag isFirstLogin debe gestionarse apropiadamente para onboarding
+   - La información del perfil debe ser completa para una experiencia óptima
+   - Las preferencias del usuario deben persistirse correctamente
+
+5. **Integridad de Datos:**
+   - Los datos del perfil deben ser consistentes entre sí
+   - Las actualizaciones deben preservar la integridad referencial
+   - Los cambios críticos (como email) deben ser validados
+
+6. **Auditoría y Trazabilidad:**
+   - Todos los cambios en perfiles deben ser auditables
+   - Los eventos de dominio deben dispararse para cambios significativos
+   - Se debe mantener historial de cambios para compliance
+
+7. **Seguridad y Privacidad:**
+   - Los datos sensibles deben ser protegidos apropiadamente
+   - El acceso a perfiles debe estar controlado por permisos
+   - Las consultas deben respetar las políticas de privacidad
+
+8. **Integración con Otros Contextos:**
+   - Los perfiles sirven como propietarios de entidades en otros bounded contexts
+   - Los cambios en perfiles pueden afectar otros dominios
+   - La eliminación de perfiles debe considerar dependencias externas
 
 ### 2.6.1.2. Interface Layer
 _Contenido pendiente._
