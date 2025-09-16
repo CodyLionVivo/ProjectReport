@@ -713,11 +713,10 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 # 2.6. Tactical-Level Domain-Driven Design
-_Contenido pendiente._
 
 ## 2.6.1. Bounded Context: Sprint 1
 
-En esta sección, para cada uno de los productos, el equipo presenta las clases identificadas y las detalla a manera de diccionario, explicando para cada una su nombre, propósito y la documentación de atributos y métodos considerados, junto con las relaciones entre ellas.
+En esta sección, para cada uno de los productos, se presentan las clases identificadas, explicando para cada una su nombre, propósito y la documentación de atributos y métodos considerados, junto con las relaciones entre ellas.
 
 **Bounded Context: Coffees**
 
@@ -1119,7 +1118,7 @@ En esta sección, para cada uno de los productos, el equipo presenta las clases 
 
 ### 2.6.1.1. Domain Layer
 
-En esta capa el equipo explica por medio de qué clases representará el core de la aplicación y las reglas de negocio que pertenecen al dominio para el bounded context. Aquí el equipo presenta clases de categorías como Entities, Value Objects, Aggregates, Factories, Domain Services.
+Esta capa explica por medio de qué clases representará el core de la aplicación y las reglas de negocio que pertenecen al dominio para el bounded context. Aquí las clases de categorías como Entities, Value Objects, Aggregates, Factories, Domain Services.
 
 **Bounded Context: Coffees**
 
@@ -2099,7 +2098,548 @@ En esta capa el equipo explica por medio de qué clases representará el core de
    - La eliminación de perfiles debe considerar dependencias externas
 
 ### 2.6.1.2. Interface Layer
-_Contenido pendiente._
+
+En esta sección el equipo introduce, presenta y explica las clases que forman parte de Interface/Presentation Layer, como clases del tipo Controllers o Consumers.
+
+**Bounded Context: Coffees**
+
+**Controllers**
+
+**CoffeesController**
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador principal que expone los endpoints REST para la gestión de cafés, proporcionando una interfaz HTTP para las operaciones CRUD del dominio de cafés.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/coffees")` → Mapeo base para todos los endpoints
+- `@Tag("Coffees")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `CoffeeCommandService` → Servicio para operaciones de comando (escritura)
+- `CoffeeQueryService` → Servicio para operaciones de consulta (lectura)
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/coffees**
+- **Operación:** `createCoffee(@RequestBody CreateCoffeeResource)`
+- **Propósito:** Crear un nuevo café en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Café creado exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/coffees/{coffeeId}**
+- **Operación:** `getCoffeeById(@PathVariable Long coffeeId)`
+- **Propósito:** Obtener un café específico por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Café encontrado
+  - `404 Not Found` → Café no encontrado
+
+**GET /api/v1/coffees**
+- **Operación:** `getAllCoffees()`
+- **Propósito:** Obtener todos los cafés disponibles en el sistema
+- **Códigos de Estado:**
+  - `200 OK` → Cafés encontrados
+  - `404 Not Found` → No hay cafés disponibles
+
+**• Características Técnicas:**
+- Utiliza inyección de dependencias por constructor
+- Implementa documentación OpenAPI/Swagger completa
+- Maneja errores con códigos de estado HTTP apropiados
+- Separa responsabilidades usando el patrón CQRS
+
+---
+
+**Bounded Context: Management**
+
+**Controllers**
+
+**InventoryEntriesController**  
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador principal que expone los endpoints REST para la gestión de entradas de inventario, proporcionando una interfaz HTTP para las operaciones CRUD del dominio de gestión de inventario.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/inventory-entries")` → Mapeo base para todos los endpoints
+- `@Tag("Inventory Entries")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `ManagementContextFacade` → Fachada para operaciones del contexto de gestión
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/inventory-entries**
+- **Operación:** `createInventoryEntry(@RequestBody CreateInventoryEntryResource)`
+- **Propósito:** Crear una nueva entrada de inventario en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Entrada de inventario creada exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/inventory-entries**
+- **Operación:** `getAllInventoryEntries()`
+- **Propósito:** Obtener todas las entradas de inventario disponibles
+- **Códigos de Estado:**
+  - `200 OK` → Entradas de inventario encontradas
+
+**GET /api/v1/inventory-entries/user/{userId}**
+- **Operación:** `getInventoryEntriesByUserId(@PathVariable Long userId)`
+- **Propósito:** Obtener entradas de inventario por usuario específico
+- **Códigos de Estado:**
+  - `200 OK` → Entradas encontradas para el usuario
+
+**GET /api/v1/inventory-entries/coffee-lot/{coffeeLotId}**
+- **Operación:** `getInventoryEntriesByCoffeeLotId(@PathVariable Long coffeeLotId)`
+- **Propósito:** Obtener entradas de inventario por lote de café específico
+- **Códigos de Estado:**
+  - `200 OK` → Entradas encontradas para el lote de café
+
+**GET /api/v1/inventory-entries/{inventoryEntryId}**
+- **Operación:** `getInventoryEntryById(@PathVariable Long inventoryEntryId)`
+- **Propósito:** Obtener una entrada de inventario específica por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Entrada de inventario encontrada
+  - `404 Not Found` → Entrada de inventario no encontrada
+
+**PUT /api/v1/inventory-entries/{inventoryEntryId}**
+- **Operación:** `updateInventoryEntry(@PathVariable Long inventoryEntryId, @RequestBody UpdateInventoryEntryResource)`
+- **Propósito:** Actualizar una entrada de inventario existente
+- **Códigos de Estado:**
+  - `200 OK` → Entrada de inventario actualizada exitosamente
+  - `404 Not Found` → Entrada de inventario no encontrada
+  - `400 Bad Request` → Error en la actualización
+
+**DELETE /api/v1/inventory-entries/{inventoryEntryId}**
+- **Operación:** `deleteInventoryEntry(@PathVariable Long inventoryEntryId)`
+- **Propósito:** Eliminar una entrada de inventario del sistema
+- **Códigos de Estado:**
+  - `200 OK` → Entrada de inventario eliminada exitosamente
+  - `404 Not Found` → Entrada de inventario no encontrada
+
+**• Características Técnicas:**
+- Utiliza inyección de dependencias por constructor
+- Implementa documentación OpenAPI/Swagger completa
+- Maneja errores con códigos de estado HTTP apropiados
+- Proporciona operaciones CRUD completas para entradas de inventario
+
+---
+
+**Bounded Context: Preparation**
+
+**Controllers**
+
+**RecipesController**
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador principal que expone los endpoints REST para la gestión de recetas de café, proporcionando una interfaz HTTP para las operaciones CRUD del dominio de preparación.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/recipes")` → Mapeo base para todos los endpoints
+- `@Tag("Recipes")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `PreparationContextFacade` → Fachada para operaciones del contexto de preparación
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/recipes**
+- **Operación:** `createRecipe(@RequestBody CreateRecipeResource)`
+- **Propósito:** Crear una nueva receta en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Receta creada exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/recipes**
+- **Operación:** `getAllRecipes()`
+- **Propósito:** Obtener todas las recetas disponibles en el sistema
+- **Códigos de Estado:**
+  - `200 OK` → Recetas encontradas
+
+**GET /api/v1/recipes/{recipeId}**
+- **Operación:** `getRecipeById(@PathVariable Long recipeId)`
+- **Propósito:** Obtener una receta específica por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Receta encontrada
+  - `404 Not Found` → Receta no encontrada
+
+**PUT /api/v1/recipes/{recipeId}**
+- **Operación:** `updateRecipe(@PathVariable Long recipeId, @RequestBody UpdateRecipeResource)`
+- **Propósito:** Actualizar una receta existente
+- **Códigos de Estado:**
+  - `200 OK` → Receta actualizada exitosamente
+  - `404 Not Found` → Receta no encontrada
+  - `400 Bad Request` → Error en la actualización
+
+**DELETE /api/v1/recipes/{recipeId}**
+- **Operación:** `deleteRecipe(@PathVariable Long recipeId)`
+- **Propósito:** Eliminar una receta del sistema
+- **Códigos de Estado:**
+  - `200 OK` → Receta eliminada exitosamente
+  - `404 Not Found` → Receta no encontrada
+
+---
+
+**PortfoliosController**
+
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador que expone los endpoints REST para la gestión de portfolios de recetas, proporcionando una interfaz HTTP para organizar y categorizar recetas.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/portfolios")` → Mapeo base para todos los endpoints
+- `@Tag("Portfolios")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `PreparationContextFacade` → Fachada para operaciones del contexto de preparación
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/portfolios**
+- **Operación:** `createPortfolio(@RequestBody CreatePortfolioResource)`
+- **Propósito:** Crear un nuevo portfolio en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Portfolio creado exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/portfolios**
+- **Operación:** `getAllPortfolios()`
+- **Propósito:** Obtener todos los portfolios disponibles
+- **Códigos de Estado:**
+  - `200 OK` → Portfolios encontrados
+
+**GET /api/v1/portfolios/{portfolioId}**
+- **Operación:** `getPortfolioById(@PathVariable Long portfolioId)`
+- **Propósito:** Obtener un portfolio específico por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Portfolio encontrado
+  - `404 Not Found` → Portfolio no encontrado
+
+**GET /api/v1/portfolios/users/{userId}**
+- **Operación:** `getPortfoliosByUserId(@PathVariable Long userId)`
+- **Propósito:** Obtener portfolios por usuario específico
+- **Códigos de Estado:**
+  - `200 OK` → Portfolios encontrados para el usuario
+
+**PUT /api/v1/portfolios/{portfolioId}**
+- **Operación:** `updatePortfolio(@PathVariable Long portfolioId, @RequestBody UpdatePortfolioResource)`
+- **Propósito:** Actualizar un portfolio existente
+- **Códigos de Estado:**
+  - `200 OK` → Portfolio actualizado exitosamente
+  - `404 Not Found` → Portfolio no encontrado
+  - `400 Bad Request` → Error en la actualización
+
+**DELETE /api/v1/portfolios/{portfolioId}**
+- **Operación:** `deletePortfolio(@PathVariable Long portfolioId)`
+- **Propósito:** Eliminar un portfolio del sistema
+- **Códigos de Estado:**
+  - `200 OK` → Portfolio eliminado exitosamente
+  - `404 Not Found` → Portfolio no encontrado
+
+---
+
+**IngredientsController**
+
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador que expone los endpoints REST para la gestión de ingredientes de recetas, proporcionando una interfaz HTTP para las operaciones CRUD de ingredientes dentro del contexto de recetas.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/recipes/{recipeId}/ingredients")` → Mapeo anidado bajo recetas
+- `@Tag("Recipes")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `PreparationContextFacade` → Fachada para operaciones del contexto de preparación
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/recipes/{recipeId}/ingredients**
+- **Operación:** `addIngredientToRecipe(@PathVariable Long recipeId, @RequestBody CreateIngredientResource)`
+- **Propósito:** Añadir un nuevo ingrediente a una receta específica
+- **Códigos de Estado:**
+  - `201 Created` → Ingrediente añadido exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos o ID no coincide
+
+**GET /api/v1/recipes/{recipeId}/ingredients**
+- **Operación:** `getIngredientsByRecipeId(@PathVariable Long recipeId)`
+- **Propósito:** Obtener todos los ingredientes de una receta específica
+- **Códigos de Estado:**
+  - `200 OK` → Ingredientes encontrados
+
+**PUT /api/v1/recipes/{recipeId}/ingredients/{ingredientId}**
+- **Operación:** `updateIngredient(@PathVariable Long recipeId, @PathVariable Long ingredientId, @RequestBody UpdateIngredientResource)`
+- **Propósito:** Actualizar un ingrediente específico de una receta
+- **Códigos de Estado:**
+  - `200 OK` → Ingrediente actualizado exitosamente
+  - `404 Not Found` → Ingrediente no encontrado
+  - `400 Bad Request` → Error en la actualización
+
+** DELETE /api/v1/recipes/{recipeId}/ingredients/{ingredientId}**
+- **Operación:** `deleteIngredient(@PathVariable Long recipeId, @PathVariable Long ingredientId)`
+- **Propósito:** Eliminar un ingrediente de una receta
+- **Códigos de Estado:**
+  - `200 OK` → Ingrediente eliminado exitosamente
+  - `404 Not Found` → Ingrediente no encontrado
+
+**• Características Técnicas:**
+- Utiliza inyección de dependencias por constructor
+- Implementa documentación OpenAPI/Swagger completa
+- Maneja errores con códigos de estado HTTP apropiados
+- Proporciona operaciones CRUD completas para cada entidad del dominio
+
+---
+
+**Bounded Context: Production**
+
+**Controllers**
+
+**CoffeeLotsController**
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador principal que expone los endpoints REST para la gestión de lotes de café, proporcionando una interfaz HTTP para las operaciones CRUD del dominio de lotes de café.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/coffee-lots")` → Mapeo base para todos los endpoints
+- `@Tag("Coffee Lots")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `CoffeeproductionContextFacade` → Fachada para operaciones del contexto de producción
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/coffee-lots**
+- **Operación:** `createCoffeeLot(@RequestBody CreateCoffeeLotResource)`
+- **Propósito:** Crear un nuevo lote de café en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Lote de café creado exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/coffee-lots**
+- **Operación:** `getAllCoffeeLots()`
+- **Propósito:** Obtener todos los lotes de café disponibles
+- **Códigos de Estado:**
+  - `200 OK` → Lotes de café encontrados
+
+**GET /api/v1/coffee-lots/user/{userId}**
+- **Operación:** `getCoffeeLotsByUserId(@PathVariable Long userId)`
+- **Propósito:** Obtener lotes de café por usuario específico
+- **Códigos de Estado:**
+  - `200 OK` → Lotes encontrados para el usuario
+
+**GET /api/v1/coffee-lots/supplier/{supplierId}**
+- **Operación:** `getCoffeeLotsBySupplierId(@PathVariable Long supplierId)`
+- **Propósito:** Obtener lotes de café por proveedor específico
+- **Códigos de Estado:**
+  - `200 OK` → Lotes encontrados para el proveedor
+
+**GET /api/v1/coffee-lots/{coffeeLotId}**
+- **Operación:** `getCoffeeLotById(@PathVariable Long coffeeLotId)`
+- **Propósito:** Obtener un lote de café específico por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Lote de café encontrado
+  - `404 Not Found` → Lote de café no encontrado
+
+**PUT /api/v1/coffee-lots/{coffeeLotId}**
+- **Operación:** `updateCoffeeLot(@PathVariable Long coffeeLotId, @RequestBody UpdateCoffeeLotResource)`
+- **Propósito:** Actualizar un lote de café existente
+- **Códigos de Estado:**
+  - `200 OK` → Lote actualizado exitosamente
+  - `404 Not Found` → Lote no encontrado
+  - `400 Bad Request` → Error en la actualización
+
+**DELETE /api/v1/coffee-lots/{coffeeLotId}**
+- **Operación:** `deleteCoffeeLot(@PathVariable Long coffeeLotId)`
+- **Propósito:** Eliminar un lote de café del sistema
+- **Códigos de Estado:**
+  - `200 OK` → Lote eliminado exitosamente
+  - `404 Not Found` → Lote no encontrado
+
+---
+
+**RoastProfilesController**
+
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador que expone los endpoints REST para la gestión de perfiles de tueste, proporcionando una interfaz HTTP para las operaciones CRUD del dominio de perfiles de tostado.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/roast-profile")` → Mapeo base para todos los endpoints
+- `@Tag("Roast Profiles")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `CoffeeproductionContextFacade` → Fachada para operaciones del contexto de producción
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/roast-profile**
+- **Operación:** `createRoastProfile(@RequestBody CreateRoastProfileResource)`
+- **Propósito:** Crear un nuevo perfil de tueste en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Perfil de tueste creado exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/roast-profile**
+- **Operación:** `getAllRoastProfiles()`
+- **Propósito:** Obtener todos los perfiles de tueste disponibles
+- **Códigos de Estado:**
+  - `200 OK` → Perfiles de tueste encontrados
+
+**GET /api/v1/roast-profile/user/{userId}**
+- **Operación:** `getRoastProfilesByUserId(@PathVariable Long userId)`
+- **Propósito:** Obtener perfiles de tueste por usuario específico
+- **Códigos de Estado:**
+  - `200 OK` → Perfiles encontrados para el usuario
+
+**GET /api/v1/roast-profile/lot/{coffeeLotId}**
+- **Operación:** `getRoastProfilesByCoffeeLotId(@PathVariable Long coffeeLotId)`
+- **Propósito:** Obtener perfiles de tueste por lote de café específico
+- **Códigos de Estado:**
+  - `200 OK` → Perfiles encontrados para el lote
+
+**GET /api/v1/roast-profile/{roastProfileId}**
+- **Operación:** `getRoastProfileById(@PathVariable Long roastProfileId)`
+- **Propósito:** Obtener un perfil de tueste específico por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Perfil de tueste encontrado
+  - `404 Not Found` → Perfil no encontrado
+
+**PUT /api/v1/roast-profile/{roastProfileId}**
+- **Operación:** `updateRoastProfile(@PathVariable Long roastProfileId, @RequestBody UpdateRoastProfileResource)`
+- **Propósito:** Actualizar un perfil de tueste existente
+- **Códigos de Estado:**
+  - `200 OK` → Perfil actualizado exitosamente
+  - `404 Not Found` → Perfil no encontrado
+  - `400 Bad Request` → Error en la actualización
+
+**DELETE /api/v1/roast-profile/{roastProfileId}**
+- **Operación:** `deleteRoastProfile(@PathVariable Long roastProfileId)`
+- **Propósito:** Eliminar un perfil de tueste del sistema
+- **Códigos de Estado:**
+  - `200 OK` → Perfil eliminado exitosamente
+  - `404 Not Found` → Perfil no encontrado
+
+**SuppliersController**
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador que expone los endpoints REST para la gestión de proveedores de café, proporcionando una interfaz HTTP para las operaciones CRUD del dominio de proveedores.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/suppliers")` → Mapeo base para todos los endpoints
+- `@Tag("Suppliers")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `CoffeeproductionContextFacade` → Fachada para operaciones del contexto de producción
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/suppliers**
+- **Operación:** `createSupplier(@RequestBody CreateSupplierResource)`
+- **Propósito:** Crear un nuevo proveedor en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Proveedor creado exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/suppliers**
+- **Operación:** `getAllSuppliers()`
+- **Propósito:** Obtener todos los proveedores disponibles
+- **Códigos de Estado:**
+  - `200 OK` → Proveedores encontrados
+
+**GET /api/v1/suppliers/user/{userId}**
+- **Operación:** `getSuppliersByUserId(@PathVariable Long userId)`
+- **Propósito:** Obtener proveedores por usuario específico
+- **Códigos de Estado:**
+  - `200 OK` → Proveedores encontrados para el usuario
+
+**GET /api/v1/suppliers/{supplierId}**
+- **Operación:** `getSupplierById(@PathVariable Long supplierId)`
+- **Propósito:** Obtener un proveedor específico por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Proveedor encontrado
+  - `404 Not Found` → Proveedor no encontrado
+
+**PUT /api/v1/suppliers/{supplierId}**
+- **Operación:** `updateSupplier(@PathVariable Long supplierId, @RequestBody UpdateSupplierResource)`
+- **Propósito:** Actualizar un proveedor existente
+- **Códigos de Estado:**
+  - `200 OK` → Proveedor actualizado exitosamente
+  - `404 Not Found` → Proveedor no encontrado
+  - `400 Bad Request` → Error en la actualización
+
+**DELETE /api/v1/suppliers/{supplierId}**
+- **Operación:** `deleteSupplier(@PathVariable Long supplierId)`
+- **Propósito:** Eliminar un proveedor del sistema
+- **Códigos de Estado:**
+  - `200 OK` → Proveedor eliminado exitosamente
+  - `404 Not Found` → Proveedor no encontrado
+
+**• Características Técnicas:**
+- Utiliza inyección de dependencias por constructor
+- Implementa documentación OpenAPI/Swagger completa
+- Maneja errores con códigos de estado HTTP apropiados
+- Proporciona operaciones CRUD completas para cada entidad del dominio
+
+---
+
+**Bounded Context: Profile**
+
+**Controllers**
+
+**ProfilesController**
+**• Tipo:** REST Controller  
+**• Propósito:** Controlador principal que expone los endpoints REST para la gestión de perfiles de usuario, proporcionando una interfaz HTTP para las operaciones CRUD del dominio de perfiles.
+
+**• Configuración:**
+- `@RestController` → Marca la clase como controlador REST de Spring
+- `@RequestMapping("/api/v1/profiles")` → Mapeo base para todos los endpoints
+- `@Tag("Profiles")` → Documentación Swagger/OpenAPI
+
+**• Dependencias:**
+- `ProfileCommandService` → Servicio para operaciones de comando (escritura)
+- `ProfileQueryService` → Servicio para operaciones de consulta (lectura)
+
+**• Endpoints Expuestos:**
+
+**POST /api/v1/profiles**
+- **Operación:** `createProfile(@RequestBody CreateProfileResource)`
+- **Propósito:** Crear un nuevo perfil de usuario en el sistema
+- **Códigos de Estado:**
+  - `201 Created` → Perfil creado exitosamente
+  - `400 Bad Request` → Datos de entrada inválidos
+
+**GET /api/v1/profiles/{profileId}**
+- **Operación:** `getProfileById(@PathVariable Long profileId)`
+- **Propósito:** Obtener un perfil específico por su identificador
+- **Códigos de Estado:**
+  - `200 OK` → Perfil encontrado
+  - `404 Not Found` → Perfil no encontrado
+
+**GET /api/v1/profiles?email={email}**
+- **Operación:** `getProfileByEmail(@RequestParam String email)`
+- **Propósito:** Obtener un perfil por su dirección de correo electrónico
+- **Códigos de Estado:**
+  - `200 OK` → Perfil encontrado
+  - `404 Not Found` → Perfil no encontrado
+
+**GET /api/v1/profiles**
+- **Operación:** `getAllProfiles()`
+- **Propósito:** Obtener todos los perfiles disponibles en el sistema
+- **Códigos de Estado:**
+  - `200 OK` → Perfiles encontrados
+  - `404 Not Found` → No hay perfiles disponibles
+
+**PATCH /api/v1/profiles/{profileId}**
+- **Operación:** `updateProfile(@PathVariable Long profileId, @RequestBody UpdateProfileResource)`
+- **Propósito:** Actualizar un perfil de usuario existente
+- **Códigos de Estado:**
+  - `200 OK` → Perfil actualizado exitosamente
+  - `404 Not Found` → Perfil no encontrado
+  - `400 Bad Request` → Error en la actualización
+
+**• Características Técnicas:**
+- Utiliza inyección de dependencias por constructor
+- Implementa documentación OpenAPI/Swagger completa
+- Maneja errores con códigos de estado HTTP apropiados
+- Separa responsabilidades usando el patrón CQRS
+- Utiliza PATCH para actualizaciones parciales
+
 
 ### 2.6.1.3. Application Layer
 _Contenido pendiente._
