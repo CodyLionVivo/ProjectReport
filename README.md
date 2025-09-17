@@ -595,6 +595,10 @@ Hemos formulado como equipo las siguientes hipótesis orientadas a probar las di
 #### 1.2.2.4. Lean UX Canvas
 El Lean UX Canvas del proyecto Xantina refleja un enfoque claro hacia la democratización del aprendizaje barista y la estandarización de recetas en cafeterías de especialidad, orientado principalmente a baristas (junior/senior), jefes de barra y dueños, con alcance secundario a entusiastas. Se identifican problemáticas como el contenido de aprendizaje disperso, la curva de capacitación lenta, la variabilidad entre turnos por falta de recetas aprobadas y la baja visibilidad del origen y los procesos del café. Las soluciones propuestas incluyen guías paso a paso, recetas “de la casa” por método y lote, registro de catas con notas comparables, checklists de calibración al inicio de turno, cápsulas breves sobre origen y cultura integradas en momentos naturales de uso y inventario básico por lotes para evitar quiebres. Los usuarios clave —baristas, jefes de barra y dueños de tiendas piloto en Lima— validan estas necesidades mediante entrevistas y pruebas en barra. Como resultados esperados, se plantea adopción como herramienta diaria en tiendas piloto de Lima en 6 meses, estandarización de preparaciones entre turnos en 6 meses, institucionalización del cierre con catas y revisión conjunta en 6–9 meses y expansión a nuevas cafeterías con una comunidad activa que comparte recetas y aprendizajes en 12 meses.
 
+<img src="./img/chapter1/leanuxcanvas.jpg" alt="Lean Ux Canvas">
+
+<div style="page-break-before: always;"></div>
+
 ## 1.3. Segmentos objetivo
 _Contenido pendiente._
 
