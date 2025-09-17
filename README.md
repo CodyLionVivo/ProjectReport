@@ -667,7 +667,7 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ## 2.5.2. Context Mapping
-_Contenido pendiente._
+Enlace al Miro: https://miro.com/app/board/uXjVJHF5uag=/
 
 ## 2.5.3. Software Architecture
 _Contenido pendiente._
