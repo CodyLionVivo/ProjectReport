@@ -3684,23 +3684,69 @@ Bounded Context: Management
   - `findByEmailAddress(EmailAddress)` → Buscar un perfil por email.  
   - `existsByEmailAddress(EmailAddress)` → Verificar si existe un perfil con un email específico.  
 
-**MessageBrokers**  
-- **Estado:** No se han identificado en este bounded context.  
-
-**Email Services**  
-- **Estado:** No se han identificado en este bounded context.  
 
 ### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
-_Contenido pendiente._
+
+### SPA
+
+**Auth**
+<td><img src="img\C4 Frontend Componentes AUTH.png"></td>
+
+### Api Application
+
+**Coffee Production Bounded Context**
+
+<td><img src="img\C4 Backend Componentes COFFEE-PRODUCTION.png"></td>
+
+**Profiles Bounded Context**
+
+<td><img src="img\C4 Backend Componentes PROFILES.png"></td>
+
+**IAM Bounded Context**
+
+<td><img src="img\C4 Backend Componentes IAM.png"></td>
 
 ### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
-_Contenido pendiente._
 
 #### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-_Contenido pendiente._
+
+### Profiles
+
+**Domain**
+<td><img src="img\domain.png"></td>
+
+**Infrastructure**
+<td><img src="img\infrastructure.png"></td>
+
+**Interfaces**
+<td><img src="img\interfaces.png"></td>
+
+**Application**
+<td><img src="img\application.png"></td>
+
+### IAM
+
+**Domain**
+<td><img src="img\domainIAM.png"></td>
+
+**Infrastructure**
+<td><img src="img\infraestructuraIAM.png"></td>
+
+**Interfaces**
+<td><img src="img\interfaces.png"></td>
+
+**Application**
+<td><img src="img\applicationIAM.png"></td>
+
+### Shared
+<td><img src="img\cl-class-diagram-shared NUEVO.png"></td>
+
 
 #### 2.6.1.6.2. Bounded Context Database Design Diagram
-_Contenido pendiente._
+El diseño de base de datos es el proceso de organizar y estructurar los datos en un sistema, creando tablas, relaciones y reglas para garantizar eficiencia, integridad y facilidad de acceso. Este diseño asegura que los datos se almacenen de manera coherente y sean fáciles de gestionar, consultar y mantener a medida que el sistema crece y evoluciona.
+### 4.8.1. Database Diagram.
+<td><img src="img\Database_Diagram.png"></td>
+
 
 # Conclusiones
 _Contenido pendiente._
