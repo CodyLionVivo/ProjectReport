@@ -10,7 +10,7 @@
 	<h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
 	<ul style="display: inline-block; text-align: left; padding: 0;">
 		<li style="padding: 5px 0;">León Vivas, Fabrizio Amir (20211b994)</li>
-		<li style="padding: 5px 0;"></li>
+		<li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
@@ -126,8 +126,8 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>León Vivas, Fabrizio Amir</td>
-	<td>CodyLionVivo</td>
+	<td>Vidal Castro, Miguel Angel</td>
+	<td>Gossk</td>
   </tr>
   <tr>
 	<td>León Vivas, Fabrizio Amir</td>
