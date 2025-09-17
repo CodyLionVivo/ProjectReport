@@ -673,7 +673,7 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ### 2.5.3.1. Software Architecture Context Level Diagrams
-_Contenido pendiente._
+<img src="./img/c4_1.png">
 
 ### 2.5.3.2. Software Architecture Container Level Diagrams
 _Contenido pendiente._
@@ -706,7 +706,6 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 #### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-_Contenido pendiente._
 
 #### 2.6.1.6.2. Bounded Context Database Design Diagram
 _Contenido pendiente._
