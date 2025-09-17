@@ -628,19 +628,19 @@ Brew Timer es una aplicación móvil que ayuda a los usuarios a cronometrar y op
         <th style="text-align:center; border: 1px solid #000;"></th>
         <th style="text-align:center; border: 1px solid #000;">
             Xantina<br>
-            <img src="public/assets/images/placeholders/xantina-logo.png" alt="Logo Xantina" width="150">
+            <img width="645" height="355" alt="image" src="https://github.com/user-attachments/assets/afb795e4-c0a2-4374-ac80-8b1090e822e2" />
         </th>
         <th style="text-align:center; border: 1px solid #000;">
             Filtru<br>
-            <img src="public/assets/images/placeholders/filtru-logo.png" alt="Logo Filtru" width="150">
+            <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/77d8b88c-2125-4046-989e-f479f1cb125c" />
         </th>
         <th style="text-align:center; border: 1px solid #000;">
             Brew Timer - Hacer buen café<br>
-            <img src="public/assets/images/placeholders/brewtimer-logo.png" alt="Logo Brew Timer" width="150">
+            <img width="240" height="240" alt="image" src="https://github.com/user-attachments/assets/9ae1848f-b7e5-45a3-8ed2-c32d931141fc" />
         </th>
         <th style="text-align:center; border: 1px solid #000;">
             coffee.cup.guru<br>
-            <img src="public/assets/images/placeholders/coffeecupguru-logo.png" alt="Logo coffee.cup.guru" width="150">
+            <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/99ee6d60-642a-4fb3-8943-596170469f59" />
         </th>
     </tr>
     <tr>
