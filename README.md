@@ -682,6 +682,7 @@ _Contenido pendiente._
 <img src="./img/c4_2.png">
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
+<img src="./img/c4_3.png">
 
 # 2.6. Tactical-Level Domain-Driven Design
 _Contenido pendiente._
