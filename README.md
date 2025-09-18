@@ -1312,6 +1312,16 @@ En esta sección se presentan los **User Journey Maps** de cada *User Persona* (
 
 * User Journey Map de Miguel Vergara:
 
+### 2.3.3. User Journey Mapping — Miguel Bergara (Barista)
+
+<div style="text-align: center;">
+  <img 
+      src="/img/chapter2/userJourneyMap_MiguelVergara.png" 
+      alt="User Journey Map de Barista, reflejando el flujo de trabajo"
+      style="max-width: 100%; height: auto;">
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3.4. Empathy Mapping
 _Contenido pendiente._
