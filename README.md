@@ -676,9 +676,10 @@ Enlace al Miro: https://miro.com/app/board/uXjVJHF5uag=/
 _Contenido pendiente._
 
 ### 2.5.3.1. Software Architecture Context Level Diagrams
-<img src="./img/c4_3.png">
+<img src="./img/c4_1.png">
 
 ### 2.5.3.2. Software Architecture Container Level Diagrams
+<img src="./img/c4_2.png">
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
 
