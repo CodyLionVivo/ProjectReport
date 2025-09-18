@@ -1331,7 +1331,10 @@ Se elaboraron **Empathy Maps** para los dos *User Personas* de Xantina: **Miguel
 
 **Baristas**
 
-
+<img 
+      src="/img/chapter2/empathyMap_Barista.png" 
+      alt="Empathy Map del Barista, mostrando su proceso de pensamiento y sentimientos"
+      style="max-width: 100%; height: auto;">
 
 ### 2.3.5. Ubiquitous Language
 
