@@ -600,8 +600,65 @@ El Lean UX Canvas del proyecto Xantina refleja un enfoque claro hacia la democra
 <div style="page-break-before: always;"></div>
 
 ## 1.3. Segmentos objetivo
-_Contenido pendiente._
 
+Esta sección describe los segmentos asociados al dominio del problema (café de especialidad) e incluye características demográficas, comportamientos y notas para el sustento estadístico.
+
+### 1.3.1. Baristas (junior y senior)
+- **Demografía y rol:** 18–35 años (mayoría), educación técnica o cursos cortos de barismo; trabajan en cafeterías de especialidad en Lima.
+- **Contexto de uso:** inicio de turno (calibración), horas pico (consulta rápida de recetas), cierre (registro de catas).
+- **Necesidades:** aprender “haciendo”, estandarizar recetas por método/lote, resolver dudas en segundos, registrar notas y ajustes.
+- **Dolores:** aprendizaje disperso/no aplicable; variabilidad entre turnos; presión por velocidad y consistencia.
+- **Motivadores:** mejorar la taza, confianza en servicio, reconocimiento del equipo.
+- **Criterios de adopción:** app rápida, usable con una mano, lenguaje de barismo y recetas “de la casa”.
+- **Indicadores para sustento (a recolectar):** % baristas en tiendas de especialidad, rotación en barra, número de cafeterías por distrito, horarios pico.
+
+### 1.3.2. Jefes de barra / Dueños
+- **Demografía y rol:** 25–45 años; responsables de estándar de marca, capacitación y operación.
+- **Contexto de uso:** apertura (checklist de calibración), seguimiento en servicio, cierre (revisión de catas).
+- **Necesidades:** alinear resultados entre turnos, acelerar onboarding, tener “recetas aprobadas” reutilizables.
+- **Dolores:** curva de aprendizaje lenta, retrabajo por preparaciones incorrectas, conocimiento tribal.
+- **Motivadores:** consistencia de marca, eficiencia operativa, satisfacción del cliente.
+- **Criterios de adopción:** control básico (recetas aprobadas, checklists), bajo esfuerzo de implementación.
+- **Indicadores para sustento (a recolectar):** número de locales por cadena/independientes, tiempo promedio de capacitación, frecuencia de cambios de personal.
+
+### 1.3.3. Entusiastas avanzados (home brewers) – Segmento secundario
+- **Demografía y rol:** 20–45 años; aficionados que invierten en métodos (V60, AeroPress, espresso casero).
+- **Contexto de uso:** hogar y talleres; consulta de recetas/microlecciones y registro de catas personales.
+- **Necesidades:** guías confiables, lenguaje claro, comparar resultados.
+- **Motivadores:** aprender, compartir y mejorar su taza.
+- **Criterios de adopción:** contenidos breves, recetas probadas, comunidad.
+- **Indicadores para sustento (a recolectar):** ventas de métodos en Lima, participación en talleres/comunidades, búsquedas relacionadas.
+
+### 1.3.4. Aliados del ecosistema (tostadores, escuelas) – Influenciadores
+- **Rol:** validan contenido, comparten datos de lotes/origen, derivan usuarios.
+- **Interés:** visibilidad de marca y educación alineada a calidad.
+- **Indicadores para sustento (a recolectar):** número de tostadores activos, escuelas/talleres y calendarios de cursos.
+
+---
+
+### 1.3.5. Mapa de priorización (MVP)
+1) **Primario:** Baristas (junior/senior) y Jefes de barra/Dueños de **tiendas piloto en Lima**.  
+2) **Secundario:** Entusiastas avanzados (aprendizaje y catas).  
+3) **Influenciadores:** Tostadores y escuelas (alianzas y contenido).
+
+---
+
+### 1.3.6. Tamaño de mercado (marco de estimación)
+> Para sustentar con cifras sin “inventar”, usar el siguiente marco con fuentes abiertas (INEI, Producción, gremios, directorios locales, cámaras):
+- **TAM (Perú, café de especialidad):** total de cafeterías + escuelas + entusiastas con métodos en hogar.
+- **SAM (Lima Metropolitana):** cafeterías de especialidad y academias activas en Lima.
+- **SOM (pilot & año 1):** tiendas piloto + nuevas tiendas alcanzables por distrito.
+- **Datos a recopilar:** # de cafeterías por distrito, aforo/turno, personal de barra por local, frecuencia de cursos/talleres, crecimiento anual.
+
+> **Sugerencias de fuentes:** INEI (CIIU servicios de alimentos/bebidas), Ministerio de la Producción (MYPE), directorios de cafeterías de especialidad locales, escuelas/tostadores (calendarios y redes), observación de campo por distritos objetivo (Miraflores, Barranco, Surco, San Isidro, etc.).
+
+---
+
+### 1.3.7. Señales de ajuste por segmento (qué observar)
+- **Baristas:** uso de recetas aprobadas al abrir, consultas rápidas durante pico, registro de catas al cierre.
+- **Jefes/Dueños:** adopción de checklists, aprobación/actualización de recetas “de la casa”, reducción de retrabajo.
+- **Entusiastas:** finalización de microlecciones y uso de recetas en casa; participación en comunidad.
+- **Aliados:** disposición a compartir datos de lote/origen y co-crear cápsulas educativas.
 # Capítulo II: Requirements Development and Software Solution Design
 
 ## 2.1. Competidores
