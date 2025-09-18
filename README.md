@@ -10,8 +10,8 @@
 	<h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
 	<ul style="display: inline-block; text-align: left; padding: 0;">
 		<li style="padding: 5px 0;">León Vivas, Fabrizio Amir (20211b994)</li>
-		<li style="padding: 5px 0;">Vidal Castro, Miguel Angel</li>
-		<li style="padding: 5px 0;"></li>
+		<li style="padding: 5px 0;">Oliva López, Fabián Alejandro (202312013)</li>
+    <li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
@@ -40,8 +40,8 @@
       <td style="border: 1px solid black; padding: 8px;">
         <ul style="margin: 0; padding-left: 18px;">
           <li>León Vivas, Fabrizio Amir</li>
+          <li>Oliva López, Fabián Alejandro</li>
           <li>Vidal Castro, Miguel Angel</li>
-          <li></li>
           <li></li>
           <li></li>
           <li></li>
@@ -130,8 +130,8 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>Gossk</td>
   </tr>
   <tr>
-	<td>León Vivas, Fabrizio Amir</td>
-	<td>CodyLionVivo</td>
+	<td>Oliva López, Fabián Alejandro</td>
+	<td>FabulousFabStar</td>
   </tr>
   <tr>
 	<td>León Vivas, Fabrizio Amir</td>
