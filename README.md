@@ -1324,7 +1324,8 @@ En esta sección se presentan los **User Journey Maps** de cada *User Persona* (
 <div style="page-break-after: always;"></div>
 
 ### 2.3.4. Empathy Mapping
-_Contenido pendiente._
+
+
 
 ### 2.3.5. Ubiquitous Language
 
