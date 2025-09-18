@@ -10,9 +10,9 @@
 	<h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
 	<ul style="display: inline-block; text-align: left; padding: 0;">
 		<li style="padding: 5px 0;">León Vivas, Fabrizio Amir (20211b994)</li>
+		<li style="padding: 5px 0;">Pereira Vasquez, Nelson Fabrizzio (202417468)</li>
 		<li style="padding: 5px 0;">Oliva López, Fabián Alejandro (202312013)</li>
-    <li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
-		<li style="padding: 5px 0;"></li>
+		<li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
 	</ul>
@@ -40,9 +40,9 @@
       <td style="border: 1px solid black; padding: 8px;">
         <ul style="margin: 0; padding-left: 18px;">
           <li>León Vivas, Fabrizio Amir</li>
-          <li>Oliva López, Fabián Alejandro</li>
+          <li>Pereira Vasquez, Nelson Fabrizzio</li>
           <li>Vidal Castro, Miguel Angel</li>
-          <li></li>
+          <li>Oliva López, Fabián Alejandro</li>
           <li></li>
           <li></li>
         </ul>
@@ -126,12 +126,12 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>Vidal Castro, Miguel Angel</td>
-	<td>Gossk</td>
+	<td>León Vivas, Fabrizio Amir</td>
+	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>Oliva López, Fabián Alejandro</td>
-	<td>FabulousFabStar</td>
+	<td>León Vivas, Fabrizio Amir</td>
+	<td>CodyLionVivo</td>
   </tr>
   <tr>
 	<td>León Vivas, Fabrizio Amir</td>
@@ -236,7 +236,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 				<strong>TB1:</strong><br>
 				<ul>
 					<li><strong>Fabrizio:</strong> </li>
-					<li><strong>Miguel:</strong> </li>
+					<li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
@@ -255,7 +255,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 				<strong>TB1:</strong><br>
 				<ul>
 					<li><strong>Fabrizio:</strong> </li>
-					<li><strong>Miguel:</strong> </li>
+					<li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
@@ -595,6 +595,10 @@ Hemos formulado como equipo las siguientes hipótesis orientadas a probar las di
 #### 1.2.2.4. Lean UX Canvas
 
 El Lean UX Canvas del proyecto Xantina refleja un enfoque claro hacia la democratización del aprendizaje barista y la estandarización de recetas en cafeterías de especialidad, orientado principalmente a baristas (junior/senior), jefes de barra y dueños, con alcance secundario a entusiastas. Se identifican problemáticas como el contenido de aprendizaje disperso, la curva de capacitación lenta, la variabilidad entre turnos por falta de recetas aprobadas y la baja visibilidad del origen y los procesos del café. Las soluciones propuestas incluyen guías paso a paso, recetas “de la casa” por método y lote, registro de catas con notas comparables, checklists de calibración al inicio de turno, cápsulas breves sobre origen y cultura integradas en momentos naturales de uso y inventario básico por lotes para evitar quiebres. Los usuarios clave —baristas, jefes de barra y dueños de tiendas piloto en Lima— validan estas necesidades mediante entrevistas y pruebas en barra. Como resultados esperados, se plantea adopción como herramienta diaria en tiendas piloto de Lima en 6 meses, estandarización de preparaciones entre turnos en 6 meses, institucionalización del cierre con catas y revisión conjunta en 6–9 meses y expansión a nuevas cafeterías con una comunidad activa que comparte recetas y aprendizajes en 12 meses.
+
+<img src="./img/chapter1/leanuxcanvas.jpg" alt="Lean Ux Canvas">
+
+<div style="page-break-before: always;"></div>
 
 ## 1.3. Segmentos objetivo
 
@@ -1323,6 +1327,10 @@ En esta sección se presentan los **User Journey Maps** de cada *User Persona* (
 
 ### 2.3.4. Empathy Mapping
 
+Se elaboraron **Empathy Maps** para los dos *User Personas* de Xantina: **Miguel Vergara (barista)** y el **Jefe de barra/Dueño** de cafetería. A partir de entrevistas y escenas de uso en barra, se sintetizó lo que **dicen, piensan, hacen y sienten** durante su jornada, identificando sus **pains** (fricciones: variabilidad, falta de estándares, poco tiempo) y **gains** esperados (consistencia, aprendizaje breve, coordinación del equipo). Estos mapas orientan las decisiones de diseño para que la solución responda realmente a sus necesidades y momentos críticos.
+
+**Baristas**
+
 
 
 ### 2.3.5. Ubiquitous Language
@@ -1387,25 +1395,21 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ## 2.5.2. Context Mapping
-_Contenido pendiente._
-
-## 2.5.2. Context Mapping
 Enlace al Miro: https://miro.com/app/board/uXjVJHF5uag=/
 
 ## 2.5.3. Software Architecture
 _Contenido pendiente._
 
 ### 2.5.3.1. Software Architecture Context Level Diagrams
-<img src="./img/chapter2/c4_1.png">
+_Contenido pendiente._
 
 ### 2.5.3.2. Software Architecture Container Level Diagrams
-<img src="./img/chapter2/c4_2.png">
+_Contenido pendiente._
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
-<img src="./img/chapter2/c4_3.png">
+_Contenido pendiente._
 
 # 2.6. Tactical-Level Domain-Driven Design
-_Contenido pendiente._
 
 ## 2.6.1. Bounded Context: Sprint 1
 
@@ -3332,9 +3336,6 @@ En esta sección el equipo introduce, presenta y explica las clases que forman p
 - Maneja errores con códigos de estado HTTP apropiados
 - Separa responsabilidades usando el patrón CQRS
 - Utiliza PATCH para actualizaciones parciales
-
-### 2.6.1.2. Interface Layer
-_Contenido pendiente._
 
 ### 2.6.1.3. Application Layer
 _Contenido pendiente._
