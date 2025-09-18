@@ -1398,16 +1398,15 @@ _Contenido pendiente._
 Enlace al Miro: https://miro.com/app/board/uXjVJHF5uag=/
 
 ## 2.5.3. Software Architecture
-_Contenido pendiente._
 
 ### 2.5.3.1. Software Architecture Context Level Diagrams
-_Contenido pendiente._
+<img src="./img/chapter2/c4_1.png">
 
 ### 2.5.3.2. Software Architecture Container Level Diagrams
-_Contenido pendiente._
+<img src="./img/chapter2/c4_2.png">
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
-_Contenido pendiente._
+<img src="./img/chapter2/c4_3.png">
 
 # 2.6. Tactical-Level Domain-Driven Design
 
