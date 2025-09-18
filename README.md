@@ -676,13 +676,13 @@ Enlace al Miro: https://miro.com/app/board/uXjVJHF5uag=/
 _Contenido pendiente._
 
 ### 2.5.3.1. Software Architecture Context Level Diagrams
-<img src="./img/c4_1.png">
+<img src="./img/chapter2/c4_1.png">
 
 ### 2.5.3.2. Software Architecture Container Level Diagrams
-<img src="./img/c4_2.png">
+<img src="./img/chapter2/c4_2.png">
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
-<img src="./img/c4_3.png">
+<img src="./img/chapter2/c4_3.png">
 
 # 2.6. Tactical-Level Domain-Driven Design
 _Contenido pendiente._
