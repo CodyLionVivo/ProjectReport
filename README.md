@@ -676,7 +676,7 @@ _Contenido pendiente._
 <img src="./img/c4_1.png">
 
 ### 2.5.3.2. Software Architecture Container Level Diagrams
-_Contenido pendiente._
+<img src="./img/c4_2.png">
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
 _Contenido pendiente._
