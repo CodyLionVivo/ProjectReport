@@ -1005,7 +1005,7 @@ Dividimos la guía en **dos bloques** por segmento. El **Bloque A (descubrimient
             text-align: left;
             padding: 12px;
             background-color: #f0f0f0;
-            font-size: 22px;"><strong>#1</strong></th>
+            font-size: 22px;"><strong>#2</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1049,7 +1049,7 @@ Dividimos la guía en **dos bloques** por segmento. El **Bloque A (descubrimient
             text-align: left;
             padding: 12px;
             background-color: #f0f0f0;
-            font-size: 22px;"><strong>#1</strong></th>
+            font-size: 22px;"><strong>#3</strong></th>
     </tr>
   </thead>
   <tbody>
@@ -1078,19 +1078,240 @@ Dividimos la guía en **dos bloques** por segmento. El **Bloque A (descubrimient
 <div style="page-break-before: always;"></div>
 
 ### 2.2.3. Análisis de entrevistas
-_Contenido pendiente._
+
+**Baristas**
+
+Muestra: n = 3 baristas (21-30 años) en Lima Metropolitana.
+
+a) Distrito de residencia
+
+<table>
+<tr>
+  <th> Distrito </th>
+  <th> Conteo </th>
+  <th> % </th>
+</tr>
+<tr>
+  <th> Surco </th>
+  <th> 1 </th>
+  <th> 33.3% </th>
+</tr>
+<tr>
+  <th> San Borja </th>
+  <th> 1 </th>
+  <th> 33.3% </th>
+</tr>
+<tr>
+  <th>Ate</th>
+  <th> 1 </th>
+  <th> 33.3% </th>
+</tr>
+</table>
+
+b) Edades
+* Valores: 23, 25, 27 años
+* Rango: 23-27
+* Media: 25.0 años
+* Mediana: 25 años
+
+c) Experiencia en barra
+
+<table>
+<tr>
+  <th> Nivel </th>
+  <th> Criterio (aprox.) </th>
+  <th> Conteo </th>
+  <th> % </th>
+</tr>
+<tr>
+  <th> Junior </th>
+  <th> < 1 años </th>
+  <th> 1 </th>
+  <th> 33.3% </th>
+</tr>
+<tr>
+  <th> Intermedio </th>
+  <th> 1-2 años </th>
+  <th> 1 </th>
+  <th> 33.3.% </th>
+</tr>
+<tr>
+  <th>Senior / Jefe de turno</th>
+  <th> ≥ 3 años </th>
+  <th> 1 </th>
+  <th> 33.3% </th>
+</tr>
+</table>
+
+* Años totales reportados: 0.7 + 1.5 + 3.0 = 5.2
+* Media de experiencia: 1.7 años (aprox. 20 meses)
+* Rango de experiencia: 0.7-3.0 años
+
+d) Momentos críticos de trabajo
+
+<table>
+<tr>
+  <th> Momento </th>
+  <th> Apariciones </th>
+  <th> % </th>
+</tr>
+<tr>
+  <th> Apertura / calibración </th>
+  <th> 3 </th>
+  <th> 100% </th>
+</tr>
+<tr>
+  <th> Horas pico </th>
+  <th> 3</th>
+  <th> 100% </th>
+</tr>
+<tr>
+  <th>Cierre / catas</th>
+  <th> 2 </th>
+  <th> 66.7% </th>
+</tr>
+</table>
+
+**Características objetivas**
+
+* Momentos críticos donde aparece el problema
+
+  * Apertura/calibración: 100%
+
+  * Horas pico: 100%
+
+  * Cierre/catas: 66.7%
+
+* Hechos que generan variabilidad
+
+  * Cambios de lote/tostado sin guía clara: 66.7%
+
+  * Ausencia de una receta “de la casa” única y vigente: 66.7%
+
+  * Consulta a papel/WhatsApp durante el servicio: 33.3%
+
+* Necesidades funcionales directamente ligadas a la solución
+
+  * Recetas aprobadas por método/lote accesibles en ≤2 toques: 100%
+
+  * Checklist de apertura (≤1 minuto) para calibrar: 66.7%
+
+  * Registro de catas con acuerdos de ajuste al cierre: 66.7%
+
+  * Búsqueda/filtros por método y lote para hallar la receta correcta en segundos: 66.7%
+
+  * Notas rápidas ligadas a la receta (ajustes locales): 33.3%
+
+  * Cápsulas breves de origen/procesos en momentos de espera (no intrusivas): 33.3%
+* Comportamientos actuales observados (problema)
+
+  * Calibración “a ojo” cuando hay prisa o cambia el lote: 66.7%
+
+  * Falta de registro sistemático de catas/acuerdos: 66.7%
+
+  * Actualización informal de recetas (memoria/voz): 66.7%
+
+**Características subjetivas**
+
+* Dolores percibidos
+
+  * Inseguridad al preparar en pico por no tener la receta a mano.
+
+  * Frustración cuando cambia el lote y se pierden intentos de calibración.
+
+  * Sensación de “estándar perdido” entre turnos.
+
+* Qué esperan de la solución
+
+  * Confianza inmediata con una receta única y validada (“de la casa”).
+
+  * Guía breve y usable: pasos claros, sin scroll, lenguaje de barismo.
+
+  * Checklist ágil que no estorbe (solo lo esencial).
+
+  * Catas que terminen en acuerdos concretos para el día siguiente.
+
+  * Tips de cultura/origen solo en momentos naturales (carga/espera).
+
+* Barreras percibidas a la adopción
+
+  * Apps lentas o con texto excesivo.
+
+  * Interrupciones del flujo en horas pico.
+
+  * Falta de validador (quién aprobó la receta y cuándo).
+
+* Criterios de aceptación implícitos
+
+  * Acceso en ≤2 toques y ≤10 s para iniciar una preparación.
+
+  * Ver método, dosis, molienda, tiempo/temperatura sin scrollear.
+
+  * Mostrar “aprobado por [jefe] – última actualización [fecha]”.
+
+  * Poder anotar ajustes y que el equipo los vea.
+  * Tips cortos, no bloqueantes, con opción “guardar para después”.
+
+<div style="page-break-after: always;"></div>
 
 ## 2.3. Needfinding
-_Contenido pendiente._
+
+El needfinding facilita detectar las necesidades reales de los usuarios a través de entrevistas y del estudio de su contexto. Con esos hallazgos se elaboraron artefactos clave que permitieron entender con mayor precisión sus objetivos, tareas, emociones y puntos de frustración.
 
 ### 2.3.1. User Personas
-_Contenido pendiente._
+ 
+Los **User Personas** se construyeron a partir de los hallazgos de las entrevistas y representan perfiles fieles de los segmentos objetivo. Cada ficha resume rasgos demográficos, patrones de comportamiento y motivaciones/emociones, sirviendo como guía para las decisiones de diseño funcional y visual de la plataforma.
+
+**User Persona: Barista**
+
+Profesional de barra en una cafetería de especialidad, responsable del servicio central en tienda (preparación, calibración y atención al cliente). Necesita **agilizar procesos**, **mantener consistencia** en taza y **responder rápido** en horas pico. Valora el trabajo en equipo y la comunicación clara, busca **optimizar el tiempo** sin sacrificar calidad.
+
+<div style="text-align: center;">
+  <img 
+      src="/img/chapter2/userPersona_Barista.png" 
+      alt="User Persona de Barista" 
+      style="max-width: 55%; height: auto;">
+</div>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3.2. User Task Matrix
-_Contenido pendiente._
+
+En el User Task Matrix se especifican las tareas claves de cada segmento, seguidos por su frecuencia e importancia.
+
+| Tarea clave (independiente del software) | Miguel Vergara — Frec. | Miguel Vergara — Imp. | [Segundo segmento] — Frec. | [Segundo segmento] — Imp. |
+|---|---|---|---|---|
+| Calibrar espresso al inicio de turno | Alta | Alta | Alta | Alta |
+| Confirmar receta “de la casa” por método/lote | Alta | Alta | Alta | Alta |
+| Preparar bebidas durante horas pico | Alta | Alta | Media | Alta |
+| Ajustar parámetros ante cambio de lote/tostado | Media | Alta | Alta | Alta |
+| Registrar catas al cierre y acordar ajustes | Media | Media | Alta | Alta |
+| Documentar notas rápidas ligadas a la receta | Media | Media | Alta | Alta |
+| Buscar/filtrar la receta adecuada en servicio | Alta | Alta | Media | Alta |
+| Comunicar cambios de receta al equipo | Media | Media | Alta | Alta |
+| Capacitar / onboardear a un barista nuevo | Baja | Media | Alta | Alta |
+| Verificar inventario básico de insumos (grano/leche) | Media | Media | Alta | Alta |
+| Atender al cliente y responder sobre origen/procesos | Alta | Media | Media | Media |
+| Limpieza y mantenimiento básico (purga, backflush, etc.) | Alta | Alta | Media | Alta |
+| Revisar checklist de apertura/cierre | Alta | Alta | Alta | Alta |
+| Supervisar consistencia entre turnos | Media | Alta | Alta | Alta |
+
+**INTERPRETACIÓN DE RESULTADOS**
+
+* Alta/Alta en ambos segmentos: calibrar, confirmar receta de la casa, checklist de apertura/cierre. Son las tareas núcleo que sostienen la consistencia.
+
+* Diferencias clave: el segundo segmento (jefe/dueño por inferencia) asume Alta frecuencia e importancia en comunicar cambios, onboarding e inventario, mientras que para Miguel son Medias (participa, pero no lidera).
+
+* Coincidencias: ambos valoran ajustes por lote, registro de catas y notas por receta, aunque el segundo segmento las realiza con mayor frecuencia para alinear al equipo.
+
+* Implicancia para requisitos: priorizar historias que soporten calibración rápida, recetas aprobadas accesibles, checklist breve, y flujos de comunicación/actualización liderados por el segundo segmento pero visibles para Miguel.
 
 ### 2.3.3. User Journey Mapping
-_Contenido pendiente._
+
+En esta sección se presentan los **User Journey Maps** de cada *User Persona* (Miguel Vergara y [segundo segmento]). Los mapas describen, etapa por etapa, **objetivos, tareas, emociones y puntos de dolor**, desde que el usuario **descubre Xantina** hasta que **comparte su feedback**. Con esto identificaremos oportunidades de mejora y prioridades de diseño.
+
+* User Journey Map de Miguel Vergara:
+
 
 ### 2.3.4. Empathy Mapping
 _Contenido pendiente._
