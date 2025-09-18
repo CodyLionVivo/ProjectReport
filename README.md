@@ -1395,7 +1395,8 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ## 2.5.2. Context Mapping
-<img src= "./img/chapter2/contextmapping.png>
+<img src="./img/chapter2/contextmapping.png">
+
 Enlace al Miro: https://miro.com/app/board/uXjVJHF5uag=/
 
 ## 2.5.3. Software Architecture
