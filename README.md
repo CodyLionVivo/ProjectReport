@@ -1395,17 +1395,21 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ## 2.5.2. Context Mapping
+<img src= "./img/chapter2/contextmapping.png>
 Enlace al Miro: https://miro.com/app/board/uXjVJHF5uag=/
 
 ## 2.5.3. Software Architecture
 
 ### 2.5.3.1. Software Architecture Context Level Diagrams
+Este es el diagrama de Contexto de nuestro sistema:
 <img src="./img/chapter2/c4_1.png">
 
 ### 2.5.3.2. Software Architecture Container Level Diagrams
+Este es el diagrama de Contenedores de nuestro sistema:
 <img src="./img/chapter2/c4_2.png">
 
 ### 2.5.3.3. Software Architecture Deployment Diagrams
+Este es el diagrama de Despliegue de nuestro sistema:
 <img src="./img/chapter2/c4_3.png">
 
 # 2.6. Tactical-Level Domain-Driven Design
