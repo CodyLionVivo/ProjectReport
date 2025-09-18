@@ -671,13 +671,190 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ## 2.2. Entrevistas
-_Contenido pendiente._
+En esta sección se presenta la investigación cualitativa realizada mediante entrevistas a representantes de los segmentos objetivo: baristas (junior y senior), dueños/jefes de barra y entusiastas del café. El propósito es comprender con mayor profundidad la problemática detectada y **validar** la pertinencia de soluciones digitales derivadas del análisis previo.
 
 ### 2.2.1. Diseño de entrevistas
-_Contenido pendiente._
+
+Dividimos la guía en **dos bloques** por segmento. El **Bloque A (descubrimiento)** profundiza en la problemática desde la voz del usuario; el **Bloque B (exploración de solución)** contrasta la pertinencia de propuestas digitales de Xantina (recetas “de la casa”, checklists de calibración, registro de catas y cápsulas breves de cultura/origen). Este diseño nos permite comprender el contexto real de uso y validar el encaje de la solución antes de construir.
+
+**Objetivo del estudio**
+- Comprender dolores, hábitos y barreras en barra (y hogar).
+- Validar qué ideas de Xantina resuelven mejor los problemas priorizados. 
+
+**Segmento objetivo 1: Baristas (junior/senior)**
+
+**Bloque A — Problemática (núcleo)**
+1. Cuéntame tu turno típico (inicio, pico, cierre). ¿En qué momentos aparecen más dudas?
+2. La última vez que **no te salió** una bebida, ¿qué pasó? ¿Qué hiciste para corregirla?
+3. ¿Cómo calibras al abrir? ¿Qué pasos sigues y cuáles omites por tiempo?
+4. ¿Dónde consultas parámetros (dosis, molienda, tiempo, temperatura) cuando no los recuerdas?
+5. ¿Cómo cambian tus preparaciones cuando llega **un lote nuevo** o tostado distinto?
+6. ¿Registran catas/pruebas? ¿Para qué les sirven y dónde quedan esas notas?
+
+**Bloque B — Solución (núcleo)**
+1. Si tuvieras **recetas “de la casa” por método/lote**, ¿cuándo y cómo las usarías en turno?
+2. Un **checklist de 1 min** antes de abrir, ¿qué debe incluir para ayudarte (no estorbar)?
+3. Un **registro de catas simple**, ¿qué campos sí o sí? (ej.: método, ratio, tiempo, notas, acuerdos)
+4. ¿Cómo deberían verse las **cápsulas de cultura/origen** para que las leas sin interrumpir tu flujo?
+5. ¿Qué te haría **confiar** en una receta aprobada? ¿Quién debería validarla?
+6. ¿Qué te haría **volver** a consultar la misma receta?
+
+*Opcionales (profundización):* “la última semana…”, “si estuvieras solo en barra…”, “si cambia el grinder…”
+
+---
+
+**Segmento objetivo 2: Dueños de cafeterías**
+
+**Bloque A — Problemática (núcleo)**
+1. ¿En qué situaciones se **rompe la consistencia** entre turnos?
+2. ¿Cómo incorporas a un **barista nuevo**? ¿Qué parte se lleva más tiempo?
+3. ¿Cómo deciden que una **receta está bien**? ¿Qué evidencia buscan?
+4. ¿Qué pasa cuando cambian **lote/tostado** o hay **pico** de clientes?
+5. ¿Registran **cierre** (catas, acuerdos, incidencias)? ¿Cómo lo usan al día siguiente?
+6. ¿Qué fricciones te gustaría eliminar mañana mismo?
+
+**Bloque B — Solución (núcleo)**
+1. ¿Qué convertiría a una receta en “**estándar de la casa**”? (proceso de aprobación/actualización)
+2. ¿Cómo te gustaría notificar **cambios de receta** al equipo?
+3. ¿Qué **checklist** de apertura te daría confianza real en calibración?
+4. ¿Qué valor tendría ver **catas** y **acuerdos** al final del día? ¿Cómo quieres revisarlos?
+5. ¿Dónde encajarían **cápsulas** de cultura/origen en la experiencia de la tienda?
+6. Si tuvieras que **priorizar una sola** funcionalidad para mañana, ¿cuál sería y por qué?
+
+<div style="page-break-before: always;"></div>
 
 ### 2.2.2. Registro de entrevistas
-_Contenido pendiente._
+<table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          margin-bottom: 40px;">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: BARISTA</strong></th>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>#1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> Richard Alberto</li>
+              <li><strong>Apellidos:</strong> Alvarado Flores</li>
+              <li><strong>Edad:</strong> 23</li>
+              <li><strong>Distrito:</strong> San Borja</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/Edy1wJCkxbxOrmrntCJmRaYBsXZyxHgX7BLh-aGeqQHCDQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZpUwNr" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 00:00</li>
+              <li><strong>Duración:</strong> 06:17</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="/img/chapter2/segmento-barista-1.png">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
+
+<table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          margin-bottom: 40px;">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: BARISTA</strong></th>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>#1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> William Martín</li>
+              <li><strong>Apellidos:</strong> Salcedo Vásquez</li>
+              <li><strong>Edad:</strong> 57</li>
+              <li><strong>Distrito:</strong> San Juan de Lurigancho</li>
+              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 00:00</li>
+              <li><strong>Duración:</strong> 04:51</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
+
+<table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          margin-bottom: 40px;">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: BARISTA</strong></th>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>#1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> William Martín</li>
+              <li><strong>Apellidos:</strong> Salcedo Vásquez</li>
+              <li><strong>Edad:</strong> 57</li>
+              <li><strong>Distrito:</strong> San Juan de Lurigancho</li>
+              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 00:00</li>
+              <li><strong>Duración:</strong> 04:51</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
 
 ### 2.2.3. Análisis de entrevistas
 _Contenido pendiente._
