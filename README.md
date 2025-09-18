@@ -10,7 +10,7 @@
 	<h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
 	<ul style="display: inline-block; text-align: left; padding: 0;">
 		<li style="padding: 5px 0;">León Vivas, Fabrizio Amir (20211b994)</li>
-		<li style="padding: 5px 0;"></li>
+		<li style="padding: 5px 0;">Tantaleán Mesta, Guillermo Fabián (202311958)</li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
 		<li style="padding: 5px 0;"></li>
@@ -40,7 +40,7 @@
       <td style="border: 1px solid black; padding: 8px;">
         <ul style="margin: 0; padding-left: 18px;">
           <li>León Vivas, Fabrizio Amir</li>
-          <li></li>
+          <li>Tantaleán Mesta, Guillermo Fabián</li>
           <li></li>
           <li></li>
           <li></li>
@@ -126,8 +126,8 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>León Vivas, Fabrizio Amir</td>
-	<td>CodyLionVivo</td>
+	<td>Tantaleán Mesta, Guillermo Fabián</td>
+	<td>guillermotantalean1</td>
   </tr>
   <tr>
 	<td>León Vivas, Fabrizio Amir</td>
