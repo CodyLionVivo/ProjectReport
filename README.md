@@ -145,6 +145,10 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>Tantaleán Mesta, Guillermo Fabián</td>
 	<td>guillermotantalean1</td>
   </tr>
+	<tr>
+	<td>Pereira Vasquez, Nelson Fabrizzio</td>
+	<td>fabrizzioper</td>
+  </tr>
 </table>
 
 **TB1**
@@ -240,6 +244,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizzio Pereira:</strong> Investigué el dominio del café de especialidad y desarrollé la arquitectura completa del sistema usando metodologías como Lean UX y Domain-Driven Design.</li>
 					<li><strong>Guillermo:</strong>  </li>
 				</ul>
 			</td>
@@ -259,6 +264,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabrizzio Pereira:</strong> Aprendí sobre café de especialidad desde cero y estudié nuevas metodologías de desarrollo que no conocía previamente.</li>
 					<li><strong>Guillermo:</strong>  </li>
 				</ul>
 			</td>
@@ -270,7 +276,6 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 </table>
 
 <div style="page-break-before: always;"></div>
-
 # Objetivos SMART
 
 <table style="border-collapse: collapse; width: 100%; text-align: left;">
@@ -285,6 +290,11 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
       <td style="border: 1px solid #000; padding: 8px;">León Vivas, Fabrizio Amir</td>
       <td style="border: 1px solid #000; padding: 8px;">jfkñdsjfkldsfjlkdsafjkdsafjsdf</td>
       <td style="border: 1px solid #000; padding: 8px;">dsfkldsjafkldsajfkldsjf</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #000; padding: 8px;">Pereira Vasquez, Fabrizzio</td>
+      <td style="border: 1px solid #000; padding: 8px;">Completar el diseño de la arquitectura de software para AromaTech/Xantina aplicando Domain-Driven Design incluyendo bounded contexts, agregados y servicios del dominio del café de especialidad.</td>
+      <td style="border: 1px solid #000; padding: 8px;">Desarrollar y documentar el Lean UX Process completo (Problem Statements, Assumptions, Hypothesis Statements y Canvas) </td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Tantaleán Mesta, Guillermo Fabián</td>
@@ -431,6 +441,20 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                         <li>Manejo de Azure para la gestión de máquinas virtuales</li>
                         <li>Conocimiento avanzado en sistemas Linux.</li>
                         <li>Familiaridad con SOA y Layered Architecture.</li>
+                    </ul>
+                </td> 
+            </tr>
+			  <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/guillhjasdermo.JPG" alt="Foto de Fabrizzio Pereira"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Nelson Fabrizzio, Pereira Vasquez</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202417468</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                      <li>Dominio en <strong>desarrollo web</strong> con énfasis en <strong>React</strong> y su ecosistema.</li>
+					  <li>Experiencia en la creación de <strong>proyectos prácticos</strong> como método de aprendizaje.</li>
+					  <li>Conocimientos en <strong>ingeniería de software</strong> aplicados al desarrollo y buenas prácticas.</li>
+					  <li>Habilidad para <strong>trabajar en equipo</strong>, colaborar y apoyar en la resolución de problemas.</li>
                     </ul>
                 </td> 
             </tr>
