@@ -14,7 +14,7 @@
 		<li style="padding: 5px 0;">Oliva López, Fabián Alejandro (202312013)</li>
 		<li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
 		<li style="padding: 5px 0;"></li>
-		<li style="padding: 5px 0;"></li>
+		<li style="padding: 5px 0;">Tantaleán Mesta, Guillermo Fabián (202311958)</li>
 	</ul>
 	<h4 style="margin: 10px 0; border-bottom: none;">Setiembre de 2025</h4>
 </div>
@@ -44,7 +44,7 @@
           <li>Vidal Castro, Miguel Angel</li>
           <li>Oliva López, Fabián Alejandro</li>
           <li></li>
-          <li></li>
+          <li>Tantaleán Mesta, Guillermo Fabián</li>
         </ul>
       </td>
       <td style="border: 1px solid black; padding: 8px;">
@@ -142,14 +142,14 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>León Vivas, Fabrizio Amir</td>
-	<td>CodyLionVivo</td>
+	<td>Tantaleán Mesta, Guillermo Fabián</td>
+	<td>guillermotantalean1</td>
   </tr>
 </table>
 
 **TB1**
 
-Este entregable comprende la elaboración del informe desde el Capítulo I hasta el Capítulo III, desarrollado íntegramente a partir del proceso de investigación en equipo y del diseño del sistema.
+Este entregable comprende la elaboración del informe desde el Capítulo I hasta el Capítulo II, desarrollado íntegramente a partir del proceso de investigación en equipo y del diseño del sistema.
 
 <img src="./img/insight_tb1.png">
 
@@ -240,7 +240,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
-					<li><strong>Fabrizio:</strong>  </li>
+					<li><strong>Guillermo:</strong>  </li>
 				</ul>
 			</td>
 			<td>
@@ -259,7 +259,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
-					<li><strong>Fabrizio:</strong>  </li>
+					<li><strong>Guillermo:</strong>  </li>
 				</ul>
 			</td>
 			<td>
@@ -287,7 +287,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
       <td style="border: 1px solid #000; padding: 8px;">dsfkldsjafkldsajfkldsjf</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Tantaleán Mesta, Guillermo Fabián</td>
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
     </tr>
@@ -421,7 +421,7 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                 </td> 
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Henry.png" alt="Foto de Henry Reaño"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/guillermo.JPG" alt="Foto de Guillermo Tantaleán"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">20221e247</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
@@ -1434,7 +1434,12 @@ _Contenido pendiente._
 _Contenido pendiente._
 
 ## 2.5.1. EventStorming
-_Contenido pendiente._
+
+<img 
+      src="/img/chapter2/EventStorming.png" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
+
 
 ### 2.5.1.1. Candidate Context Discovery
 _Contenido pendiente._
