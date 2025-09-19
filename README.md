@@ -392,7 +392,7 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                 </td> 
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/JuanDiego.png" alt="Foto de Juan Diego Mondoñedo"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/JuanDiego.jpg" alt="Foto de Juan Diego Mondoñedo"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Mondoñedo Rodriguez, Juan Diego Javier</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202110373</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
