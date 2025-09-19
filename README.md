@@ -112,7 +112,7 @@
 
 # Project Report Collaboration Insights
 
-El desarrollo del informe se realizó en un repositorio dedicado en la organización de GitHub. Enlace: [https://github.com/GreatBuild/Report](https://github.com/GreatBuild/Report)
+El desarrollo del informe se realizó en un repositorio dedicado en la organización de GitHub. Enlace: [https://github.com/CodyLionVivo/ProjectReport](https://github.com/CodyLionVivo/ProjectReport)
 
 Se presenta una tabla que especifica qué miembro del equipo se corresponde con qué usuario de GitHub.
 
@@ -239,7 +239,9 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 			<td>
 				<strong>TB1:</strong><br>
 				<ul>
-					<li><strong>Fabrizio:</strong> </li>
+					<li><strong>Fabrizio León:</strong>
+          Realiza una investigación mediante el uso de entrevistas para la validación de los items hechos en el Lean UX Process.
+          </li>
 					<li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
@@ -259,7 +261,8 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 			<td>
 				<strong>TB1:</strong><br>
 				<ul>
-					<li><strong>Fabrizio:</strong> </li>
+					<li><strong>Fabrizio León:</strong>
+          Fue importante que aprenda sobre del modelo de negocio para así desarrollar los artefactos de una mejora manera. Además, investigue más acerca del DDD para su correcto planteamiento. </li>
 					<li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
@@ -276,6 +279,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 </table>
 
 <div style="page-break-before: always;"></div>
+
 # Objetivos SMART
 
 <table style="border-collapse: collapse; width: 100%; text-align: left;">
@@ -288,8 +292,8 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
   <tbody>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">León Vivas, Fabrizio Amir</td>
-      <td style="border: 1px solid #000; padding: 8px;">jfkñdsjfkldsfjlkdsafjkdsafjsdf</td>
-      <td style="border: 1px solid #000; padding: 8px;">dsfkldsjafkldsajfkldsjf</td>
+      <td style="border: 1px solid #000; padding: 8px;">Desarrollar proyectos de alto impacto en la sociedad que permita que las personas tengan una mejor calidad de vida.</td>
+      <td style="border: 1px solid #000; padding: 8px;">Completar soluciones de software con los artefactos aprendidos y conocimientos adquiridos a lo largo de mi carrera universitario como lo es con Xantina.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Pereira Vasquez, Fabrizzio</td>
@@ -361,7 +365,7 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Andrea.png" alt="Foto de Andrea Aponte"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="" alt="Foto de "></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202224135</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
@@ -388,7 +392,7 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                 </td> 
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Mario.png" alt="Foto de Mario Lopez"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/" alt="Foto de "></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202116250</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
@@ -402,7 +406,7 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                 </td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Alvaro.png" alt="Foto de Álvaro Orozco"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="" alt="Foto de "></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202220783</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
@@ -417,7 +421,7 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                 </td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Henry.png" alt="Foto de Henry Reaño"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="" alt="Foto de "></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">20221e247</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
