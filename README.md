@@ -1432,6 +1432,19 @@ _Contenido pendiente._
 | **EP06/US15** | Asignar roles y permisos | **Como** jefe de barra, **quiero** poder asignar diferentes niveles de acceso a los miembros de mi equipo (ej. barista junior, barista senior), **para** controlar quién puede editar las recetas y registrar catas de forma oficial. | **Dado** que tengo permisos de administrador,<br>**cuando** asigno un rol a un miembro del equipo,<br>**entonces** el usuario obtiene los permisos correspondientes a su nivel de acceso. |
 | **EP06/US16** | Dar de baja a un usuario | **Como** jefe de barra, **quiero** poder eliminar el acceso de un barista que ya no trabaja con nosotros, **para** proteger la información y los estándares de mi cafetería. | **Dado** que un barista ya no forma parte del equipo,<br>**cuando** elimino su acceso desde la configuración,<br>**entonces** el usuario pierde todos los permisos y no puede acceder a la información de la cafetería. |
 
+##### **EP07: Reportes y Análisis**
+
+| Story ID | Título de la Historia | Descripción (Situación y Motivación) | Criterios de Aceptación |
+| :--- | :--- | :--- | :--- |
+| **EP07/US17** | Generar reporte de consumo | **Como** jefe de barra, **quiero** generar reportes de consumo de café por período, **para poder** planificar mejor las compras e identificar tendencias de uso. | **Dado** que tengo datos de inventario registrados,<br>**cuando** solicito un reporte mensual de consumo,<br>**entonces** veo gráficos con el consumo por lote y proyecciones de reposición. |
+
+| Story ID | Título de la Historia | Descripción (Situación y Motivación) | Criterios de Aceptación |
+| :--- | :--- | :--- | :--- |
+| **EP08/US18** | Enviar comunicados al equipo | **Como** jefe de barra, **quiero** poder enviar comunicados importantes a todo mi equipo, **para poder** informar sobre cambios en recetas, nuevos procedimientos o actualizaciones del día. | **Dado** que tengo información importante que compartir,<br>**cuando** creo un comunicado y lo envío al equipo,<br>**entonces** todos los miembros reciben una notificación y pueden ver el mensaje en su panel principal. |
+| **EP08/US19** | Compartir actualizaciones de lote | **Como** jefe de barra, **quiero** notificar automáticamente al equipo cuando hay cambios en los lotes de café, **para que** todos estén al tanto de ajustes necesarios en las recetas y preparaciones. | **Dado** que registro un nuevo lote o modifico parámetros de uno existente,<br>**cuando** marco la opción "Notificar al equipo",<br>**entonces** todos los baristas reciben una alerta con los detalles del cambio y las recetas afectadas. |
+
+
+
 ## 2.4.2. Impact Mapping
 _Contenido pendiente._
 
