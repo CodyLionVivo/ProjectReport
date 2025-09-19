@@ -307,8 +307,8 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Mondoñedo Rodriguez, Juan Diego Javier</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Resolver parte de las problematicas y dolores diarios del grupo objetivo que seleccionamos para nuestro enfoque de proyecto para brindarles mayor satisfaccion de vida.</td>
+      <td style="border: 1px solid #000; padding: 8px;">Identificar correctamente las necesidades de nuestros segmentos mediante el needfinding e interpretarlas para definir user stories adecuados para su caso.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
@@ -392,16 +392,16 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                 </td> 
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/" alt="Foto de "></td>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202116250</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/JuanDiego.png" alt="Foto de Juan Diego Mondoñedo"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Mondoñedo Rodriguez, Juan Diego Javier</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202110373</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
                 <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
                     <ul>
-                        <li>Diseño web</li>
-                        <li>Manejo de Azure para la gestión de máquinas virtuales</li>
+                        <li>Desarrollo front-end</li>
+                        <li>Manejo de bases de datos con mySQL</li>
                         <li>Conocimiento en sistemas Linux</li>
-                        <li>Competente en C++, JavaScript y Python</li> 
+                        <li>Competente con frameworks de desarrollo como Angular y Vue</li> 
                     </ul>
                 </td>
             </tr>
