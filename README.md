@@ -13,7 +13,7 @@
 		<li style="padding: 5px 0;">Pereira Vasquez, Nelson Fabrizzio (202417468)</li>
 		<li style="padding: 5px 0;">Oliva López, Fabián Alejandro (202312013)</li>
 		<li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
-		<li style="padding: 5px 0;"></li>
+		<li style="padding: 5px 0;">Mondoñedo Rodriguez, Juan Diego Javier</li>
 		<li style="padding: 5px 0;">Tantaleán Mesta, Guillermo Fabián (202311958)</li>
 	</ul>
 	<h4 style="margin: 10px 0; border-bottom: none;">Setiembre de 2025</h4>
@@ -43,7 +43,7 @@
           <li>Pereira Vasquez, Nelson Fabrizzio</li>
           <li>Vidal Castro, Miguel Angel</li>
           <li>Oliva López, Fabián Alejandro</li>
-          <li></li>
+          <li>Mondoñedo Rodriguez, Juan Diego Javier</li>
           <li>Tantaleán Mesta, Guillermo Fabián</li>
         </ul>
       </td>
@@ -138,8 +138,8 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>León Vivas, Fabrizio Amir</td>
-	<td>CodyLionVivo</td>
+	<td>Mondoñedo Rodriguez, Juan Diego Javier</td>
+	<td>Jmondonedor</td>
   </tr>
   <tr>
 	<td>Tantaleán Mesta, Guillermo Fabián</td>
@@ -242,7 +242,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 					<li><strong>Fabrizio León:</strong>
           Realiza una investigación mediante el uso de entrevistas para la validación de los items hechos en el Lean UX Process.
           </li>
-					<li><strong>Fabrizio:</strong> </li>
+					<li><strong>Juan Diego Mondoñedo:</strong> Analicé los resultados de nuestras entrevistas para desarrollar parte del needfinding y definir las user stories </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
@@ -263,7 +263,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 				<ul>
 					<li><strong>Fabrizio León:</strong>
           Fue importante que aprenda sobre del modelo de negocio para así desarrollar los artefactos de una mejora manera. Además, investigue más acerca del DDD para su correcto planteamiento. </li>
-					<li><strong>Fabrizio:</strong> </li>
+					<li><strong>Juan Diego Mondoñedo:</strong> Refresqué mis conocimientos sobre las user stories e investigué sobre el ambiente laboral de nuestro publico objetivo para plantear user stories pertinentes. </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
@@ -306,7 +306,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Mondoñedo Rodriguez, Juan Diego Javier</td>
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
     </tr>
@@ -1584,6 +1584,8 @@ _Contenido pendiente._
 | Story ID | Título de la Historia | Descripción (Situación y Motivación) | Criterios de Aceptación |
 | :--- | :--- | :--- | :--- |
 | **EP07/US17** | Generar reporte de consumo | **Como** jefe de barra, **quiero** generar reportes de consumo de café por período, **para poder** planificar mejor las compras e identificar tendencias de uso. | **Dado** que tengo datos de inventario registrados,<br>**cuando** solicito un reporte mensual de consumo,<br>**entonces** veo gráficos con el consumo por lote y proyecciones de reposición. |
+
+##### **EP08: Comunicación y Difusión de Información**
 
 | Story ID | Título de la Historia | Descripción (Situación y Motivación) | Criterios de Aceptación |
 | :--- | :--- | :--- | :--- |
