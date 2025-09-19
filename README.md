@@ -3419,22 +3419,334 @@ En esta sección el equipo introduce, presenta y explica las clases que forman p
 - Utiliza PATCH para actualizaciones parciales
 
 ### 2.6.1.3. Application Layer
-_Contenido pendiente._
+
+En esta sección se muestran las clases que manejan los flujos de procesos del negocio, considerando las capacidades de la aplicación en relación al bounded context. Se incluyen Command Handlers, Query Handlers y, si corresponde, Event Handlers.
+
+**Bounded Context: Coffees**
+
+**Command Handlers**
+
+**CoffeeCommandServiceImpl**
+**• Tipo:** Command Handler  
+**• Propósito:** Gestiona los comandos relacionados con la creación de cafés, aplicando las reglas de negocio necesarias antes de la persistencia.  
+**• Flujo de Procesamiento:**
+1. Recibe el comando `CreateCoffeeCommand`.  
+2. Valida que no exista un café con el mismo nombre.  
+3. Si ya existe, lanza una excepción.  
+4. Crea la entidad `Coffee` con los datos recibidos.  
+5. Persiste la entidad a través del repositorio.  
+
+**Query Handlers**
+**CoffeeQueryServiceImpl**
+**• Tipo:** Query Handler  
+**• Propósito:** Gestiona consultas para obtener información de cafés sin modificar el estado del sistema.  
+**• Flujos Principales:**
+- **GetCoffeeByIdQuery** → Recupera un café específico por su identificador.  
+- **GetAllCoffeesQuery** → Recupera todos los cafés registrados.  
+
+---
+Bounded Context: Management
+
+**Command Handlers**
+
+**InventoryEntryCommandServiceImpl**
+
+**• Tipo:** Command Handler  
+**• Propósito:** Gestiona los comandos relacionados con entradas de inventario, aplicando las reglas de negocio antes de persistir los cambios.  
+**• Flujos Principales:**
+- **CreateInventoryEntryCommand** → Crea una nueva entrada de inventario.  
+- **UpdateInventoryEntryCommand** → Actualiza una entrada existente.  
+- **DeleteInventoryEntryCommand** → Elimina una entrada de inventario.  
+
+**Query Handlers**
+
+**InventoryEntryQueryServiceImpl**
+
+**• Tipo:** Query Handler  
+**• Propósito:** Gestiona consultas para recuperar información de entradas de inventario sin modificar el estado del sistema.  
+**• Flujos Principales:**
+- Obtener todas las entradas de inventario.  
+- Obtener entradas por usuario específico.  
+- Obtener entradas por lote de café.  
+- Obtener entrada específica por ID.  
+
+**Event Handlers**
+
+**• Estado:** No se han identificado Event Handlers en este bounded context.  
+**• Razón:** El contexto de Management se centra en operaciones CRUD directas sobre inventario, sin procesamiento de eventos de dominio. 
+
+---
+
+**Bounded Context: Preparation**
+**Command Handlers**
+
+**RecipeCommandServiceImpl**
+- **Tipo:** Command Handler  
+- **Propósito:** Gestiona creación, actualización y eliminación de recetas.  
+
+**PortfolioCommandServiceImpl**
+- **Tipo:** Command Handler  
+- **Propósito:** Gestiona creación, actualización y eliminación de portafolios de recetas.  
+
+**IngredientCommandServiceImpl**
+- **Tipo:** Command Handler  
+- **Propósito:** Gestiona creación, actualización y eliminación de ingredientes.  
+-
+**Query Handlers**
+
+**RecipeQueryServiceImpl**
+- **Tipo:** Query Handler  
+- **Propósito:** Consultas de recetas (todas, por ID).  
+
+**PortfolioQueryServiceImpl**
+- **Tipo:** Query Handler  
+- **Propósito:** Consultas de portafolios (todos, por ID, por usuario).  
+
+**IngredientQueryServiceImpl**
+- **Tipo:** Query Handler  
+- **Propósito:** Consultas de ingredientes por receta.  
+
+
+En esta sección se muestran las clases que manejan los flujos de procesos del negocio, considerando las capacidades de la aplicación en relación al bounded context. Se incluyen Command Handlers, Query Handlers y, si corresponde, Event Handlers.
+
+**Command Handlers**
+
+**CoffeeLotCommandServiceImpl**  
+- **Tipo:** Command Handler  
+- **Propósito:** Gestiona creación, actualización y eliminación de lotes de café.  
+
+**SupplierCommandServiceImpl**  
+- **Tipo:** Command Handler  
+- **Propósito:** Gestiona creación, actualización y eliminación de proveedores de café.  
+
+**RoastProfileCommandServiceImpl**  
+- **Tipo:** Command Handler  
+- **Propósito:** Gestiona creación, actualización y eliminación de perfiles de tostado.  
+
+---
+**Bounded Context: Production**
+
+**Query Handlers**
+
+**CoffeeLotQueryServiceImpl**  
+- **Tipo:** Query Handler  
+- **Propósito:** Consultas de lotes de café.  
+- **Flujos Principales:**  
+  - Obtener todos los lotes.  
+  - Obtener lote por ID.  
+  - Obtener lotes por usuario.  
+  - Obtener lotes por proveedor.  
+
+**SupplierQueryServiceImpl**  
+- **Tipo:** Query Handler  
+- **Propósito:** Consultas de proveedores de café.  
+- **Flujos Principales:**  
+  - Obtener todos los proveedores.  
+  - Obtener proveedor por ID.  
+  - Obtener proveedores por usuario.  
+
+**RoastProfileQueryServiceImpl**  
+- **Tipo:** Query Handler  
+- **Propósito:** Consultas de perfiles de tostado.  
+- **Flujos Principales:**  
+  - Obtener todos los perfiles.  
+  - Obtener perfil por ID.  
+  - Obtener perfiles por usuario.  
+  - Obtener perfiles por lote de café.  
+
+
+**Event Handlers**
+
+- **Estado:** No se han identificado Event Handlers en este bounded context.  
+- **Razón:** Production se centra en operaciones CRUD sobre lotes, proveedores y perfiles de tostado, sin procesamiento de eventos de dominio.  
+
+---
+
+
 
 ### 2.6.1.4. Infrastructure Layer
-_Contenido pendiente._
+
+En esta capa se presentan las clases que acceden a servicios externos, como bases de datos. Aquí se incluye la implementación de repositorios definidos en la capa de dominio.
+
+
+**Bounded Context: Coffees**
+
+**Repository Implementations**
+
+**CoffeeRepository**
+**• Tipo:** Repository Implementation  
+**• Propósito:** Gestiona la persistencia de la entidad `Coffee` en la base de datos.  
+**• Capacidades Principales:**
+- Guardar y recuperar cafés.  
+- Buscar un café por nombre.  
+- Verificar si existe un café con un nombre específico.
+
+---
+
+Bounded Context: Management
+
+**Repository Implementations**
+
+**InventoryEntryRepository**
+
+**• Tipo:** Repository Implementation  
+**• Propósito:** Gestiona la persistencia de la entidad `InventoryEntry` en la base de datos.  
+**• Capacidades Principales:**
+- Guardar, actualizar y eliminar entradas de inventario.  
+- Buscar entradas por usuario.  
+- Buscar entradas por lote de café.  
+- Buscar entradas combinando usuario y lote.  
+
+---
+
+**Bounded Context: Preparation**
+**Infrastructure Layer**
+
+**Repository Implementations**
+
+**RecipeRepository**
+- **Tipo:** Repository  
+- **Propósito:** Persistencia de `Recipe`.  
+- **Consultas:** `findByUserId`, `findByPortfolioId`.  
+
+**PortfolioRepository**
+- **Tipo:** Repository  
+- **Propósito:** Persistencia de `Portfolio`.  
+- **Consultas:** `findAllByUserId`.  
+
+#### IngredientRepository
+- **Tipo:** Repository  
+- **Propósito:** Persistencia de `Ingredient`.  
+- **Consultas:** `findByRecipeId`.  
+
+---
+
+**Bounded Context: Production**
+
+
+**Repository Implementations**
+
+**CoffeeLotRepository**  
+- **Tipo:** Repository Implementation  
+- **Propósito:** Gestiona la persistencia de `CoffeeLot`.  
+- **Consultas:** `findByUserId`, `findBySupplierId`, `findByUserIdAndSupplierId`.  
+
+**SupplierRepository**  
+- **Tipo:** Repository Implementation  
+- **Propósito:** Gestiona la persistencia de `Supplier`.  
+- **Consultas:** `findByUserId`.  
+
+**RoastProfileRepository**  
+- **Tipo:** Repository Implementation  
+- **Propósito:** Gestiona la persistencia de `RoastProfile`.  
+- **Consultas:** `findByUserId`, `findByCoffeeLotId`, `findByUserIdAndCoffeeLotId`.  
+
+---
+
+**Bounded Context: Profiles**
+
+**Command Handlers**
+
+**ProfileCommandServiceImpl**  
+- **Tipo:** Command Handler  
+- **Propósito:** Implementa la lógica de negocio para manejar los comandos relacionados con la gestión de perfiles de usuario.  
+- **Flujos Principales:**  
+  - **CreateProfileCommand** → Crea un perfil de usuario validando la unicidad del email.  
+  - **UpdateProfileCommand** → Actualiza un perfil existente (nombre, email, cafetería, experiencia, método de pago, plan, etc.).  
+
+
+**Query Handlers**
+
+**ProfileQueryServiceImpl**  
+- **Tipo:** Query Handler  
+- **Propósito:** Implementa la lógica de negocio para consultas relacionadas con la recuperación de perfiles.  
+- **Flujos Principales:**  
+  - **GetProfileByIdQuery** → Recupera un perfil por su ID.  
+  - **GetProfileByEmailQuery** → Recupera un perfil por su email.  
+  - **GetAllProfilesQuery** → Recupera todos los perfiles registrados.  
+
+
+**Event Handlers**
+
+- **Estado:** No se han identificado Event Handlers en este bounded context.  
+- **Razón:** Aunque se publican eventos de dominio (`ProfileCreatedEvent`), no existen handlers específicos que los procesen localmente.  
+
+---
+
+**Bounded Context: Production**
+
+**Repository Implementations**
+
+**ProfileRepository**  
+- **Tipo:** Repository Implementation  
+- **Propósito:** Gestiona la persistencia de la entidad `Profile`.  
+- **Consultas Principales:**  
+  - `findByEmailAddress(EmailAddress)` → Buscar un perfil por email.  
+  - `existsByEmailAddress(EmailAddress)` → Verificar si existe un perfil con un email específico.  
+
 
 ### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
-_Contenido pendiente._
+
+### SPA
+
+**Auth**
+<td><img src="img\C4 Frontend Componentes AUTH.png"></td>
+
+### Api Application
+
+**Coffee Production Bounded Context**
+
+<td><img src="img\C4 Backend Componentes COFFEE-PRODUCTION.png"></td>
+
+**Profiles Bounded Context**
+
+<td><img src="img\C4 Backend Componentes PROFILES.png"></td>
+
+**IAM Bounded Context**
+
+<td><img src="img\C4 Backend Componentes IAM.png"></td>
 
 ### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
-_Contenido pendiente._
 
 #### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-_Contenido pendiente._
+
+### Profiles
+
+**Domain**
+<td><img src="img\domain.png"></td>
+
+**Infrastructure**
+<td><img src="img\infrastructure.png"></td>
+
+**Interfaces**
+<td><img src="img\interfaces.png"></td>
+
+**Application**
+<td><img src="img\application.png"></td>
+
+### IAM
+
+**Domain**
+<td><img src="img\domainIAM.png"></td>
+
+**Infrastructure**
+<td><img src="img\infraestructuraIAM.png"></td>
+
+**Interfaces**
+<td><img src="img\interfaces.png"></td>
+
+**Application**
+<td><img src="img\applicationIAM.png"></td>
+
+### Shared
+<td><img src="img\cl-class-diagram-shared NUEVO.png"></td>
+
 
 #### 2.6.1.6.2. Bounded Context Database Design Diagram
-_Contenido pendiente._
+El diseño de base de datos es el proceso de organizar y estructurar los datos en un sistema, creando tablas, relaciones y reglas para garantizar eficiencia, integridad y facilidad de acceso. Este diseño asegura que los datos se almacenen de manera coherente y sean fáciles de gestionar, consultar y mantener a medida que el sistema crece y evoluciona.
+### 4.8.1. Database Diagram.
+<td><img src="img\Database_Diagram.png"></td>
+
 
 # Conclusiones
 _Contenido pendiente._
