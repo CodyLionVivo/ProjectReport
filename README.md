@@ -1446,7 +1446,7 @@ _Contenido pendiente._
 
 
 ## 2.4.2. Impact Mapping
-_Contenido pendiente._
+<img src="./img/chapter2/impactMapping_Barista.png">
 
 ## 2.4.3. Product Backlog
 _Contenido pendiente._
