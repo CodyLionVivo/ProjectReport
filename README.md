@@ -1001,7 +1001,7 @@ Dividimos la guía en **dos bloques** por segmento. El **Bloque A (descubrimient
               <li><strong>Apellidos:</strong> Alvarado Flores</li>
               <li><strong>Edad:</strong> 23</li>
               <li><strong>Distrito:</strong> San Borja</li>
-              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/Edy1wJCkxbxOrmrntCJmRaYBsXZyxHgX7BLh-aGeqQHCDQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZpUwNr" target="_blank">Ver video</a></li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EdrzyrYimb5Ail4Jx6mqBMEBFv7kOmMJCXt7YLxTAVuznw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MmQAAK" target="_blank">Ver video</a></li>
               <li><strong>Timestamp:</strong> 00:00</li>
               <li><strong>Duración:</strong> 06:17</li>
             </ul>
@@ -1041,13 +1041,13 @@ Dividimos la guía en **dos bloques** por segmento. El **Bloque A (descubrimient
           <div style="flex: 1; display: flex; flex-direction: column;">
             <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
-              <li><strong>Nombres:</strong> William Martín</li>
-              <li><strong>Apellidos:</strong> Salcedo Vásquez</li>
-              <li><strong>Edad:</strong> 57</li>
-              <li><strong>Distrito:</strong> San Juan de Lurigancho</li>
-              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
-              <li><strong>Timestamp:</strong> 00:00</li>
-              <li><strong>Duración:</strong> 04:51</li>
+              <li><strong>Nombres:</strong> Mario Joaquin</li>
+              <li><strong>Apellidos:</strong> Lopez Acuña</li>
+              <li><strong>Edad:</strong> 25</li>
+              <li><strong>Distrito:</strong> La Molina</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EdrzyrYimb5Ail4Jx6mqBMEBFv7kOmMJCXt7YLxTAVuznw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MmQAAK" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 06:17</li>
+              <li><strong>Duración:</strong> 06:25</li>
             </ul>
           </div>
           <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="">
@@ -1085,13 +1085,145 @@ Dividimos la guía en **dos bloques** por segmento. El **Bloque A (descubrimient
           <div style="flex: 1; display: flex; flex-direction: column;">
             <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
             <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
-              <li><strong>Nombres:</strong> William Martín</li>
-              <li><strong>Apellidos:</strong> Salcedo Vásquez</li>
-              <li><strong>Edad:</strong> 57</li>
-              <li><strong>Distrito:</strong> San Juan de Lurigancho</li>
-              <li><strong>URL Entrevista:</strong> <a href="" target="_blank">Ver video</a></li>
-              <li><strong>Timestamp:</strong> 00:00</li>
-              <li><strong>Duración:</strong> 04:51</li>
+              <li><strong>Nombres:</strong> Jorge Rolando</li>
+              <li><strong>Apellidos:</strong> Garcia Roque</li>
+              <li><strong>Edad:</strong> 27</li>
+              <li><strong>Distrito:</strong> San Miguel</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EdrzyrYimb5Ail4Jx6mqBMEBFv7kOmMJCXt7YLxTAVuznw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MmQAAK" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 12:43</li>
+              <li><strong>Duración:</strong> 07:48</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
+
+<table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          margin-bottom: 40px;">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: DUEÑO DE CAFETERÍA</strong></th>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>#1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> Jorge Rolando</li>
+              <li><strong>Apellidos:</strong> Garcia Roque</li>
+              <li><strong>Edad:</strong> 27</li>
+              <li><strong>Distrito:</strong> San Miguel</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EdrzyrYimb5Ail4Jx6mqBMEBFv7kOmMJCXt7YLxTAVuznw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MmQAAK" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 20:31</li>
+              <li><strong>Duración:</strong> 03:39</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
+
+<table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          margin-bottom: 40px;">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: DUEÑO DE CAFETERÍA</strong></th>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>#2</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> Jorge Rolando</li>
+              <li><strong>Apellidos:</strong> Garcia Roque</li>
+              <li><strong>Edad:</strong> 27</li>
+              <li><strong>Distrito:</strong> San Miguel</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EdrzyrYimb5Ail4Jx6mqBMEBFv7kOmMJCXt7YLxTAVuznw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MmQAAK" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 24:09</li>
+              <li><strong>Duración:</strong> 04:24</li>
+            </ul>
+          </div>
+          <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="page-break-before: always;"></div>
+
+<table style="
+          width: 100%;
+          border-collapse: collapse;
+          font-family: Arial, sans-serif;
+          margin-bottom: 40px;">
+  <thead>
+    <tr>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>SEGMENTO OBJETIVO: DUEÑO DE CAFETERÍA</strong></th>
+      <th style="
+            text-align: left;
+            padding: 12px;
+            background-color: #f0f0f0;
+            font-size: 22px;"><strong>#3</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;" style="padding: 0; vertical-align: top; background-color: #fff border-top: 1px solid #ddd;">
+        <div style="display: flex; gap: 24px; align-items: flex-start; background-color: #fafafa; border-radius: 10px; padding: 24px;">
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <p style="font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 12px; padding-bottom: 6px;">Datos generales</p>
+            <ul style="margin: 0; padding-left: 20px; list-style-type: disc; font-size: 1.05em; line-height: 1.7; color: #333;">
+              <li><strong>Nombres:</strong> Jorge Rolando</li>
+              <li><strong>Apellidos:</strong> Garcia Roque</li>
+              <li><strong>Edad:</strong> 27</li>
+              <li><strong>Distrito:</strong> San Miguel</li>
+              <li><strong>URL Entrevista:</strong> <a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20211b994_upc_edu_pe/EdrzyrYimb5Ail4Jx6mqBMEBFv7kOmMJCXt7YLxTAVuznw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MmQAAK" target="_blank">Ver video</a></li>
+              <li><strong>Timestamp:</strong> 28:32</li>
+              <li><strong>Duración:</strong> 04:55</li>
             </ul>
           </div>
           <img style="max-width: 40%; height: auto; border-radius: 10px; object-fit: cover; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" src="">
@@ -1292,12 +1424,7 @@ Los **User Personas** se construyeron a partir de los hallazgos de las entrevist
 
 Profesional de barra en una cafetería de especialidad, responsable del servicio central en tienda (preparación, calibración y atención al cliente). Necesita **agilizar procesos**, **mantener consistencia** en taza y **responder rápido** en horas pico. Valora el trabajo en equipo y la comunicación clara, busca **optimizar el tiempo** sin sacrificar calidad.
 
-<div style="text-align: center;">
-  <img 
-      src="/img/chapter2/userPersona_Barista.png" 
-      alt="User Persona de Barista" 
-      style="max-width: 55%; height: auto;">
-</div>
+![Foto](./img/chapter2/userPersona_Barista.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -1340,12 +1467,7 @@ En esta sección se presentan los **User Journey Maps** de cada *User Persona* (
 
 ### 2.3.3. User Journey Mapping — Miguel Bergara (Barista)
 
-<div style="text-align: center;">
-  <img 
-      src="/img/chapter2/userJourneyMap_MiguelVergara.png" 
-      alt="User Journey Map de Barista, reflejando el flujo de trabajo"
-      style="max-width: 100%; height: auto;">
-</div>
+![Foto](./img/chapter2/userJourneyMap_MiguelVergara.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -1355,10 +1477,7 @@ Se elaboraron **Empathy Maps** para los dos *User Personas* de Xantina: **Miguel
 
 **Baristas**
 
-<img 
-      src="/img/chapter2/empathyMap_Barista.png" 
-      alt="Empathy Map del Barista, mostrando su proceso de pensamiento y sentimientos"
-      style="max-width: 100%; height: auto;">
+![Foto](./img/chapter2/empathyMap_Barista.png)
 
 ### 2.3.5. Ubiquitous Language
 
