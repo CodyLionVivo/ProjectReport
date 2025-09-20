@@ -1495,6 +1495,10 @@ Se elaboraron **Empathy Maps** para los dos *User Personas* de Xantina: **Miguel
 
 ![Foto](./img/chapter2/empathyMap_Barista.png)
 
+**Dueños de cafeterías**
+
+![Foto](./img/chapter2/empathyMap_Owners.png)
+
 ### 2.3.5. Ubiquitous Language
 
 Glosario de términos clave del dominio del café de especialidad utilizados en AromaTech/Xantina:
