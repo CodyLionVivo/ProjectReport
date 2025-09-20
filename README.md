@@ -1617,20 +1617,38 @@ La presente sección detalla la especificación de requerimientos del sistema Xa
 _Contenido pendiente._
 
 # 2.5. Strategic-Level Domain-Driven Design
-_Contenido pendiente._
+En esta sección se aborda el Diseño Estratégico con Domain Driven Design (DDD) para el sistema Xantina. El objetivo es identificar y delimitar los diferentes subdominios del problema, comprender cómo interactúan entre sí y establecer los Bounded Contexts que estructurarán la solución. A nivel estratégico, este análisis permite alinear el modelo de negocio con la arquitectura técnica, clarificando responsabilidades, evitando ambigüedades en el lenguaje y facilitando la comunicación entre los equipos de desarrollo y los stakeholders.
 
 ## 2.5.1. EventStorming
 
-![Foto](./img/chapter2/EventStorming.png)
+<img 
+      src="/img/chapter2/ddd1.png" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
+
 
 ### 2.5.1.1. Candidate Context Discovery
-_Contenido pendiente._
+<img 
+      src="/img/chapter2/ddd2.png" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
 
 ### 2.5.1.2. Domain Message Flows Modeling
-_Contenido pendiente._
+<img 
+      src="/img/chapter2/dd3.png" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
 
 ### 2.5.1.3. Bounded Context Canvases
-_Contenido pendiente._
+<img 
+      src="/img/chapter2/bccExtraccion.jpg" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
+
+<img 
+      src="/img/chapter2/bccSocial.jpg" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
 
 ## 2.5.2. Context Mapping
 <img src="./img/chapter2/contextmapping.png">
@@ -3913,9 +3931,15 @@ El diseño de base de datos es el proceso de organizar y estructurar los datos e
 - Xantina encaja con claridad en el nicho de cafeterías de especialidad en Lima: resuelve dos trabajos críticos —aprendizaje práctico y estandarización operativa— donde hoy dominan soluciones dispersas (cursos presenciales y contenido suelto en redes). El diferencial no es “tener más contenido”, sino insertarse en el flujo diario de barra con recetas aprobadas, checklist y catas accionables. El go-to-market más sólido combina pilotos por tienda, alianzas con tostadores y escuelas y un modelo freemium→B2B para equipos. El principal riesgo es la adopción en turno; queda mitigado con co-diseño en tiendas piloto y evidencia de uso en momentos clave (apertura, pico y cierre).
 - El diseño propuesto —mobile-first, offline-friendly, flujos cortos y lenguaje ubicuo de barismo— es viable y mantenible para iteraciones rápidas. La separación por dominios (recetas, calibración, catas, cápsulas) y la trazabilidad de cambios (recetas “de la casa” con sello y fecha) soportan consistencia entre turnos. Priorizar búsqueda por método/lote, acceso en ≤2 toques y checklists de ≤1 minuto asegura desempeño en condiciones reales (ruido, manos ocupadas, tiempo limitado). La instrumentación de eventos (receta abierta, checklist completado, cata registrada) permitirá validar hipótesis y dirigir el roadmap con datos, cuidando privacidad y seguridad.
 - La investigación (5W+2H, entrevistas, personas, journey y empathy maps) confirma que el valor emerge cuando la app ahorra decisiones y fricción en el momento exacto: abrir turno, atender pico y cerrar con acuerdos. Xantina no solo mejora la taza; eleva la cultura cafetera con cápsulas breves y visibiliza el trabajo en origen, fortaleciendo la conversación con el cliente. El éxito sostenido dependerá de gobernanza de recetas (quién aprueba, cuándo cambia) y de un ciclo continuo hipótesis→experimento→evidencia→decisión, manteniendo al equipo motivado porque ve que sus aportes se convierten en mejoras reales.
+El análisis realizado permitió comprender con mayor profundidad los problemas y oportunidades en el ecosistema del café de especialidad, tanto en el entorno profesional (baristas y dueños de cafeterías) como en el doméstico (home brewers). A través de herramientas como Event Storming, User Personas, User Journey Mapping y Empathy Mapping, se identificaron los principales flujos de valor, los puntos de dolor en la experiencia de los usuarios y las necesidades que guían el diseño de la solución.
+
+El ejercicio de Domain Driven Design a nivel estratégico facilitó la identificación de Bounded Contexts clave, Extracción y Social, así como sus interacciones mediante mensajes, eventos y comandos. Esta separación aporta claridad sobre los límites del dominio, evita ambigüedades en el lenguaje y sienta las bases para una arquitectura modular, escalable y alineada con los objetivos del negocio.
+
+En conjunto, los hallazgos evidencian que la aplicación Xantina no solo debe enfocarse en la estandarización y registro de extracciones, sino también en la interacción social y la cultura del café, aspectos que fortalecen la adopción y generan valor adicional para los usuarios. Este primer avance constituye un marco sólido para continuar con la especificación detallada de requerimientos y el diseño técnico, asegurando que la solución responda de manera efectiva a las necesidades del mercado identificado.
 
 # Bibliografía
-_Contenido pendiente._
+Tune, N. (2020, 12 enero). Modelling Bounded Contexts with the Bounded Context Canvas: A Workshop Recipe. Medium. https://medium.com/nick-tune-tech-strategy-blog/modelling-bounded-contexts-with-the-bounded-context-design-canvas-a-workshop-recipe-1f123e592ab
+
 
 # Anexos
 - Reporte: [Enlace](https://github.com/CodyLionVivo/ProjectReport)
