@@ -134,8 +134,8 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>CodyLionVivo</td>
   </tr>
   <tr>
-	<td>León Vivas, Fabrizio Amir</td>
-	<td>CodyLionVivo</td>
+	<td>Oliva López, Fabián Alejandro</td>
+	<td>FabulousFabStar</td>
   </tr>
   <tr>
 	<td>Mondoñedo Rodriguez, Juan Diego Javier</td>
@@ -243,7 +243,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           Realiza una investigación mediante el uso de entrevistas para la validación de los items hechos en el Lean UX Process.
           </li>
 					<li><strong>Juan Diego Mondoñedo:</strong> Analicé los resultados de nuestras entrevistas para desarrollar parte del needfinding y definir las user stories </li>
-          <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabián Oliva López:</strong> Investigué acerca de posibles competidores y desarrollo su respectivo análisis competitivo a su vez de estrategias frente a estos competidores</li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Investigué el dominio del café de especialidad y desarrollé la arquitectura completa del sistema usando metodologías como Lean UX y Domain-Driven Design.</li>
@@ -264,7 +264,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 					<li><strong>Fabrizio León:</strong>
           Fue importante que aprenda sobre del modelo de negocio para así desarrollar los artefactos de una mejora manera. Además, investigue más acerca del DDD para su correcto planteamiento. </li>
 					<li><strong>Juan Diego Mondoñedo:</strong> Refresqué mis conocimientos sobre las user stories e investigué sobre el ambiente laboral de nuestro publico objetivo para plantear user stories pertinentes. </li>
-          <li><strong>Fabrizio:</strong> </li>
+          <li><strong>Fabian Oliva López:</strong> Pude aprender la necesidad de investigar acerca de competidores lo cual ayuda a ver puntos estrategicos los cuales puede improvisar nuestro trabajor para entregar un producto de buena calidad </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Aprendí sobre café de especialidad desde cero y estudié nuevas metodologías de desarrollo que no conocía previamente.</li>
@@ -311,7 +311,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
       <td style="border: 1px solid #000; padding: 8px;">Identificar correctamente las necesidades de nuestros segmentos mediante el needfinding e interpretarlas para definir user stories adecuados para su caso.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Oliva López Fabián Alejandro;</td>
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
       <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
     </tr>
@@ -406,9 +406,9 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
                 </td>
             </tr>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="" alt="Foto de "></td>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202220783</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img width="192" height="185" alt="image" src="https://github.com/user-attachments/assets/57fbf2a0-8aee-432f-b12c-32d9b0a2f53e" />
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Oliva López, Fabián Alejandro</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202312013</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
                 <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
                     <ul>
