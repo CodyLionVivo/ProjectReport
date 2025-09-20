@@ -130,10 +130,6 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 	<td>Gossk</td>
   </tr>
   <tr>
-	<td>León Vivas, Fabrizio Amir</td>
-	<td>CodyLionVivo</td>
-  </tr>
-  <tr>
 	<td>Oliva López, Fabián Alejandro</td>
 	<td>FabulousFabStar</td>
   </tr>
