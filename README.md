@@ -1501,7 +1501,6 @@ Estado cuando la máquina está apagada y lista para limpieza final.
 Leche con textura perfecta para hacer arte latte.
 
 # 2.4. Requirements specification
-_Contenido pendiente._
 
 ## 2.4.1. User Stories
 | EPIC ID | TÍTULO DE LA ÉPICA | Objetivo Principal |
