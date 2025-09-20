@@ -3902,5 +3902,5 @@ El diseño de base de datos es el proceso de organizar y estructurar los datos e
 _Contenido pendiente._
 
 # Anexos
-_Contenido pendiente._
+- Reporte: [Enlace](https://github.com/CodyLionVivo/ProjectReport)
 
