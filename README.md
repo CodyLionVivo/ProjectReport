@@ -1534,7 +1534,7 @@ Estado cuando la máquina está apagada y lista para limpieza final.
 Leche con textura perfecta para hacer arte latte.
 
 # 2.4. Requirements specification
-_Contenido pendiente._
+La presente sección detalla la especificación de requerimientos del sistema Xantina, orientado a la democratización del aprendizaje del café de especialidad y la estandarización de procesos en barra y en el hogar. Se describen los requerimientos funcionales y no funcionales que guiarán el diseño y desarrollo de la aplicación, asegurando que responda a las necesidades de los usuarios principales —baristas, dueños de cafeterías y entusiastas avanzados— y que cumpla con criterios de calidad, usabilidad, seguridad y escalabilidad. Esta especificación constituye la base para la validación con los stakeholders y servirá como marco de referencia durante el ciclo de desarrollo del proyecto.
 
 ## 2.4.1. User Stories
 | EPIC ID | TÍTULO DE LA ÉPICA | Objetivo Principal |
