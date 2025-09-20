@@ -1428,11 +1428,19 @@ Profesional de barra en una cafetería de especialidad, responsable del servicio
 
 <div style="page-break-after: always;"></div>
 
+**User Persona: Dueño de cafetería**
+
+Emprendedor y administrador de una tienda de café de especialidad, encargado de velar por la operación, calidad y capacitación del personal. Necesita **estandarizar recetas**, acelerar el onboarding de nuevos baristas y reducir costos operativos mediante un control más claro de procesos e insumos. Valora la **consistencia de marca, la eficiencia operativa y la satisfacción del cliente,** y busca herramientas que le permitan mantener un **equipo alineado y autónomo en el día a día.
+
+![Foto](./img/chapter2/userPersona_owner.png)
+
+<div style="page-break-after: always;"></div>
+
 ### 2.3.2. User Task Matrix
 
 En el User Task Matrix se especifican las tareas claves de cada segmento, seguidos por su frecuencia e importancia.
 
-| Tarea clave (independiente del software) | Miguel Vergara — Frec. | Miguel Vergara — Imp. | [Segundo segmento] — Frec. | [Segundo segmento] — Imp. |
+| Tarea clave (independiente del software) | Miguel Vergara — Frec. | Miguel Vergara — Imp. | Harry Salazar — Frec. | Harry Salazar — Imp. |
 |---|---|---|---|---|
 | Calibrar espresso al inicio de turno | Alta | Alta | Alta | Alta |
 | Confirmar receta “de la casa” por método/lote | Alta | Alta | Alta | Alta |
@@ -1465,9 +1473,17 @@ En esta sección se presentan los **User Journey Maps** de cada *User Persona* (
 
 * User Journey Map de Miguel Vergara:
 
-### 2.3.3. User Journey Mapping — Miguel Bergara (Barista)
+### 2.3.3. User Journey Mapping — Miguel Vergara (Barista)
 
 ![Foto](./img/chapter2/userJourneyMap_MiguelVergara.png)
+
+<div style="page-break-after: always;"></div>
+
+* User Journey Map de Harry Salazar:
+
+### 2.3.3. User Journey Mapping — Harry Salazar (Owner)
+
+![Foto](./img/chapter2/userJourneyMap_HarrySalazar.png)
 
 <div style="page-break-after: always;"></div>
 
