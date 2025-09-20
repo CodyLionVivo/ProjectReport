@@ -309,8 +309,8 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Oliva López Fabián Alejandro;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Realizar un análisis detallado de los competidores para identificar sus fortalezas, debilidades y estrategias de mercado que puedan impactar en el proyecto.</td>
+      <td style="border: 1px solid #000; padding: 8px;">Proponer estrategias y tácticas frente a los competidores, orientadas a diferenciar el proyecto y lograr una posición competitiva más sólida.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Vidal Castro Miguel Angel</td>
