@@ -243,7 +243,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Miguel Vidal Castro</strong> Determiné mediante las entrevistas del segmento objetivo de dueño de café, información relevante para entender que bounded contexts desarrollar en la aplicación para poder cubrir sus necesidades. </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Investigué el dominio del café de especialidad y desarrollé la arquitectura completa del sistema usando metodologías como Lean UX y Domain-Driven Design.</li>
-					<li><strong>Guillermo:</strong>  </li>
+					<li><strong>Guillermo: Desarrollé toda la parte de DDD como el event storming identificando los principales bounded context.</strong>  </li>
 				</ul>
 			</td>
 			<td>
@@ -264,7 +264,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Miguel Vidal Castro:</strong> Pude aprendar a investigar sobre como realizar un diagrama C4, reforzando conocimientos pasados. Realicé un Event Storming del proyecto lo que me ayudó a identificar los bounded contexts</li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Aprendí sobre café de especialidad desde cero y estudié nuevas metodologías de desarrollo que no conocía previamente.</li>
-					<li><strong>Guillermo:</strong>  </li>
+					<li><strong>Guillermo: Realicé investigación del modelo de negocio del tema en cuestión para el trabajo lo cual me permitió entender la aplicación de conocimientos de software a nivel de dirección. </strong>  </li>
 				</ul>
 			</td>
 			<td>
@@ -298,8 +298,9 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Tantaleán Mesta, Guillermo Fabián</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Definir y documentar la arquitectura de software de Xantina mediante la aplicación de Domain-Driven Design, incluyendo la delimitación de bounded contexts, modelos de comunicación y decisiones estratégicas del dominio.
+;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Elaborar y validar el proceso Lean UX para Xantina, integrando problem statements, supuestos, hipótesis y el Lean UX Canvas, como base para el diseño centrado en el usuario.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Mondoñedo Rodriguez, Juan Diego Javier</td>
