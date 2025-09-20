@@ -1614,7 +1614,29 @@ La presente sección detalla la especificación de requerimientos del sistema Xa
 <img src="./img/chapter2/impactMapping_Barista.png">
 
 ## 2.4.3. Product Backlog
-_Contenido pendiente._
+# 📌 Product Backlog – Xantina
+
+| ID        | Historia de Usuario (resumen)             | Épica                              | Prioridad | Estado  |
+|-----------|-------------------------------------------|------------------------------------|-----------|---------|
+| EP01/US01 | Creación de cuenta y unión a cafetería    | Gestión de Cuentas de Usuario      | Alta      | To Do   |
+| EP01/US02 | Iniciar sesión                            | Gestión de Cuentas de Usuario      | Alta      | To Do   |
+| EP01/US03 | Recuperar acceso (contraseña)             | Gestión de Cuentas de Usuario      | Media     | To Do   |
+| EP02/US04 | Crear y guardar una receta                | Gestión de Recetas                 | Alta      | To Do   |
+| EP02/US05 | Acceder a una receta aprobada rápidamente | Gestión de Recetas                 | Alta      | To Do   |
+| EP02/US06 | Actualizar receta por lote                | Gestión de Recetas                 | Alta      | To Do   |
+| EP02/US07 | Compartir receta con el equipo            | Gestión de Recetas                 | Alta      | To Do   |
+| EP03/US08 | Seguir checklist de calibración           | Calibración y Operación en Barra   | Alta      | To Do   |
+| EP03/US09 | Usar cronómetro integrado                 | Calibración y Operación en Barra   | Media     | To Do   |
+| EP04/US10 | Registrar una cata simplificada           | Registro y Análisis de Catas       | Alta      | To Do   |
+| EP04/US11 | Comparar catas del mismo café             | Registro y Análisis de Catas       | Media     | To Do   |
+| EP05/US12 | Controlar lotes de café                   | Gestión de Inventario y Trazabilidad | Alta    | To Do   |
+| EP05/US13 | Recibir alerta de stock bajo              | Gestión de Inventario y Trazabilidad | Alta    | To Do   |
+| EP06/US14 | Registrar a un nuevo barista              | Gestión de Usuarios y Permisos     | Alta      | To Do   |
+| EP06/US15 | Asignar roles y permisos                  | Gestión de Usuarios y Permisos     | Alta      | To Do   |
+| EP06/US16 | Dar de baja a un usuario                  | Gestión de Usuarios y Permisos     | Alta      | To Do   |
+| EP07/US17 | Generar reporte de consumo                | Reportes y Análisis                | Media     | To Do   |
+| EP08/US18 | Enviar comunicados al equipo              | Comunicación y Difusión de Info    | Media     | To Do   |
+| EP08/US19 | Compartir actualizaciones de lote         | Comunicación y Difusión de Info    | Media     | To Do   |
 
 # 2.5. Strategic-Level Domain-Driven Design
 En esta sección se aborda el Diseño Estratégico con Domain Driven Design (DDD) para el sistema Xantina. El objetivo es identificar y delimitar los diferentes subdominios del problema, comprender cómo interactúan entre sí y establecer los Bounded Contexts que estructurarán la solución. A nivel estratégico, este análisis permite alinear el modelo de negocio con la arquitectura técnica, clarificando responsabilidades, evitando ambigüedades en el lenguaje y facilitando la comunicación entre los equipos de desarrollo y los stakeholders.
