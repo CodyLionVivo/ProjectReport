@@ -151,7 +151,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 
 Este entregable comprende la elaboración del informe desde el Capítulo I hasta el Capítulo II, desarrollado íntegramente a partir del proceso de investigación en equipo y del diseño del sistema.
 
-<img src="./img/insights_tb1.png">
+<img src="./img/insight_tb1.png">
 
 <div style="page-break-before: always;"></div>
 
@@ -243,7 +243,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Miguel Vidal Castro</strong> Determiné mediante las entrevistas del segmento objetivo de dueño de café, información relevante para entender que bounded contexts desarrollar en la aplicación para poder cubrir sus necesidades. </li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Investigué el dominio del café de especialidad y desarrollé la arquitectura completa del sistema usando metodologías como Lean UX y Domain-Driven Design.</li>
-					<li><strong>Guillermo:</strong>  </li>
+					<li><strong>Guillermo: Desarrollé toda la parte de DDD como el event storming identificando los principales bounded context.</strong>  </li>
 				</ul>
 			</td>
 			<td>
@@ -264,7 +264,7 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
           <li><strong>Miguel Vidal Castro:</strong> Pude aprendar a investigar sobre como realizar un diagrama C4, reforzando conocimientos pasados. Realicé un Event Storming del proyecto lo que me ayudó a identificar los bounded contexts</li>
           <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Aprendí sobre café de especialidad desde cero y estudié nuevas metodologías de desarrollo que no conocía previamente.</li>
-					<li><strong>Guillermo:</strong>  </li>
+					<li><strong>Guillermo: Realicé investigación del modelo de negocio del tema en cuestión para el trabajo lo cual me permitió entender la aplicación de conocimientos de software a nivel de dirección. </strong>  </li>
 				</ul>
 			</td>
 			<td>
@@ -298,8 +298,9 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Tantaleán Mesta, Guillermo Fabián</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Definir y documentar la arquitectura de software de Xantina mediante la aplicación de Domain-Driven Design, incluyendo la delimitación de bounded contexts, modelos de comunicación y decisiones estratégicas del dominio.
+;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Elaborar y validar el proceso Lean UX para Xantina, integrando problem statements, supuestos, hipótesis y el Lean UX Canvas, como base para el diseño centrado en el usuario.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Mondoñedo Rodriguez, Juan Diego Javier</td>
@@ -360,6 +361,19 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="" alt="Foto de "></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202224135</td>
+                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
+                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
+                    <ul>
+                        <li>Diseño web</li>
+                        <li>Gestión y diseño de bases de datos SQL y noSQL</li>
+                        <li>Programación en C++ y Python</li>
+                    </ul>
+                </td>
+            </tr>
             <tr>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Fabrizio.png" alt="Foto de Fabrizio León"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">León Vivas, Fabrizio Amir</td>
@@ -1415,11 +1429,19 @@ Profesional de barra en una cafetería de especialidad, responsable del servicio
 
 <div style="page-break-after: always;"></div>
 
+**User Persona: Dueño de cafetería**
+
+Emprendedor y administrador de una tienda de café de especialidad, encargado de velar por la operación, calidad y capacitación del personal. Necesita **estandarizar recetas**, acelerar el onboarding de nuevos baristas y reducir costos operativos mediante un control más claro de procesos e insumos. Valora la **consistencia de marca, la eficiencia operativa y la satisfacción del cliente,** y busca herramientas que le permitan mantener un **equipo alineado y autónomo en el día a día.
+
+![Foto](./img/chapter2/userPersona_owner.png)
+
+<div style="page-break-after: always;"></div>
+
 ### 2.3.2. User Task Matrix
 
 En el User Task Matrix se especifican las tareas claves de cada segmento, seguidos por su frecuencia e importancia.
 
-| Tarea clave (independiente del software) | Miguel Vergara — Frec. | Miguel Vergara — Imp. | [Segundo segmento] — Frec. | [Segundo segmento] — Imp. |
+| Tarea clave (independiente del software) | Miguel Vergara — Frec. | Miguel Vergara — Imp. | Harry Salazar — Frec. | Harry Salazar — Imp. |
 |---|---|---|---|---|
 | Calibrar espresso al inicio de turno | Alta | Alta | Alta | Alta |
 | Confirmar receta “de la casa” por método/lote | Alta | Alta | Alta | Alta |
@@ -1452,9 +1474,17 @@ En esta sección se presentan los **User Journey Maps** de cada *User Persona* (
 
 * User Journey Map de Miguel Vergara:
 
-### 2.3.3. User Journey Mapping — Miguel Bergara (Barista)
+### 2.3.3. User Journey Mapping — Miguel Vergara (Barista)
 
 ![Foto](./img/chapter2/userJourneyMap_MiguelVergara.png)
+
+<div style="page-break-after: always;"></div>
+
+* User Journey Map de Harry Salazar:
+
+### 2.3.3. User Journey Mapping — Harry Salazar (Owner)
+
+![Foto](./img/chapter2/userJourneyMap_HarrySalazar.png)
 
 <div style="page-break-after: always;"></div>
 
@@ -1465,6 +1495,10 @@ Se elaboraron **Empathy Maps** para los dos *User Personas* de Xantina: **Miguel
 **Baristas**
 
 ![Foto](./img/chapter2/empathyMap_Barista.png)
+
+**Dueños de cafeterías**
+
+![Foto](./img/chapter2/empathyMap_Owners.png)
 
 ### 2.3.5. Ubiquitous Language
 
@@ -1501,6 +1535,7 @@ Estado cuando la máquina está apagada y lista para limpieza final.
 Leche con textura perfecta para hacer arte latte.
 
 # 2.4. Requirements specification
+La presente sección detalla la especificación de requerimientos del sistema Xantina, orientado a la democratización del aprendizaje del café de especialidad y la estandarización de procesos en barra y en el hogar. Se describen los requerimientos funcionales y no funcionales que guiarán el diseño y desarrollo de la aplicación, asegurando que responda a las necesidades de los usuarios principales —baristas, dueños de cafeterías y entusiastas avanzados— y que cumpla con criterios de calidad, usabilidad, seguridad y escalabilidad. Esta especificación constituye la base para la validación con los stakeholders y servirá como marco de referencia durante el ciclo de desarrollo del proyecto.
 
 ## 2.4.1. User Stories
 | EPIC ID | TÍTULO DE LA ÉPICA | Objetivo Principal |
@@ -1580,23 +1615,63 @@ Leche con textura perfecta para hacer arte latte.
 <img src="./img/chapter2/impactMapping_Barista.png">
 
 ## 2.4.3. Product Backlog
-_Contenido pendiente._
+# 📌 Product Backlog – Xantina
+
+| ID        | Historia de Usuario (resumen)             | Épica                              | Prioridad | Estado  |
+|-----------|-------------------------------------------|------------------------------------|-----------|---------|
+| EP01/US01 | Creación de cuenta y unión a cafetería    | Gestión de Cuentas de Usuario      | Alta      | To Do   |
+| EP01/US02 | Iniciar sesión                            | Gestión de Cuentas de Usuario      | Alta      | To Do   |
+| EP01/US03 | Recuperar acceso (contraseña)             | Gestión de Cuentas de Usuario      | Media     | To Do   |
+| EP02/US04 | Crear y guardar una receta                | Gestión de Recetas                 | Alta      | To Do   |
+| EP02/US05 | Acceder a una receta aprobada rápidamente | Gestión de Recetas                 | Alta      | To Do   |
+| EP02/US06 | Actualizar receta por lote                | Gestión de Recetas                 | Alta      | To Do   |
+| EP02/US07 | Compartir receta con el equipo            | Gestión de Recetas                 | Alta      | To Do   |
+| EP03/US08 | Seguir checklist de calibración           | Calibración y Operación en Barra   | Alta      | To Do   |
+| EP03/US09 | Usar cronómetro integrado                 | Calibración y Operación en Barra   | Media     | To Do   |
+| EP04/US10 | Registrar una cata simplificada           | Registro y Análisis de Catas       | Alta      | To Do   |
+| EP04/US11 | Comparar catas del mismo café             | Registro y Análisis de Catas       | Media     | To Do   |
+| EP05/US12 | Controlar lotes de café                   | Gestión de Inventario y Trazabilidad | Alta    | To Do   |
+| EP05/US13 | Recibir alerta de stock bajo              | Gestión de Inventario y Trazabilidad | Alta    | To Do   |
+| EP06/US14 | Registrar a un nuevo barista              | Gestión de Usuarios y Permisos     | Alta      | To Do   |
+| EP06/US15 | Asignar roles y permisos                  | Gestión de Usuarios y Permisos     | Alta      | To Do   |
+| EP06/US16 | Dar de baja a un usuario                  | Gestión de Usuarios y Permisos     | Alta      | To Do   |
+| EP07/US17 | Generar reporte de consumo                | Reportes y Análisis                | Media     | To Do   |
+| EP08/US18 | Enviar comunicados al equipo              | Comunicación y Difusión de Info    | Media     | To Do   |
+| EP08/US19 | Compartir actualizaciones de lote         | Comunicación y Difusión de Info    | Media     | To Do   |
 
 # 2.5. Strategic-Level Domain-Driven Design
-_Contenido pendiente._
+En esta sección se aborda el Diseño Estratégico con Domain Driven Design (DDD) para el sistema Xantina. El objetivo es identificar y delimitar los diferentes subdominios del problema, comprender cómo interactúan entre sí y establecer los Bounded Contexts que estructurarán la solución. A nivel estratégico, este análisis permite alinear el modelo de negocio con la arquitectura técnica, clarificando responsabilidades, evitando ambigüedades en el lenguaje y facilitando la comunicación entre los equipos de desarrollo y los stakeholders.
 
 ## 2.5.1. EventStorming
 
-![Foto](./img/chapter2/EventStorming.png)
+<img 
+      src="/img/chapter2/ddd1.png" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
+
 
 ### 2.5.1.1. Candidate Context Discovery
-_Contenido pendiente._
+<img 
+      src="/img/chapter2/ddd2.png" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
 
 ### 2.5.1.2. Domain Message Flows Modeling
-_Contenido pendiente._
+<img 
+      src="/img/chapter2/dd3.png" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
 
 ### 2.5.1.3. Bounded Context Canvases
-_Contenido pendiente._
+<img 
+      src="/img/chapter2/bccExtraccion.jpg" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
+
+<img 
+      src="/img/chapter2/bccSocial.jpg" 
+      alt="Event storming Map de Xantina"
+      style="max-width: 100%; height: auto;">
 
 ## 2.5.2. Context Mapping
 <img src="./img/chapter2/contextmapping.png">
@@ -3879,9 +3954,15 @@ El diseño de base de datos es el proceso de organizar y estructurar los datos e
 - Xantina encaja con claridad en el nicho de cafeterías de especialidad en Lima: resuelve dos trabajos críticos —aprendizaje práctico y estandarización operativa— donde hoy dominan soluciones dispersas (cursos presenciales y contenido suelto en redes). El diferencial no es “tener más contenido”, sino insertarse en el flujo diario de barra con recetas aprobadas, checklist y catas accionables. El go-to-market más sólido combina pilotos por tienda, alianzas con tostadores y escuelas y un modelo freemium→B2B para equipos. El principal riesgo es la adopción en turno; queda mitigado con co-diseño en tiendas piloto y evidencia de uso en momentos clave (apertura, pico y cierre).
 - El diseño propuesto —mobile-first, offline-friendly, flujos cortos y lenguaje ubicuo de barismo— es viable y mantenible para iteraciones rápidas. La separación por dominios (recetas, calibración, catas, cápsulas) y la trazabilidad de cambios (recetas “de la casa” con sello y fecha) soportan consistencia entre turnos. Priorizar búsqueda por método/lote, acceso en ≤2 toques y checklists de ≤1 minuto asegura desempeño en condiciones reales (ruido, manos ocupadas, tiempo limitado). La instrumentación de eventos (receta abierta, checklist completado, cata registrada) permitirá validar hipótesis y dirigir el roadmap con datos, cuidando privacidad y seguridad.
 - La investigación (5W+2H, entrevistas, personas, journey y empathy maps) confirma que el valor emerge cuando la app ahorra decisiones y fricción en el momento exacto: abrir turno, atender pico y cerrar con acuerdos. Xantina no solo mejora la taza; eleva la cultura cafetera con cápsulas breves y visibiliza el trabajo en origen, fortaleciendo la conversación con el cliente. El éxito sostenido dependerá de gobernanza de recetas (quién aprueba, cuándo cambia) y de un ciclo continuo hipótesis→experimento→evidencia→decisión, manteniendo al equipo motivado porque ve que sus aportes se convierten en mejoras reales.
+El análisis realizado permitió comprender con mayor profundidad los problemas y oportunidades en el ecosistema del café de especialidad, tanto en el entorno profesional (baristas y dueños de cafeterías) como en el doméstico (home brewers). A través de herramientas como Event Storming, User Personas, User Journey Mapping y Empathy Mapping, se identificaron los principales flujos de valor, los puntos de dolor en la experiencia de los usuarios y las necesidades que guían el diseño de la solución.
+
+El ejercicio de Domain Driven Design a nivel estratégico facilitó la identificación de Bounded Contexts clave, Extracción y Social, así como sus interacciones mediante mensajes, eventos y comandos. Esta separación aporta claridad sobre los límites del dominio, evita ambigüedades en el lenguaje y sienta las bases para una arquitectura modular, escalable y alineada con los objetivos del negocio.
+
+En conjunto, los hallazgos evidencian que la aplicación Xantina no solo debe enfocarse en la estandarización y registro de extracciones, sino también en la interacción social y la cultura del café, aspectos que fortalecen la adopción y generan valor adicional para los usuarios. Este primer avance constituye un marco sólido para continuar con la especificación detallada de requerimientos y el diseño técnico, asegurando que la solución responda de manera efectiva a las necesidades del mercado identificado.
 
 # Bibliografía
-_Contenido pendiente._
+Tune, N. (2020, 12 enero). Modelling Bounded Contexts with the Bounded Context Canvas: A Workshop Recipe. Medium. https://medium.com/nick-tune-tech-strategy-blog/modelling-bounded-contexts-with-the-bounded-context-design-canvas-a-workshop-recipe-1f123e592ab
+
 
 # Anexos
 - Reporte: [Enlace](https://github.com/CodyLionVivo/ProjectReport)
