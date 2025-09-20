@@ -361,19 +361,6 @@ Construir la plataforma móvil de referencia para el café de especialidad en La
         </thead>
         <tbody>
             <tr>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="" alt="Foto de "></td>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"></td>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">202224135</td>
-                <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">Ingeniería de Software</td>
-                <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: normal;">
-                    <ul>
-                        <li>Diseño web</li>
-                        <li>Gestión y diseño de bases de datos SQL y noSQL</li>
-                        <li>Programación en C++ y Python</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;"><img style="width: 240px; height: auto; border-radius: 25%;" src="./img/chapter1/Fabrizio.png" alt="Foto de Fabrizio León"></td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">León Vivas, Fabrizio Amir</td>
                 <td style="border: 1px solid #ddd; padding: 10px; text-align: left; background-color: #f2f2f2; color: #333;">20211b994</td>
