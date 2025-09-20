@@ -151,7 +151,7 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 
 Este entregable comprende la elaboración del informe desde el Capítulo I hasta el Capítulo II, desarrollado íntegramente a partir del proceso de investigación en equipo y del diseño del sistema.
 
-<img src="./img/insight_tb1.png">
+<img src="./img/insights_tb1.png">
 
 <div style="page-break-before: always;"></div>
 
