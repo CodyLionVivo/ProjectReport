@@ -10,11 +10,11 @@
 	<h4 style="margin: 10px 0; border-bottom: none;">Integrantes:</h4>
 	<ul style="display: inline-block; text-align: left; padding: 0;">
 		<li style="padding: 5px 0;">León Vivas, Fabrizio Amir (20211b994)</li>
-		<li style="padding: 5px 0;">Pereira Vasquez, Nelson Fabrizzio (202417468)</li>
-		<li style="padding: 5px 0;">Oliva López, Fabián Alejandro (202312013)</li>
-		<li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
-		<li style="padding: 5px 0;">Mondoñedo Rodriguez, Juan Diego Javier (202110373)</li>
-		<li style="padding: 5px 0;">Tantaleán Mesta, Guillermo Fabián (202311958)</li>
+    <li style="padding: 5px 0;">Mondoñedo Rodriguez, Juan Diego Javier (202110373)</li>
+    <li style="padding: 5px 0;">Oliva López, Fabián Alejandro (202312013)</li>
+    <li style="padding: 5px 0;">Pereira Vasquez, Nelson Fabrizzio (202417468)</li>
+    <li style="padding: 5px 0;">Tantaleán Mesta, Guillermo Fabián (202311958)</li>
+    <li style="padding: 5px 0;">Vidal Castro, Miguel Angel (202314186)</li>
 	</ul>
 	<h4 style="margin: 10px 0; border-bottom: none;">Setiembre de 2025</h4>
 </div>
@@ -151,7 +151,21 @@ Se presenta una tabla que especifica qué miembro del equipo se corresponde con 
 
 Este entregable comprende la elaboración del informe desde el Capítulo I hasta el Capítulo II, desarrollado íntegramente a partir del proceso de investigación en equipo y del diseño del sistema.
 
-<img src="./img/insight_tb1.png">
+**TB1 Network Graph**
+<figure style="text-align: center;">
+    <img src="img/chapter1/TB1_NetworkGraph.PNG" alt="TB1 Network Graph">
+</figure>
+
+**TB1 Contributors**
+<figure style="text-align: center;">
+    <img src="img/chapter1/TB1_CommitsOverTime.PNG" alt="TB1 Contributors">
+    <img src="img/chapter1/TB1_CommitsPerUser.PNG" alt="TB1 Contributors">
+</figure>
+
+**TB1 Pulse**
+<figure style="text-align: center;">
+    <img src="img/chapter1/TB1_Pulse.PNG" alt="TB1 Pulse">
+</figure>
 
 <div style="page-break-before: always;"></div>
 
