@@ -322,24 +322,14 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
       <td style="border: 1px solid #000; padding: 8px;">Identificar correctamente las necesidades de nuestros segmentos mediante el needfinding e interpretarlas para definir user stories adecuados para su caso.</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">Oliva López Fabián Alejandro;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
+      <td style="border: 1px solid #000; padding: 8px;">Oliva López, Fabián Alejandro</td>
+      <td style="border: 1px solid #000; padding: 8px;"> Realizar un análisis detallado de los competidores directos e indirectos de Xantina, identificando sus fortalezas, debilidades y estrategias de mercado, con el fin de reconocer oportunidades de diferenciación.</td>
+      <td style="border: 1px solid #000; padding: 8px;">Proponer y documentar estrategias competitivas para Xantina basadas en el análisis realizado, estableciendo acciones concretas que permitan posicionar la solución frente a los principales competidores.</td>
     </tr>
     <tr>
       <td style="border: 1px solid #000; padding: 8px;">Vidal Castro Miguel Angel</td>
       <td style="border: 1px solid #000; padding: 8px;">Completar la parte de Software Architecture Diagrams, entrevistar al segmento objetivo de dueño de cafetería.</td>
       <td style="border: 1px solid #000; padding: 8px;">Determinar que bounded context se aplican en los diagramas para saber identificarlos. Realización de Event Storming para entender que bounded context se usan.</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
-      <td style="border: 1px solid #000; padding: 8px;">&nbsp;</td>
     </tr>
   </tbody>
 </table>
