@@ -255,13 +255,12 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 					<li><strong>Juan Diego Mondoñedo:</strong> Analicé los resultados de nuestras entrevistas para desarrollar parte del needfinding y definir las user stories </li>
           <li><strong>Fabián Oliva López:</strong> Investigué acerca de posibles competidores y desarrollo su respectivo análisis competitivo a su vez de estrategias frente a estos competidores</li>
           <li><strong>Miguel Vidal Castro</strong> Determiné mediante las entrevistas del segmento objetivo de dueño de café, información relevante para entender que bounded contexts desarrollar en la aplicación para poder cubrir sus necesidades. </li>
-          <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Investigué el dominio del café de especialidad y desarrollé la arquitectura completa del sistema usando metodologías como Lean UX y Domain-Driven Design.</li>
-					<li><strong>Guillermo: Desarrollé toda la parte de DDD como el event storming identificando los principales bounded context.</strong>  </li>
+					<li><strong>Guillermo:</strong> Desarrollé toda la parte de DDD como el event storming identificando los principales bounded context.  </li>
 				</ul>
 			</td>
 			<td>
-				<strong>TB1:</strong> <br>
+				<strong>TB1:</strong>El equipo reforzó y actualizó conocimientos clave en metodologías de desarrollo como Lean UX y Domain-Driven Design, aplicándolos al dominio del café de especialidad. Cada integrante contribuyó con investigación y análisis (usuarios, competidores, modelo de negocio, arquitectura) lo que permitió construir una base conceptual sólida para el proyecto y asegurar la pertinencia de las soluciones propuestas. <br>
 			</td>
 		</tr>
 		<tr>
@@ -276,13 +275,12 @@ Este entregable comprende la elaboración del informe desde el Capítulo I hasta
 					<li><strong>Juan Diego Mondoñedo:</strong> Refresqué mis conocimientos sobre las user stories e investigué sobre el ambiente laboral de nuestro publico objetivo para plantear user stories pertinentes. </li>
           <li><strong>Fabian Oliva López:</strong> Pude aprender la necesidad de investigar acerca de competidores lo cual ayuda a ver puntos estrategicos los cuales puede improvisar nuestro trabajor para entregar un producto de buena calidad </li>
           <li><strong>Miguel Vidal Castro:</strong> Pude aprendar a investigar sobre como realizar un diagrama C4, reforzando conocimientos pasados. Realicé un Event Storming del proyecto lo que me ayudó a identificar los bounded contexts</li>
-          <li><strong>Fabrizio:</strong> </li>
           <li><strong>Fabrizzio Pereira:</strong> Aprendí sobre café de especialidad desde cero y estudié nuevas metodologías de desarrollo que no conocía previamente.</li>
 					<li><strong>Guillermo: Realicé investigación del modelo de negocio del tema en cuestión para el trabajo lo cual me permitió entender la aplicación de conocimientos de software a nivel de dirección. </strong>  </li>
 				</ul>
 			</td>
 			<td>
-				<strong>TB1:</strong> <br>
+				<strong>TB1:</strong>El equipo demostró apertura hacia el aprendizaje permanente, investigando tanto aspectos técnicos (diagramas C4, DDD, user stories) como estratégicos (modelo de negocio, competidores y dominio del café de especialidad). Esta disposición a aprender y actualizarse permitió aplicar de forma más efectiva los conocimientos adquiridos, adaptándolos a un contexto real y fortaleciendo las competencias profesionales de cada integrante. <br>
 			</td>
 		</tr>
 	</tobdy>
@@ -3969,5 +3967,32 @@ Tune, N. (2020, 12 enero). Modelling Bounded Contexts with the Bounded Context C
 
 
 # Anexos
-- Reporte: [Enlace](https://github.com/CodyLionVivo/ProjectReport)
+- Enlace para acceder al [video exposición de TB1]()
 
+- Enlace para acceder al [video exposición de TP1]()
+
+- Enlace para acceder al [Figma]()
+
+- Enlace para acceder al  [repositorio Front-end]()
+
+- Enlace para acceder al  [Front-end]()
+
+- Enlace para acceder al [repositorio Back-end]()
+
+- Enlace para acceder al [repositorio Landing-page]()
+
+- Enlace para acceder al [Landing-page]()
+
+- Enlace para acceder al [Backend deployado]()
+
+- Enlace para acceder al [repositorio Informe](https://github.com/CodyLionVivo/ProjectReport/tree/main?tab=readme-ov-file)
+
+- Enlace al video "About the Team": [video about the team]()
+
+- Enlace al video "About the Product": [video about the product]()
+
+- Enlace para acceder al [video de entrevistas de validacion]()
+
+- Enlace para acceder al [video exposicion tb2]()
+
+- Enlace para acceder al [video exposicion trabajo final]()
